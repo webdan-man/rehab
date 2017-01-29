@@ -65,7 +65,8 @@ gulp.task("minJsLibs", function(){
 	del.sync("src/desktop/js/libs.min.js"); // удаляем старую сборку
 	return gulp.src([
 				'src/desktop/libs/jquery/dist/jquery.min.js',
-				'src/desktop/libs/arcticmodal/jquery.arcticmodal.js'
+				'src/desktop/libs/arcticmodal/jquery.arcticmodal.js',
+				'src/desktop/libs/jquery.maskedinput/dist/jquery.maskedinput.min.js'
 	])
 			.pipe(concat("libs.min.js")) // собираем все библиотеки в один файл
 			.pipe(uglify()) // сжимаем

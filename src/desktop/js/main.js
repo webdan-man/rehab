@@ -4,12 +4,6 @@ $(function(){
 
 	$(document).ready(function(){
 
-		//modal header
-		$('.callback-btn').click(function() {$('#callback-modal').arcticmodal();});
-		$('#consult-btn').click(function(e) {
-			e.preventDefault();
-			$('#write-modal').arcticmodal();
-		});
 
 		// стабилизация
 		var isMobile = false;
@@ -37,6 +31,7 @@ $(function(){
 		
 		// убираем плейсхолдер при фокусе
 		$('input, textarea').focus(function(){
+			$(this).css({'box-shadow': 'none'});
 			$(this).data('placeholder',$(this).attr('placeholder'))
 			$(this).attr('placeholder','');
 		});
@@ -70,6 +65,34 @@ $(function(){
 				$('#fixed-menu').removeClass('down-menu');
 			}
 		});
+
+		//modal header
+		$('.callback-btn').click(function() {$('#callback-modal').arcticmodal();});
+		$('#consult-btn').click(function(e) {
+			e.preventDefault();
+			$('#write-modal').arcticmodal();
+		});
+
+		//неправильный ввод полей
+		$('.send-form').click(function(event) {
+			if($('.person-name').val() == '' || $('.person-tel').val() == '') {
+				event.preventDefault();
+				$('#error-modal').arcticmodal();
+				if($('.person-name').val() == '') {$('.person-name').css({'box-shadow': '0 0 4px 1px #F02D0E'});}
+				if($('.person-tel').val() == '') {$('.person-tel').css({'box-shadow': '0 0 4px 1px #F02D0E'});}
+			}
+		});
+		$('.send-form-modal').click(function(event) {
+			if($('.person-name-modal').val() == '' || $('.person-tel-modal').val() == '') {
+				event.preventDefault();
+				$('#error-modal').arcticmodal();
+				if($('.person-name-modal').val() == '') {$('.person-name-modal').css({'box-shadow': '0 0 4px 1px #F02D0E'});}
+				if($('.person-tel-modal').val() == '') {$('.person-tel-modal').css({'box-shadow': '0 0 4px 1px #F02D0E'});}
+			}
+		});
+
+		//masked phone
+		$(".masked").mask("+7 (999) 999-9999");
 
 
 

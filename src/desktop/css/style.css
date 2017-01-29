@@ -489,7 +489,8 @@ section {
 .main-form {
   position: relative; }
 
-.box-modal_close.arcticmodal-close {
+#write-modal .box-modal_close.arcticmodal-close,
+#callback-modal .box-modal_close.arcticmodal-close {
   position: absolute;
   top: -24px;
   right: -24px;
@@ -501,6 +502,20 @@ section {
 #callback-modal .main-form,
 #write-modal .main-form {
   background-image: none; }
+
+#error-modal {
+  padding: 50px;
+  text-align: center;
+  background-color: #fff;
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 18px; }
+  #error-modal p {
+    color: #9ca20d; }
+  #error-modal .box-modal_close {
+    text-decoration: underline;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer; }
 
 #fixed-menu {
   -webkit-transform: translate3d(0, -100%, 0);

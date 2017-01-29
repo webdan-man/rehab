@@ -52,9 +52,9 @@
 			<div class="main-form">
 				<form id="header-form">
 					<p>Запишитесь на бесплатную <br>консультацию психиатора нарколога</p>
-					<input type="text" name="name" placeholder="Ваше имя">
-					<input type="tel" name="tel" placeholder="Ваш телефон">
-					<input type="submit" value="Заказать звонок">
+					<input class="person-name" type="text" name="name" placeholder="Ваше имя">
+					<input class="person-tel masked" type="tel" name="tel" placeholder="Ваш телефон">
+					<input class="send-form" type="submit" value="Заказать звонок">
 				</form>
 			</div>
 		</div>
@@ -143,9 +143,9 @@
 			<div class="box-modal_close arcticmodal-close"></div>
 			<form id="header-popup-form">
 				<p>Оставьте свои контактные данные <br>и наши сотрудники свяжутся с Вами</p>
-				<input type="text" name="name" placeholder="Ваше имя">
-				<input type="tel" name="tel" placeholder="Ваш телефон">
-				<input type="submit" value="Заказать звонок">
+				<input class="person-name-modal" type="text" name="name" placeholder="Ваше имя">
+				<input class="person-tel-modal masked" type="tel" name="tel" placeholder="Ваш телефон">
+				<input class="send-form-modal" type="submit" value="Заказать звонок">
 			</form>
 		</div>
 	</div>
@@ -155,11 +155,16 @@
 			<div class="box-modal_close arcticmodal-close"></div>
 			<form id="write-popup-form">
 				<p>Запишитесь на бесплатную <br>консультацию психиатора нарколога</p>
-				<input type="text" name="name" placeholder="Ваше имя">
-				<input type="tel" name="tel" placeholder="Ваш телефон">
-				<input type="submit" value="Записаться">
+				<input class="person-name-modal" type="text" name="name" placeholder="Ваше имя">
+				<input class="person-tel-modal masked" type="tel" name="tel" placeholder="Ваш телефон">
+				<input class="send-form-modal" type="submit" value="Записаться">
 			</form>
 		</div>
+	</div>
+
+	<div id="error-modal">
+		<p>Пожалуйста, <br>введите правильное имя и телефон!</p>
+		<div class="box-modal_close arcticmodal-close">закрыть окно и ввести правильно</div>
 	</div>
 </div>
 
