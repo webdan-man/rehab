@@ -1,5 +1,4 @@
-.arcticmodal-overlay,
-.arcticmodal-container {
+.arcticmodal-container, .arcticmodal-overlay {
   position: fixed;
   left: 0;
   top: 0;
@@ -14,29 +13,21 @@
   border: 0;
   border-collapse: collapse; }
 
-*:first-child + html .arcticmodal-container {
+:first-child + html .arcticmodal-container {
   height: 100%; }
 
 .arcticmodal-container_i {
-  height: 100%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  height: 100%; }
 
 .arcticmodal-container_i2 {
-  padding: 24px;
+  padding: 0;
   margin: 0;
   border: 0;
   vertical-align: middle; }
 
-.arcticmodal-error {
-  padding: 20px;
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
-  background: #000;
-  color: #fff; }
+#hidden-box, .hidden-box {
+  display: none; }
 
-.arcticmodal-loading {
-  width: 80px;
-  height: 80px;
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
-  background: #000 url(loading.gif) no-repeat 50% 50%; }
+.error-input {
+  border: 1px solid red; }

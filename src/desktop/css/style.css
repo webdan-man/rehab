@@ -76,27 +76,6 @@ button, input, textarea {
   background-image: url("../img/header-bg.jpg"); }
   .header .head {
     min-height: 55px; }
-  .header .menu-btn {
-    width: 160px;
-    min-height: 55px;
-    background-image: url("../img/menu-toggle.png");
-    background-repeat: no-repeat;
-    background-position: top left;
-    text-align: center;
-    cursor: pointer;
-    margin-right: 200px;
-    float: left;
-    -webkit-transition: all .25s;
-    transition: all .25s; }
-    .header .menu-btn span {
-      font-family: "Roboto Slab", sans-serif;
-      font-weight: bold;
-      font-size: 13px;
-      line-height: 38px; }
-    .header .menu-btn:hover {
-      background-image: url("../img/menu-toggle-hover.png"); }
-    .header .menu-btn:hover span {
-      color: #9ca20d; }
   .header .logo {
     float: left;
     height: 55px; }
@@ -171,11 +150,34 @@ button, input, textarea {
         -webkit-transition: all .25s;
         transition: all .25s; }
 
+.menu-btn {
+  width: 160px;
+  min-height: 55px;
+  background-image: url("../img/menu-toggle.png");
+  background-repeat: no-repeat;
+  background-position: top left;
+  text-align: center;
+  cursor: pointer;
+  margin-right: 200px;
+  float: left;
+  -webkit-transition: all .25s;
+  transition: all .25s; }
+  .menu-btn span {
+    font-family: "Roboto Slab", sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 38px; }
+  .menu-btn:hover {
+    background-image: url("../img/menu-toggle-hover.png"); }
+  .menu-btn:hover span {
+    color: #9ca20d; }
+
 .main-form {
   width: 365px;
   height: 315px;
   float: left;
   margin-top: 9px;
+  background-color: #27292c;
   background-image: url("../img/header-form-bg.png");
   -webkit-border-top-left-radius: 30px;
   border-top-left-radius: 30px;
@@ -390,7 +392,7 @@ section {
 .menu {
   background-color: rgba(255, 255, 255, 0.93);
   position: fixed;
-  z-index: 2000;
+  z-index: 800;
   top: 0;
   left: 0;
   width: 100%;
@@ -483,6 +485,95 @@ section {
     opacity: .85;
     -webkit-box-shadow: none;
     box-shadow: none; }
+
+.main-form {
+  position: relative; }
+
+.box-modal_close.arcticmodal-close {
+  position: absolute;
+  top: -24px;
+  right: -24px;
+  width: 21px;
+  height: 21px;
+  background-image: url("../img/close-menu.png");
+  cursor: pointer; }
+
+#callback-modal .main-form,
+#write-modal .main-form {
+  background-image: none; }
+
+#fixed-menu {
+  -webkit-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
+  height: 65px;
+  width: 100%;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  -webkit-transition: -webkit-transform .25s;
+  transition: -webkit-transform .25s;
+  transition: transform .25s;
+  transition: transform .25s, -webkit-transform .25s; }
+  #fixed-menu.down-menu {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); }
+  #fixed-menu > div {
+    width: 980px;
+    margin: 0 auto; }
+  #fixed-menu .menu-btn {
+    background-image: none;
+    position: relative;
+    line-height: 65px; }
+    #fixed-menu .menu-btn:hover .a {
+      top: 20px; }
+    #fixed-menu .menu-btn:hover .c {
+      top: 40px; }
+
+.toggle {
+  width: 65px;
+  height: 65px;
+  position: absolute;
+  top: 0;
+  left: -8px; }
+  .toggle span {
+    position: absolute;
+    left: 20px;
+    width: 24px;
+    height: 4px;
+    margin-bottom: 4px;
+    display: block;
+    background-color: #b9be13;
+    -webkit-border-bottom-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    -webkit-border-top-right-radius: 4px;
+    border-top-right-radius: 4px; }
+    .toggle span.a {
+      top: 22px; }
+    .toggle span.b {
+      top: 30px; }
+    .toggle span.c {
+      top: 38px; }
+
+.logo-fixed {
+  float: left; }
+  .logo-fixed img {
+    height: 42px;
+    width: auto;
+    display: block;
+    margin: 11px 82px; }
+
+.callback-fixed {
+  float: right; }
+  .callback-fixed a {
+    line-height: 65px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Roboto Slab", sans-serif;
+    color: #46494d; }
+    .callback-fixed a:hover {
+      color: #9ca20d; }
 
 @media screen and (max-width: 1700px) {
   .header {

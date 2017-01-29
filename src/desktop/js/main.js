@@ -4,6 +4,13 @@ $(function(){
 
 	$(document).ready(function(){
 
+		//modal header
+		$('.callback-btn').click(function() {$('#callback-modal').arcticmodal();});
+		$('#consult-btn').click(function(e) {
+			e.preventDefault();
+			$('#write-modal').arcticmodal();
+		});
+
 		// стабилизация
 		var isMobile = false;
 
@@ -40,16 +47,31 @@ $(function(){
 		//работа меню
 		$('.menu-btn').on('click', function() {
 			$('.menu').addClass('down').css('padding-left', '0');
+			$('#fixed-menu').css('padding-left', '0');
 			$('body').css({'overflow': 'hidden', 'padding-right': '17px'});
 		});
 		$('#close-menu').on('click', function() {
 			$('.menu').removeClass('down').css('padding-left', '17px');
+			$('#fixed-menu').css('padding-left', '17px');
 			$('body').css({'overflow': 'auto', 'padding-right': '0'});
 		});
 
+		//video in header
 		$('.header .vid-over').click(function(){
 		  $(this).html('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/ogjkRFi810w?autoplay=1;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>')
 		});
+
+		//fixed menu
+		$(window).scroll(function () {
+			if($(this).scrollTop() > 400) {
+				$('#fixed-menu').addClass('down-menu');
+			}
+			if($(this).scrollTop() <= 400 && $('#fixed-menu').hasClass('down-menu')) {
+				$('#fixed-menu').removeClass('down-menu');
+			}
+		});
+
+
 
 
 

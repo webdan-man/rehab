@@ -9,26 +9,6 @@
 	.head {
 		min-height: 55px;
 	}
-	.menu-btn {
-		width: 160px;
-		min-height: 55px;
-		background-image: url('../img/menu-toggle.png');
-		background-repeat: no-repeat;
-		background-position: top left;
-		text-align: center;
-		cursor: pointer;
-		margin-right: 200px;
-		float: left;
-		transition: all .25s;
-		span {
-			font-family: $second-font;
-			font-weight: bold;
-			font-size: 13px;
-			line-height: 38px;
-		}
-		&:hover {background-image: url('../img/menu-toggle-hover.png');}
-		&:hover span {color: $h-color;}
-	}
 	.logo {
 		float: left;
 		height: 55px;
@@ -111,11 +91,33 @@
 	}
 }
 
+.menu-btn {
+	width: 160px;
+	min-height: 55px;
+	background-image: url('../img/menu-toggle.png');
+	background-repeat: no-repeat;
+	background-position: top left;
+	text-align: center;
+	cursor: pointer;
+	margin-right: 200px;
+	float: left;
+	transition: all .25s;
+	span {
+		font-family: $second-font;
+		font-weight: bold;
+		font-size: 13px;
+		line-height: 38px;
+	}
+	&:hover {background-image: url('../img/menu-toggle-hover.png');}
+	&:hover span {color: $h-color;}
+}
+
 .main-form {
 	width: 365px;
 	height: 315px;
 	float: left;
 	margin-top: 9px;
+	background-color: #27292c;
 	background-image: url('../img/header-form-bg.png');
 	border-top-left-radius: 30px;
 	border-bottom-right-radius: 30px;

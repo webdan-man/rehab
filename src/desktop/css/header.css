@@ -76,27 +76,6 @@ button, input, textarea {
   background-image: url("../img/header-bg.jpg"); }
   .header .head {
     min-height: 55px; }
-  .header .menu-btn {
-    width: 160px;
-    min-height: 55px;
-    background-image: url("../img/menu-toggle.png");
-    background-repeat: no-repeat;
-    background-position: top left;
-    text-align: center;
-    cursor: pointer;
-    margin-right: 200px;
-    float: left;
-    -webkit-transition: all .25s;
-    transition: all .25s; }
-    .header .menu-btn span {
-      font-family: "Roboto Slab", sans-serif;
-      font-weight: bold;
-      font-size: 13px;
-      line-height: 38px; }
-    .header .menu-btn:hover {
-      background-image: url("../img/menu-toggle-hover.png"); }
-    .header .menu-btn:hover span {
-      color: #9ca20d; }
   .header .logo {
     float: left;
     height: 55px; }
@@ -171,11 +150,34 @@ button, input, textarea {
         -webkit-transition: all .25s;
         transition: all .25s; }
 
+.menu-btn {
+  width: 160px;
+  min-height: 55px;
+  background-image: url("../img/menu-toggle.png");
+  background-repeat: no-repeat;
+  background-position: top left;
+  text-align: center;
+  cursor: pointer;
+  margin-right: 200px;
+  float: left;
+  -webkit-transition: all .25s;
+  transition: all .25s; }
+  .menu-btn span {
+    font-family: "Roboto Slab", sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 38px; }
+  .menu-btn:hover {
+    background-image: url("../img/menu-toggle-hover.png"); }
+  .menu-btn:hover span {
+    color: #9ca20d; }
+
 .main-form {
   width: 365px;
   height: 315px;
   float: left;
   margin-top: 9px;
+  background-color: #27292c;
   background-image: url("../img/header-form-bg.png");
   -webkit-border-top-left-radius: 30px;
   border-top-left-radius: 30px;
