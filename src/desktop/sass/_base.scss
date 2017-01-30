@@ -33,11 +33,19 @@ h1,h2,h3,h4,h5{font-size:1em;font-weight:inherit;text-align:center;font-family: 
 a{text-decoration:none;color:inherit;outline:0!important}
 button,input,textarea{outline: none;}
 
-// .overflow-h {overflow: hidden;}
+::selection { background-color: rgba(177, 213, 38, .85);}
+::-moz-selection { background-color: rgba(177, 213, 38, .85);}
 
+section.header > div > div,
+section.menu > div > div,
+section.problem > div > div {top: 50%;}
 
-
-
+h2 {
+	font-family: $second-font;
+	color: $h-color;
+	font-size: 26px;
+	font-weight: bold;
+}
 
 @mixin sec() {
 	width: 100%;
@@ -58,7 +66,7 @@ button,input,textarea{outline: none;}
 			width: 100%;
 			position: absolute;
 			height: 600px;
-			top: 50%;
+			top: 55%;
 			margin-top: -300px;
 		}
 	}

@@ -51,8 +51,12 @@ $(function(){
 			$('body').css({'overflow': 'auto', 'padding-right': '0'});
 		});
 
-		//video in header
+		//подгрузка объектов
 		$('.header .vid-over').click(function(){
+		  $(this).html('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/ogjkRFi810w?autoplay=1;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>')
+		});
+		$('.frame-3d').click(function(e){
+			e.preventDefault();
 		  $(this).html('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/ogjkRFi810w?autoplay=1;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>')
 		});
 
@@ -90,9 +94,49 @@ $(function(){
 				if($('.person-tel-modal').val() == '') {$('.person-tel-modal').css({'box-shadow': '0 0 4px 1px #F02D0E'});}
 			}
 		});
+		$('#right-button').click(function(event) {
+			if($('#calc-name').val() == '' || $('#calc-tel').val() == '') {
+				event.preventDefault();
+				$('#error-modal').arcticmodal();
+				if($('#calc-name').val() == '') {$('#calc-name').css({'box-shadow': '0 0 4px 1px #F02D0E'});}
+				if($('#calc-tel').val() == '') {$('#calc-tel').css({'box-shadow': '0 0 4px 1px #F02D0E'});}
+			}
+		});
+
+		//style select
+		$('.slct').click(function(){
+			/* Заносим выпадающий список в переменную */
+			var dropBlock = $(this).parent().find('.drop');
+			/* Делаем проверку: Если выпадающий блок скрыт то делаем его видимым*/
+			if( dropBlock.is(':hidden') ) {
+				dropBlock.slideDown('fast');
+				/* Выделяем ссылку открывающую select */
+				$(this).addClass('active');
+				/* Работаем с событием клика по элементам выпадающего списка */
+				$('.drop').find('li').click(function(){
+					/* Заносим в переменную HTML код элемента
+					списка по которому кликнули */
+					var selectResult = $(this).html();
+					/* Находим наш скрытый инпут и передаем в него
+					значение из переменной selectResult */
+					$(this).parent().parent().find('input').val(selectResult);
+					/* Передаем значение переменной selectResult в ссылку которая
+					открывает наш выпадающий список и удаляем активность */
+					$(this).parent().parent().find('.slct').removeClass('active').html(selectResult);
+					/* Скрываем выпадающий блок */
+					dropBlock.slideUp('fast');
+				});
+			/* Продолжаем проверку: Если выпадающий блок не скрыт то скрываем его */
+			} else {
+				$(this).removeClass('active');
+				dropBlock.slideUp('fast');
+			}
+			/* Предотвращаем обычное поведение ссылки при клике */
+			return false;
+		});
 
 		//masked phone
-		$(".masked").mask("+7 (999) 999-9999");
+		$(".masked").mask("+7 (999) 999-99-99");
 
 
 

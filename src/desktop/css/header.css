@@ -71,6 +71,26 @@ a {
 button, input, textarea {
   outline: none; }
 
+::-moz-selection {
+  background-color: rgba(177, 213, 38, 0.85); }
+
+::selection {
+  background-color: rgba(177, 213, 38, 0.85); }
+
+::-moz-selection {
+  background-color: rgba(177, 213, 38, 0.85); }
+
+section.header > div > div,
+section.menu > div > div,
+section.problem > div > div {
+  top: 50%; }
+
+h2 {
+  font-family: "Roboto Slab", sans-serif;
+  color: #9ca20d;
+  font-size: 26px;
+  font-weight: bold; }
+
 /* Стили хедера */
 .header {
   background-image: url("../img/header-bg.jpg"); }

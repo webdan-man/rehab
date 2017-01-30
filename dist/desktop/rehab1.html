@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1200">
+	<title>REHAB</title>
+	<!-- Картинка появляющаяся в социальных сетях, при отправке ссылки на сайт в сообщении или на стену -->
+	<meta property="og:image" content="img/1.jpg">
+	<link rel="apple-touch-icon-precomposed" href="images/l/apple-touch-icon-precomposed.png">
+
+	<!-- head stylesheets -->
+	<style type="text/css">
+		/*стили header*/
+	</style>
+
+	<!-- stylesheets -->
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/libs.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&amp;subset=cyrillic" rel="stylesheet">
+
+	<!-- google API (for maps) -->
+	<!-- <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyC0bhPp-iKqVjX9uRAMbawAWaCH8OOztvU"></script> -->
+
+</head>
+<body>
+
+
+<section class="header" id="sec1">
+	<div>
+		<div>
+			<div class="head">
+				<div class="menu-btn"><span>Меню</span></div>
+				<div class="logo">
+					<img src="img/logo.png" alt="logo">
+					<p>Семейная клиника психического <br>здоровья и лечения зависимостей</p>
+				</div>
+				<div class="callback">
+					<a href="tel:+84952225511">8 495 223 55 11</a>
+					<div class="callback-btn">Заказать звонок</div>
+				</div>
+			</div>
+			<div class="header-text">
+				<h1>Сохраните вашу семью! Решитесь на прохождение <br> реабилитационного курса в Rehab family</h1>
+				<h2>и всего <span>за 30 дней</span> вернитесь к нормальной <br> жизни</h2>
+			</div>
+			<div class="header-video">
+				<div class="vid-over"><img src="img/play-btn.png" alt="playbtn"></div>
+			</div>
+			<div class="main-form">
+				<form id="header-form">
+					<p>Запишитесь на бесплатную <br>консультацию психиатора нарколога</p>
+					<input class="person-name" type="text" name="name" placeholder="Ваше имя">
+					<input class="person-tel masked" type="tel" name="tel" placeholder="Ваш телефон">
+					<input class="send-form" type="submit" value="Заказать звонок">
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="menu" id="menu">
+	<div>
+		<div>
+			<img id="close-menu" src="img/close-menu.png" alt="close">
+			<div class="logo-menu"><img src="img/logo.png" alt="logo-menu"></div>
+			<ul class="menu-list">
+				<li><a href="#">Стоимость и сроки</a></li>
+				<li><a href="#">3d экскурсия</a></li>
+				<li><a href="#">Видео о пациентах</a></li>
+				<li><a href="#">Ответы на вопросы</a></li>
+				<li><a href="#">Отзывы пациентов</a></li>
+				<li><a href="#">Специалисты Rehab Family</a></li>
+				<li><a href="#">Записаться на конференцию</a></li>
+				<li><a href="#">Контактная информация</a></li>
+			</ul>
+			<a href="#" id="consult-btn">Записаться на консультацию</a>
+		</div>
+	</div>
+</section>
+
+<nav id="fixed-menu">
+	<div>
+		<div class="menu-btn">
+			<span class="toggle">
+				<span class="a"></span>
+				<span class="b"></span>
+				<span class="c"></span>
+			</span>
+			<span>Меню</span>
+		</div>
+		<div class="logo-fixed">
+			<a href=""><img src="img/logo.png" alt="logo-fixed" height="40" width="auto"></a>
+		</div>
+		<div class="callback-fixed">
+			<a href="tel:+84952225511">8 495 223 55 11</a>
+		</div>
+	</div>
+</nav>
+
+<section class="calc" id="sec3">
+	<div>
+		<div>
+			<h2>Узнайте стоимость и сроки лечения в Вашем случае</h2>
+			<h3>Заполните форму и мы предложим вам индивидуальную <br>программу освобождения</h3>
+			<div class="calc-form">
+				<form id="calc-form">
+					<div class="wrap-filters">
+						<div class="left-labels">
+							<p>Для кого вы выбираете лечение?</p>
+							<p>Сколько лет вы уже боритесь <br>с зависимостью:</p>
+							<p>Ранее уже проходили лечения?</p>
+							<p>Были случаи агрессивного поведения?</p>
+						</div>
+						<div class="right-filters">
+							<div class="line">
+								<div>
+									<input id="rad1" name="for-who" type="radio" value="dlya_sebya">
+									<label for="rad1">Для себя</label>
+								</div>
+								<div>
+									<input id="rad2" name="for-who" type="radio" value="dlya_blizkogo">
+									<label for="rad2">Для близкого</label>
+								</div>
+							</div>
+							<div class="line">
+								<div>
+									<input id="rad1" name="for-who" type="radio" value="dlya_sebya">
+									<label for="rad1">Для себя</label>
+								</div>
+								<div>
+									<input id="rad2" name="for-who" type="radio" value="dlya_blizkogo">
+									<label for="rad2">Для близкого</label>
+								</div>
+							</div>
+							<div class="line">
+								<div>
+									<input id="rad3" name="before" type="radio" value="dlya_sebya">
+									<label for="rad3">Да</label>
+								</div>
+								<div>
+									<input id="rad4" name="before" type="radio" value="dlya_blizkogo">
+									<label for="rad4">Нет</label>
+								</div>
+							</div>
+							<div class="line">
+								<div>
+									<input id="rad5" name="agro" type="radio" value="dlya_sebya">
+									<label for="rad5">Да</label>
+								</div>
+								<div>
+									<input id="rad6" name="agro" type="radio" value="dlya_blizkogo">
+									<label for="rad6">Нет</label>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="bottom-contact">
+						<input class="input-bottom" type="text" name="name" placeholder="Ваше имя">
+						<input class="input-bottom masked" type="tel" name="tel" placeholder="Ваш телефон">
+						<input id="right-button" type="submit" value="Узнать стоимость">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+
+
+
+<div class="hidden-box">
+	<div id="callback-modal">
+		<div class="main-form">
+			<div class="box-modal_close arcticmodal-close"></div>
+			<form id="header-popup-form">
+				<p>Оставьте свои контактные данные <br>и наши сотрудники свяжутся с Вами</p>
+				<input class="person-name-modal" type="text" name="name" placeholder="Ваше имя">
+				<input class="person-tel-modal masked" type="tel" name="tel" placeholder="Ваш телефон">
+				<input class="send-form-modal" type="submit" value="Заказать звонок">
+			</form>
+		</div>
+	</div>
+
+	<div id="write-modal">
+		<div class="main-form">
+			<div class="box-modal_close arcticmodal-close"></div>
+			<form id="write-popup-form">
+				<p>Запишитесь на бесплатную <br>консультацию психиатора нарколога</p>
+				<input class="person-name-modal" type="text" name="name" placeholder="Ваше имя">
+				<input class="person-tel-modal masked" type="tel" name="tel" placeholder="Ваш телефон">
+				<input class="send-form-modal" type="submit" value="Записаться">
+			</form>
+		</div>
+	</div>
+
+	<div id="error-modal">
+		<p>Пожалуйста, <br>введите правильное имя и телефон!</p>
+		<div class="box-modal_close arcticmodal-close">закрыть окно и ввести правильно</div>
+	</div>
+</div>
+
+
+<!-- main stylesheet -->
+	<link rel="stylesheet" href="css/style.css">
+
+<!-- google map -->
+<script>
+	//START Google Maps API
+	// var myCenter=new google.maps.LatLng(59.856801, 30.158371);
+
+	// function initialize() {
+	// 	var mapProp = {
+	// 		center:myCenter,
+	// 		zoom:16,
+	// 		mapTypeId:google.maps.MapTypeId.ROADMAP,
+	// 		scrollwheel: false,
+	// 	};
+	// 	var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
+	// 	var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+	// 	var marker=new google.maps.Marker({
+	// 		position:myCenter,
+	// 		map: map,
+	// 		animation: google.maps.Animation.BOUNCE,
+	// 		// icon: iconBase + 'parking_lot_maps.png'
+	// 		icon: 'images/pin.png'
+	// 	});
+
+	// 	marker.setMap(map);
+
+	// 	var infowindow = new google.maps.InfoWindow({
+	// 		 content:"Наш адрес: "
+	// 	});
+
+//      infowindow.open(map,marker);
+	// }
+
+	// google.maps.event.addDomListener(window, 'load', initialize);
+	// END Google Maps API
+</script>
+<!-- endgoogle map -->
+
+<!-- styles -->
+	<!-- <link rel="stylesheet" href="css/magnific-popup.min.css"> -->
+
+<!-- scripts -->
+	<script src="js/libs.min.js"></script>
+
+	<script src="js/main.js"></script>
+
+</body>
+</html>
