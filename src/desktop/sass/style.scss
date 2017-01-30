@@ -496,7 +496,7 @@ section {
 		font-size: 16px;
 		color: $grey-color;
 		line-height: 22px;
-		margin: 12px 0;
+		margin: 12px 0 15px;
 	}
 	.frame-3d {
 		height: 300px;
@@ -557,7 +557,52 @@ section {
 	}
 }
 
+//VIDEO SECTION
+.video-sect {
+	background-image: url('../img/video-sect-bg.jpg');
+	h2 {
+		color: #fff;
+		line-height: 32px;
+	}
+	.video-block {
+		width: 630px;
+		height: 315px;
+		line-height: 315px;
+		text-align: center;
+		background-image: url('../img/video-item.jpg');
+		background-size: cover;
+		margin: 25px auto;
+		cursor: pointer;
+		img {
+			display: inline-block;
+			vertical-align: middle;
+			transition: all .25s;
+			&:hover {transform: scale(.95);}
+		}
+	}
+}
+.under-video {
+	width: 460px;
+	height: 60px;
+	text-align: center;
+	margin: 21px auto 0;
+	color: #fff;
+	font-size: 16px;
+	font-family: $second-font;
+	font-weight: bold;
+	background-image: url('../img/2years.png');
+	background-position: center left;
+	padding: 15px 0 0 50px;
+}
 
+//ANSWERS SECTION
+.answers {
+	background-image: url('../img/answers-bg.jpg');
+	h2 {
+		line-height: 30px;
+		margin-top: 15px;
+	}
+}
 
 
 

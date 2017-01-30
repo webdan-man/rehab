@@ -59,6 +59,10 @@ $(function(){
 			e.preventDefault();
 		  $(this).html('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/ogjkRFi810w?autoplay=1;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>')
 		});
+		$('.video-block').click(function(e){
+			e.preventDefault();
+		  $(this).html('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/ogjkRFi810w?autoplay=1;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>')
+		});
 
 		//fixed menu
 		$(window).scroll(function () {
