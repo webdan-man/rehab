@@ -53,15 +53,15 @@ $(function(){
 
 		//подгрузка объектов
 		$('.header .vid-over').click(function(){
-		  $(this).html('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/ogjkRFi810w?autoplay=1;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>')
+			$(this).html('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/ogjkRFi810w?autoplay=1;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>')
 		});
 		$('.frame-3d').click(function(e){
 			e.preventDefault();
-		  $(this).html('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/ogjkRFi810w?autoplay=1;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>')
+			$(this).html('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/ogjkRFi810w?autoplay=1;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>')
 		});
-		$('.video-block').click(function(e){
+		$('.video-block, .vid-1').click(function(e){
 			e.preventDefault();
-		  $(this).html('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/ogjkRFi810w?autoplay=1;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>')
+			$(this).html('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/ogjkRFi810w?autoplay=1;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>')
 		});
 
 		//fixed menu
@@ -142,6 +142,24 @@ $(function(){
 		//masked phone
 		$(".masked").mask("+7 (999) 999-99-99");
 
+		// удаление бордер боттом у предыдущего элемента
+		$( "#ans-right li.active" ).prev().css( "border-bottom", "none" );
+		
+
+		(function($) {
+		$(function() {
+
+		  $('ul.tabs__caption').on('click', 'li:not(.active)', function() {
+		    $(this)
+		      .addClass('active').siblings().removeClass('active')
+		      .closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
+		      $( "#ans-right li:not(.active)" ).css( {'border-bottom': '1px solid #cdcdcd'});
+		      $( "#ans-right li.active" ).prev().css( "border-bottom", "none");
+		  });
+
+		});
+		})(jQuery);
+
 
 
 
@@ -150,5 +168,6 @@ $(function(){
 
 
 //==========EoF==============
-});
-});
+	}); //doc.ready
+
+});//function

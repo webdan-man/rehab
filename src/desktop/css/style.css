@@ -17,7 +17,7 @@ input {
   border: none;
   outline: none; }
 
-a, input, span, div {
+a, input, span, div, img {
   -webkit-transition: all .25s;
   transition: all .25s; }
 
@@ -924,6 +924,97 @@ section {
   .answers h2 {
     line-height: 30px;
     margin-top: 15px; }
+
+#ans-wrap {
+  margin-top: 40px; }
+  #ans-wrap #ans-left {
+    width: 400px;
+    min-height: 350px;
+    max-height: 430px;
+    overflow: hidden;
+    margin-left: 75px;
+    float: left;
+    -webkit-transition: all .35s;
+    transition: all .35s; }
+    #ans-wrap #ans-left h3 {
+      font-family: "Roboto Slab", sans-serif;
+      font-size: 26px;
+      line-height: 30px;
+      color: #5a5a5a;
+      text-align: left;
+      margin-bottom: 25px; }
+    #ans-wrap #ans-left h4 {
+      color: #494949;
+      font-size: 14px;
+      line-height: 16px;
+      font-weight: bold;
+      font-family: "Roboto Slab", sans-serif;
+      text-align: left; }
+    #ans-wrap #ans-left p {
+      font-size: 13px; }
+    #ans-wrap #ans-left .ans-video {
+      height: 210px;
+      line-height: 210px;
+      width: 100%;
+      max-width: 400px;
+      background-color: #666;
+      text-align: center;
+      cursor: pointer;
+      margin-bottom: 30px; }
+      #ans-wrap #ans-left .ans-video img {
+        vertical-align: middle; }
+        #ans-wrap #ans-left .ans-video img:hover {
+          -webkit-transform: scale(0.95);
+          -ms-transform: scale(0.95);
+          transform: scale(0.95); }
+  #ans-wrap #ans-right {
+    width: 370px;
+    float: left;
+    margin-left: 85px;
+    height: 430px;
+    overflow-y: scroll;
+    z-index: 5;
+    padding-left: 25px; }
+    #ans-wrap #ans-right li {
+      z-index: 1;
+      width: 300px;
+      line-height: 17px;
+      padding: 15px 0;
+      color: #6b6b6b;
+      font-size: 14px;
+      border-bottom: 1px solid #cdcdcd;
+      cursor: pointer; }
+      #ans-wrap #ans-right li:hover {
+        color: #aab617; }
+      #ans-wrap #ans-right li.active {
+        border-top: 1px solid #aab617;
+        border-bottom: 1px solid #aab617 !important;
+        color: #2c2c2c;
+        font-weight: bold;
+        position: relative; }
+        #ans-wrap #ans-right li.active:after {
+          content: '';
+          display: block;
+          width: 29px;
+          height: -webkit-calc(100% + 2px);
+          height: calc(100% + 2px);
+          position: absolute;
+          left: -25px;
+          top: -1px;
+          background-image: url("../img/li-after.png");
+          background-size: 100% 100%;
+          background-repeat: no-repeat; }
+
+.tabs__content {
+  -webkit-transition: opacity 1.5s ease;
+  transition: opacity 1.5s ease;
+  opacity: 0;
+  height: 0;
+  overflow: hidden; }
+
+.tabs__content.active {
+  opacity: 1;
+  height: auto; }
 
 @media screen and (max-width: 1700px) {
   .header {

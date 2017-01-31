@@ -17,7 +17,7 @@ a, a:visited, a:focus {
 	outline: none;
 }
 input {border: none;outline: none;}
-a,input,span,div {transition: all .25s;}
+a,input,span,div,img {transition: all .25s;}
 input:focus, textarea:focus {outline: 0;}
 h1, h2, h3, h4, h5, h6 {font-family: $main-font, sans-serif;}
 img {

@@ -69,7 +69,7 @@ gulp.task("minJsLibs", function(){
 				'src/desktop/libs/jquery.maskedinput/dist/jquery.maskedinput.min.js'
 	])
 			.pipe(concat("libs.min.js")) // собираем все библиотеки в один файл
-			.pipe(uglify()) // сжимаем
+			//.pipe(uglify()) // сжимаем
 			.pipe(gulp.dest("src/desktop/js"));
 });
 
