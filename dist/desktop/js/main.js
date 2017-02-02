@@ -80,7 +80,7 @@ $(function(){
 
 		//modal header
 		$('.callback-btn').click(function() {$('#callback-modal').arcticmodal();});
-		$('#consult-btn').click(function(e) {
+		$('#consult-btn, .consult-fixed').click(function(e) {
 			e.preventDefault();
 			$('#write-modal').arcticmodal();
 		});

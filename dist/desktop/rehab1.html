@@ -2,9 +2,8 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=1200">
+	<!-- <meta name="viewport" content="width=1200"> -->
 	<title>REHAB</title>
-	<!-- Картинка появляющаяся в социальных сетях, при отправке ссылки на сайт в сообщении или на стену -->
 	<meta property="og:image" content="img/1.jpg">
 	<link rel="apple-touch-icon-precomposed" href="images/l/apple-touch-icon-precomposed.png">
 
@@ -13,10 +12,8 @@
 		/*стили header*/
 	</style>
 
-	<!-- stylesheets -->
-	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/header.css">
-	<link rel="stylesheet" href="css/libs.css">
+	
 
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&amp;subset=cyrillic" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto&amp;subset=cyrillic" rel="stylesheet">
@@ -542,6 +539,9 @@
 </section>
 
 
+<div class="consult-fixed"></div>
+
+
 
 
 
@@ -579,10 +579,9 @@
 
 
 <!-- main stylesheet -->
+	<link rel="stylesheet" href="css/libs.css">
 	<link rel="stylesheet" href="css/style.css">
-
 <!-- styles -->
-	<!-- <link rel="stylesheet" href="css/magnific-popup.min.css"> -->
 
 <!-- scripts -->
 	<script src="js/libs.min.js"></script>
@@ -651,23 +650,23 @@
 				position: loc1,
 				map: map1,
 					icon: {
-							url: '../img/map-marker.png',
+							url: 'img/map-marker.png',
 							// size: new google.maps.Size(47, 71),
 							// origin: new google.maps.Point(0, 0),
 							// anchor: new google.maps.Point(23, 71)
 						},
-						title: 'Fortis'
+						title: 'Rehab'
 					});
 			var marker2 = new google.maps.Marker({
 				position: loc2,
 				map: map2,
 					icon: {
-							url: '../img/map-marker.png',
+							url: 'img/map-marker.png',
 							// size: new google.maps.Size(47, 71),
 							// origin: new google.maps.Point(0, 0),
 							// anchor: new google.maps.Point(23, 71)
 						},
-						title: 'Fortis'
+						title: 'Rehab'
 					});
 
 			map1.fitBounds(bounds);//autozoom
