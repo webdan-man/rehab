@@ -25,7 +25,7 @@ input:focus, textarea:focus {
   outline: 0; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Roboto", sans-serif, sans-serif; }
+  font-family: "Roboto Slab", sans-serif, sans-serif; }
 
 img {
   max-width: 100%;
@@ -79,6 +79,9 @@ button, input, textarea {
 
 ::-moz-selection {
   background-color: rgba(177, 213, 38, 0.85); }
+
+.clearfix {
+  clear: both !important; }
 
 section.header > div > div,
 section.menu > div > div,
@@ -164,7 +167,8 @@ h2 {
       text-align: center;
       line-height: 315px;
       -webkit-transition: all .25s;
-      transition: all .25s; }
+      transition: all .25s;
+      overflow: hidden; }
       .header .header-video .vid-over img {
         vertical-align: middle;
         -webkit-transition: all .25s;

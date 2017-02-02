@@ -2,9 +2,8 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=1200">
+	<!-- <meta name="viewport" content="width=1200"> -->
 	<title>REHAB</title>
-	<!-- Картинка появляющаяся в социальных сетях, при отправке ссылки на сайт в сообщении или на стену -->
 	<meta property="og:image" content="img/1.jpg">
 	<link rel="apple-touch-icon-precomposed" href="images/l/apple-touch-icon-precomposed.png">
 
@@ -13,10 +12,8 @@
 		/*стили header*/
 	</style>
 
-	<!-- stylesheets -->
-	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/header.css">
-	<link rel="stylesheet" href="css/libs.css">
+	
 
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&amp;subset=cyrillic" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto&amp;subset=cyrillic" rel="stylesheet">
@@ -327,11 +324,10 @@
 				</ul>
 				
 				<div class="wrap-filters">
-					<div class="tabs__content">123</div>
-					<div class="tabs__content">qwe</div>
-					<div class="tabs__content active">
-						<div class="bxslider2-3">
-							<div class="spec-slide">
+					<!-- FIRST TAB -->
+					<div class="tabs__content"> 
+						<div class="bxslider2-1">
+							<div class="spec-slide first-slide" data-sld="0">
 								<div class="photo">
 									<img src="img/doctor-photo.jpg" alt="doc">
 								</div>
@@ -340,7 +336,7 @@
 									<h4>Профессор. <br>Доктор медицинских наук <br>Врач психиатор, психотерапевт</h4>
 								</div>
 							</div>
-							<div class="spec-slide">
+							<div class="spec-slide" data-sld="1">
 								<div class="photo">
 									<img src="img/doctor-photo.jpg" alt="doc">
 								</div>
@@ -350,11 +346,108 @@
 								</div>
 							</div>
 						</div>
-						<div id="sld2l"></div>
-						<div id="sld2r"></div>
+						<div id="sld2-1l"></div>
+						<div id="sld2-1r"></div>
 					</div>
-					<div class="tabs__content">zxc</div>
-					<div class="tabs__content">fwfwf</div>
+					<!-- SECONT TAB -->
+					<div class="tabs__content">
+						<div class="bxslider2-2">
+							<div class="spec-slide first-slide" data-sld="0">
+								<div class="photo">
+									<img src="img/doctor-photo.jpg" alt="doc">
+								</div>
+								<div class="descr">
+									<h3>Игумнов <br> Александрович</h3>
+									<h4>Профессор. <br>Доктор медицинских наук <br>Врач психиатор, психотерапевт</h4>
+								</div>
+							</div>
+							<div class="spec-slide" data-sld="1">
+								<div class="photo">
+									<img src="img/doctor-photo.jpg" alt="doc">
+								</div>
+								<div class="descr">
+									<h3>Игумнов Сергей</h3>
+									<h4>Профессор. <br>Доктор медицинских наук <br>Врач психиатор, психотерапевт</h4>
+								</div>
+							</div>
+						</div>
+						<div id="sld2-2l"></div>
+						<div id="sld2-2r"></div>
+					</div>
+					<!-- 3TH TAB -->
+					<div class="tabs__content active">
+						<div class="bxslider2-3">
+							<div class="spec-slide first-slide" data-sld="0">
+								<div class="photo">
+									<img src="img/doctor-photo.jpg" alt="doc">
+								</div>
+								<div class="descr">
+									<h3>Игумнов Сергей <br> Александрович</h3>
+									<h4>Профессор. <br>Доктор медицинских наук <br>Врач психиатор, психотерапевт</h4>
+								</div>
+							</div>
+							<div class="spec-slide" data-sld="1">
+								<div class="photo">
+									<img src="img/doctor-photo.jpg" alt="doc">
+								</div>
+								<div class="descr">
+									<h3>Игумнов Сергей <br> Александрович</h3>
+									<h4>Профессор. <br>Доктор медицинских наук <br>Врач психиатор, психотерапевт</h4>
+								</div>
+							</div>
+						</div>
+						<div id="sld2-3l"></div>
+						<div id="sld2-3r"></div>
+					</div>
+					<!-- 4TH TAB -->
+					<div class="tabs__content">
+						<div class="bxslider2-4">
+							<div class="spec-slide first-slide" data-sld="0">
+								<div class="photo">
+									<img src="img/doctor-photo.jpg" alt="doc">
+								</div>
+								<div class="descr">
+									<h3>Александрович</h3>
+									<h4>Профессор. <br>Доктор  <br>Врач психиатор, психотерапевт</h4>
+								</div>
+							</div>
+							<div class="spec-slide" data-sld="1">
+								<div class="photo">
+									<img src="img/doctor-photo.jpg" alt="doc">
+								</div>
+								<div class="descr">
+									<h3>Игумнов Сергей <br> Александрович</h3>
+									<h4>Профессор. <br>Доктор медицинских наук <br></h4>
+								</div>
+							</div>
+						</div>
+						<div id="sld2-4l"></div>
+						<div id="sld2-4r"></div>
+					</div>
+					<div class="tabs__content">
+						<div class="bxslider2-5">
+							<div class="spec-slide first-slide" data-sld="0">
+								<div class="photo">
+									<img src="img/doctor-photo.jpg" alt="doc">
+								</div>
+								<div class="descr">
+									<h3>Игумнов Сергей <br> Александрович</h3>
+									<h4>Профессор.</h4>
+								</div>
+							</div>
+							<div class="spec-slide" data-sld="1">
+								<div class="photo">
+									<img src="img/doctor-photo.jpg" alt="doc">
+								</div>
+								<div class="descr">
+									<h3>Игумнов Сергей <br> Александрович</h3>
+									<h4>Профессор. <br>Доктор медицинских наук <br>Врач психиатор, психотерапевт</h4>
+								</div>
+							</div>
+						</div>
+						<div id="sld2-5l"></div>
+						<div id="sld2-5r"></div>
+					</div>
 				</div>
 			</div>
 
@@ -362,6 +455,91 @@
 	</div>
 </section>
 
+<section class="conference" id="sec8">
+	<div>
+		<div>
+			<h2>Вы не знаете что делать? Вас мучают сомнения, <br>а ситуация становится все хуже и хуже?</h2>
+			<h3>Специально для родственников, чьи близкие зависимы от алкоголя <br>мы организовываем конференцию в нашем центре, где ответим на <br> все ваши вопросы и расскажем как побороть недуг!</h3>
+			<div class="wrap-form">
+				<div class="left-part">
+					<h4>Чтобы принять участие в <br> конференции заполните форму!</h4>
+					<h5>Если у вас нет возможности <br> приехать к нам вы можете <br> посмотреть конференцию онлайн!</h5>
+				</div>
+				<div class="right-part">
+					<form id="conference-form">
+						<input class="person-name-conference" type="text" name="name" placeholder="Ваше имя">
+						<input class="person-tel-conference masked" type="tel" name="tel" placeholder="Ваш телефон">
+						<input class="person-email-conference" type="email" name="email" placeholder="Ваш email">
+						<input class="send-form-conference" type="submit" value="Записаться">
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="map-sect" id="sec9">
+	<div>
+		<div>
+			<h2>Контактные данные семейной клиники Rehab Family</h2>
+			<div class="phone">
+				<a href="tel:+74951251239">+7 (495) 125-12-39</a>
+				<p>Единый контактный номер</p>
+			</div>
+			<div class="email">
+				<a href="mailto:info@rehabfamily.ru">info@rehabfamily.ru</a>
+			</div>
+			<div class="clearfix"></div>
+			<div class="wrap-for-map">
+				<div class="tabs">
+
+					<ul class="tabs__caption">
+						<li class="active">Реабилитационный центр</li>
+						<li>Амбулаторный центр</li>
+					</ul>
+
+					<div class="tabs__content active">
+						<div id="map1"></div>
+						<div class="overmap">
+							<h3>Реабилитационный <br> центр</h3>
+							<p>Москва, Малый Ивановский переулок, дом 6, стр.2</p>
+							<div class="kak-dobrat">Как добраться</div>
+							<p>rc@rehabfamily.ru</p>
+							<p>с 9-00 до 21-00 без выходных</p>
+						</div>
+						<div class="overmap-descr hidden">
+							<p>Едем по Дмитровскому шоссе на 54 км поворачиваем направо ориентир — указатель Софрино, Ногинск. Проезжаем 1,5 км до поворота направо на указатель Славино, Игнатово, Рождественно. Едем 10 км прямо по главной дороге до перекрестка Большое Ивановское и Голенищево, через 200 метров после перекрестка сворачиваем налево (вы увидите комплекс на опушке леса). <br>GPS ш. 56.136711, д. 37.571728</p>
+							<div class="back">Назад</div>
+						</div>
+					</div>
+					<div class="tabs__content">
+						<div id="map2"></div>
+						<div class="overmap">
+							<h3>Амбулаторный <br> центр</h3>
+							<p>Москва, Малый Ивановский переулок, дом 6, стр.2</p>
+							<div class="kak-dobrat">Как добраться</div>
+							<p>rc@rehabfamily.ru</p>
+							<p>с 9-00 до 21-00 без выходных</p>
+						</div>
+						<div class="overmap-descr hidden">
+							<p>Едем по Дмитровскому шоссе на 54 км поворачиваем направо ориентир — указатель Софрино, Ногинск. Проезжаем 1,5 км до поворота направо на указатель Славино, Игнатово, Рождественно. Едем 10 км прямо по главной дороге до перекрестка Большое Ивановское и Голенищево, через 200 метров после перекрестка сворачиваем налево (вы увидите комплекс на опушке леса). <br>GPS ш. 56.136711, д. 37.571728</p>
+							<div class="back">Назад</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="content">
+			<p>Копирайты. Разработка: Черный лебедь</p>
+		</div>
+	</footer>
+</section>
+
+
+<div class="consult-fixed"></div>
 
 
 
@@ -394,22 +572,110 @@
 	</div>
 
 	<div id="error-modal">
-		<p>Пожалуйста, <br>введите правильное имя и телефон!</p>
+		<p>Пожалуйста, <br>введите правильно данные!</p>
 		<div class="box-modal_close arcticmodal-close">закрыть окно и ввести правильно</div>
 	</div>
 </div>
 
 
 <!-- main stylesheet -->
+	<link rel="stylesheet" href="css/libs.css">
 	<link rel="stylesheet" href="css/style.css">
-
 <!-- styles -->
-	<!-- <link rel="stylesheet" href="css/magnific-popup.min.css"> -->
 
 <!-- scripts -->
 	<script src="js/libs.min.js"></script>
 
 	<script src="js/main.js"></script>
+
+
+	<script 
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdzwz73OHrdVGjKVKow8ID8T31yNxiBSI">
+	</script>
+	<script type="text/javascript">
+	// google.maps.event.addDomListener(window, 'load', init);
+
+	function init_map() {
+			var bounds = new google.maps.LatLngBounds();
+			var center1 = new google.maps.LatLng(55.77556115429107, 37.671939364417965);
+			var center2 = new google.maps.LatLng(55.77556115429107, 37.671939364417965);
+			bounds.extend(center1);
+			bounds.extend(center2);
+			var loc1 = new google.maps.LatLng(55.77556115429107, 37.669339364417965);
+			var loc2 = new google.maps.LatLng(55.77556115429107, 37.669339364417965);
+			bounds.extend(loc1);
+			bounds.extend(loc2);
+			var mapOptions1 = {
+				zoom: 5,
+				scrollwheel: false,
+				streetViewControl: false,
+				panControl: true,
+				panControlOptions: {
+					position: google.maps.ControlPosition.TOP_RIGHT
+				},
+				mapTypeControl: false,
+				zoomControl: true,
+				zoomControlOptions: {
+					position: google.maps.ControlPosition.RIGHT_BOTTOM
+				},
+					center: center1,
+					styles:
+
+					[{"featureType":"water","elementType":"geometry.fill","stylers":[{"color":"#d3d3d3"}]},{"featureType":"transit","stylers":[{"color":"#808080"},{"visibility":"off"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"visibility":"on"},{"color":"#b3b3b3"}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"road.local","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#ffffff"},{"weight":1.8}]},{"featureType":"road.local","elementType":"geometry.stroke","stylers":[{"color":"#d7d7d7"}]},{"featureType":"poi","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#ebebeb"}]},{"featureType":"administrative","elementType":"geometry","stylers":[{"color":"#a7a7a7"}]},{"featureType":"road.arterial","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"road.arterial","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"landscape","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#efefef"}]},{"featureType":"road","elementType":"labels.text.fill","stylers":[{"color":"#696969"}]},{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"visibility":"on"},{"color":"#737373"}]},{"featureType":"poi","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road.arterial","elementType":"geometry.stroke","stylers":[{"color":"#d6d6d6"}]},{"featureType":"road","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{},{"featureType":"poi","elementType":"geometry.fill","stylers":[{"color":"#dadada"}]}]
+				};
+				var mapOptions2 = {
+					zoom: 5,
+					scrollwheel: false,
+					streetViewControl: false,
+					panControl: true,
+					panControlOptions: {
+						position: google.maps.ControlPosition.TOP_RIGHT
+					},
+					mapTypeControl: false,
+					zoomControl: true,
+					zoomControlOptions: {
+						position: google.maps.ControlPosition.RIGHT_BOTTOM
+					},
+						center: center2,
+						styles:
+
+						[{"featureType":"water","elementType":"geometry.fill","stylers":[{"color":"#d3d3d3"}]},{"featureType":"transit","stylers":[{"color":"#808080"},{"visibility":"off"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"visibility":"on"},{"color":"#b3b3b3"}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"road.local","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#ffffff"},{"weight":1.8}]},{"featureType":"road.local","elementType":"geometry.stroke","stylers":[{"color":"#d7d7d7"}]},{"featureType":"poi","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#ebebeb"}]},{"featureType":"administrative","elementType":"geometry","stylers":[{"color":"#a7a7a7"}]},{"featureType":"road.arterial","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"road.arterial","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"landscape","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#efefef"}]},{"featureType":"road","elementType":"labels.text.fill","stylers":[{"color":"#696969"}]},{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"visibility":"on"},{"color":"#737373"}]},{"featureType":"poi","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road.arterial","elementType":"geometry.stroke","stylers":[{"color":"#d6d6d6"}]},{"featureType":"road","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{},{"featureType":"poi","elementType":"geometry.fill","stylers":[{"color":"#dadada"}]}]
+					};
+			var mapElement1 = document.getElementById('map1');
+			var mapElement2 = document.getElementById('map2');
+			var map1 = new google.maps.Map(mapElement1, mapOptions1);
+			var map2 = new google.maps.Map(mapElement2, mapOptions2);
+
+			var marker1 = new google.maps.Marker({
+				position: loc1,
+				map: map1,
+					icon: {
+							url: 'img/map-marker.png',
+							// size: new google.maps.Size(47, 71),
+							// origin: new google.maps.Point(0, 0),
+							// anchor: new google.maps.Point(23, 71)
+						},
+						title: 'Rehab'
+					});
+			var marker2 = new google.maps.Marker({
+				position: loc2,
+				map: map2,
+					icon: {
+							url: 'img/map-marker.png',
+							// size: new google.maps.Size(47, 71),
+							// origin: new google.maps.Point(0, 0),
+							// anchor: new google.maps.Point(23, 71)
+						},
+						title: 'Rehab'
+					});
+
+			map1.fitBounds(bounds);//autozoom
+		}
+	init_map();
+</script>
+
+
+
 
 </body>
 </html>
