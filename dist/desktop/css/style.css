@@ -929,10 +929,13 @@ section {
   margin-top: 40px; }
   #ans-wrap #ans-left {
     width: 400px;
+    min-height: 350px;
     max-height: 430px;
     overflow: hidden;
     margin-left: 75px;
-    float: left; }
+    float: left;
+    -webkit-transition: all .35s;
+    transition: all .35s; }
     #ans-wrap #ans-left h3 {
       font-family: "Roboto Slab", sans-serif;
       font-size: 26px;
@@ -969,21 +972,38 @@ section {
     float: left;
     margin-left: 85px;
     height: 430px;
-    overflow-y: scroll;
-    padding-left: 25px; }
+    position: relative; }
+    #ans-wrap #ans-right:after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 25px;
+      -webkit-box-shadow: inset 0 -20px 20px -6px rgba(255, 255, 255, 0.8);
+      box-shadow: inset 0 -20px 20px -6px rgba(255, 255, 255, 0.8);
+      position: absolute;
+      bottom: 0;
+      left: 0; }
+    #ans-wrap #ans-right .mCSB_container {
+      padding-left: 25px !important; }
+    #ans-wrap #ans-right ul {
+      height: 100%;
+      padding-left: 25px;
+      padding-bottom: 20px; }
     #ans-wrap #ans-right li {
       width: 300px;
       line-height: 17px;
       padding: 15px 0;
       color: #6b6b6b;
       font-size: 14px;
+      border-bottom: 1px solid #cdcdcd;
       cursor: pointer; }
       #ans-wrap #ans-right li:hover {
         color: #aab617; }
       #ans-wrap #ans-right li.active {
         border-top: 1px solid #aab617;
-        border-bottom: 1px solid #aab617;
+        border-bottom: 1px solid #aab617 !important;
         color: #2c2c2c;
+        font-weight: bold;
         position: relative; }
         #ans-wrap #ans-right li.active:after {
           content: '';
@@ -992,11 +1012,22 @@ section {
           height: -webkit-calc(100% + 2px);
           height: calc(100% + 2px);
           position: absolute;
-          left: -20px;
+          left: -25px;
           top: -1px;
           background-image: url("../img/li-after.png");
-          background-size: contain;
+          background-size: 100% 100%;
           background-repeat: no-repeat; }
+
+.tabs__content {
+  -webkit-transition: opacity 1.5s ease;
+  transition: opacity 1.5s ease;
+  opacity: 0;
+  height: 0;
+  overflow: hidden; }
+
+.tabs__content.active {
+  opacity: 1;
+  height: auto; }
 
 @media screen and (max-width: 1700px) {
   .header {

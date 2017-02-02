@@ -4,7 +4,6 @@ $(function(){
 
 	$(document).ready(function(){
 
-
 		// стабилизация
 		var isMobile = false;
 
@@ -24,7 +23,7 @@ $(function(){
 
 		if (isMobile != true) {
 			$(window).scroll(function(){
-				clearTimeout($.data(this, 'scrollTimer'));				
+				clearTimeout($.data(this, 'scrollTimer'));
 				$.data(this, 'scrollTimer',setTimeout(stabilize,1500));
 			});
 		}
@@ -53,20 +52,20 @@ $(function(){
 
 		//подгрузка объектов
 		$('.header .vid-over').click(function(){
-		  $(this).html('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/ogjkRFi810w?autoplay=1;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>')
+			$(this).html('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/ogjkRFi810w?autoplay=1;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>')
 		});
 		$('.frame-3d').click(function(e){
 			e.preventDefault();
-		  $(this).html('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/ogjkRFi810w?autoplay=1;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>')
+			$(this).html('<iframe width="100%" height="100%" src="http://vitebsk360.by/panoramas/kadetka/index.html?autoplay=1;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>')
 		});
-		$('.video-block, #vid-1').click(function(e){
+		$('.video-block, .vid-1').click(function(e){
 			e.preventDefault();
-		  $(this).html('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/ogjkRFi810w?autoplay=1;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>')
+			$(this).html('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/ogjkRFi810w?autoplay=1;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>')
 		});
 
 		//fixed menu
 		$(window).scroll(function () {
-			if($(this).scrollTop() > 400) {
+			if($(this).scrollTop() > $('section').height()) {
 				$('#fixed-menu').addClass('down-menu');
 			}
 			if($(this).scrollTop() <= 400 && $('#fixed-menu').hasClass('down-menu')) {
@@ -130,7 +129,7 @@ $(function(){
 					/* Скрываем выпадающий блок */
 					dropBlock.slideUp('fast');
 				});
-			/* Продолжаем проверку: Если выпадающий блок не скрыт то скрываем его */
+				/* Продолжаем проверку: Если выпадающий блок не скрыт то скрываем его */
 			} else {
 				$(this).removeClass('active');
 				dropBlock.slideUp('fast');
@@ -142,6 +141,29 @@ $(function(){
 		//masked phone
 		$(".masked").mask("+7 (999) 999-99-99");
 
+		// удаление бордер боттом у предыдущего элемента
+		$( "#ans-right li.active" ).prev().css( "border-bottom", "none" );
+		
+		// ТАБЫ
+		(function($) {
+			$(function() {
+
+				$('ul.tabs__caption').on('click', 'li:not(.active)', function() {
+					$(this)
+					.addClass('active').siblings().removeClass('active')
+					.closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
+					$("#ans-right li:not(.active)" ).css( {'border-bottom': '1px solid #cdcdcd'});
+					$("#ans-right li.active" ).prev().css( "border-bottom", "none");
+				});
+
+			});
+		})(jQuery);
+
+		$('.mCustomScrollbar').mCustomScrollbar({
+			scrollInertia: 0,
+			theme: 'rounded-dots-dark',
+			mouseWheel:{ scrollAmount: 70 }
+		});
 
 
 
@@ -150,5 +172,7 @@ $(function(){
 
 
 //==========EoF==============
-});
-});
+	}); //doc.ready
+
+});//function
+

@@ -66,10 +66,12 @@ gulp.task("minJsLibs", function(){
 	return gulp.src([
 				'src/desktop/libs/jquery/dist/jquery.min.js',
 				'src/desktop/libs/arcticmodal/jquery.arcticmodal.js',
-				'src/desktop/libs/jquery.maskedinput/dist/jquery.maskedinput.min.js'
+				'src/desktop/libs/jquery.maskedinput/dist/jquery.maskedinput.min.js',
+				'src/desktop/libs/flexcroll/flexcroll.js',
+				'src/desktop/libs/bxslider-4/dist/jquery.bxslider.min.js'
 	])
 			.pipe(concat("libs.min.js")) // собираем все библиотеки в один файл
-			//.pipe(uglify()) // сжимаем
+			.pipe(uglify()) // сжимаем
 			.pipe(gulp.dest("src/desktop/js"));
 });
 
