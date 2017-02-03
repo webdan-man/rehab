@@ -68,8 +68,14 @@ $(function(){
 
 		$('.video-block, .vid-1').click(function(e){
 			e.preventDefault();
-			$(this).html('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/ogjkRFi810w?autoplay=1;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>')
+			// if($(this).parent().parent().hasClass('active')) {
+				$(this).html('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/ogjkRFi810w?autoplay=1;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>');
+			// }
 		});
+
+		$('.simptom .tabs__caption li').click(function() {$('.wrap-content-psiho .ans-video').html('<img src="img/video-btn.png" alt="btnv">');});
+		$('#ans-right li').click(function() {$('#ans-left .ans-video').html('<img src="img/video-btn.png" alt="btnv">');});
+
 
 		//fixed menu
 		$(window).scroll(function () {
@@ -160,9 +166,16 @@ $(function(){
 
 		// удаление бордер боттом у предыдущего элемента
 		$( "#ans-right li.active" ).prev().css( "border-bottom", "none" );
-		
-		
 
+		//плавный переход меню
+		$('.menu a').click(function(e){
+		  e.preventDefault();
+		  $("html, body").animate({ scrollTop: $($(this).attr('href')).offset().top}, 1000);
+		  $('.menu').removeClass('down');
+		    // $('.menu-btn').removeClass('as-close');
+		    $('.close-menu').fadeOut('100');
+		});
+		
 		//bxSlider
 		$('.bxslider').bxSlider({
 			infiniteLoop: true,
@@ -177,7 +190,13 @@ $(function(){
 			speed: 500,
 			minSlides: 1,
 			maxSlides: 1,
-			moveSlides: 1
+			moveSlides: 1,
+			onSlideNext:function($slideElement, oldIndex, newIndex){
+				$('.reviews .video-block').html('<img src="img/video-btn.png" alt="btnv">');
+			},
+			onSlidePrev:function($slideElement, oldIndex, newIndex){
+				$('.reviews .video-block').html('<img src="img/video-btn.png" alt="btnv">');
+			}
 		});
 		
 		$('.bxslider2-1').bxSlider({
