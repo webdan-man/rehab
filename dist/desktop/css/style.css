@@ -17,10 +17,6 @@ input {
   border: none;
   outline: none; }
 
-a, input, span, div, img {
-  -webkit-transition: all .25s;
-  transition: all .25s; }
-
 input:focus, textarea:focus {
   outline: 0; }
 
@@ -385,7 +381,9 @@ section {
   #fixed-menu .menu-btn {
     background-image: none;
     position: relative;
-    line-height: 65px; }
+    line-height: 65px;
+    -webkit-transition: all .25s;
+    transition: all .25s; }
     #fixed-menu .menu-btn:hover .a {
       top: 20px; }
     #fixed-menu .menu-btn:hover .c {
@@ -396,7 +394,9 @@ section {
   height: 65px;
   position: absolute;
   top: 0;
-  left: -8px; }
+  left: -8px;
+  -webkit-transition: all .25s;
+  transition: all .25s; }
   .toggle span {
     position: absolute;
     left: 20px;
@@ -408,7 +408,9 @@ section {
     -webkit-border-bottom-left-radius: 4px;
     border-bottom-left-radius: 4px;
     -webkit-border-top-right-radius: 4px;
-    border-top-right-radius: 4px; }
+    border-top-right-radius: 4px;
+    -webkit-transition: all .25s;
+    transition: all .25s; }
     .toggle span.a {
       top: 22px; }
     .toggle span.b {
@@ -425,13 +427,17 @@ section {
     margin: 11px 82px; }
 
 .callback-fixed {
-  float: right; }
+  float: right;
+  -webkit-transition: all .25s;
+  transition: all .25s; }
   .callback-fixed a {
     line-height: 65px;
     font-size: 20px;
     font-weight: bold;
     font-family: "Roboto Slab", sans-serif;
-    color: #46494d; }
+    color: #46494d;
+    -webkit-transition: all .25s;
+    transition: all .25s; }
     .callback-fixed a:hover {
       color: #9ca20d; }
 
@@ -669,7 +675,9 @@ section {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a5d106', endColorstr='#7ab507',GradientType=0 );
     /* ie6-9 */
     -webkit-box-shadow: 0 4px 10px rgba(37, 61, 43, 0.2);
-    box-shadow: 0 4px 10px rgba(37, 61, 43, 0.2); }
+    box-shadow: 0 4px 10px rgba(37, 61, 43, 0.2);
+    -webkit-transition: all .25s;
+    transition: all .25s; }
     .sect3d .btn-3d:hover {
       -webkit-transform: scale(0.98);
       -ms-transform: scale(0.98);
@@ -790,7 +798,9 @@ section {
       margin-bottom: 30px;
       overflow: hidden; }
       #ans-wrap #ans-left .ans-video img {
-        vertical-align: middle; }
+        vertical-align: middle;
+        -webkit-transition: all .25s;
+        transition: all .25s; }
         #ans-wrap #ans-left .ans-video img:hover {
           -webkit-transform: scale(0.95);
           -ms-transform: scale(0.95);
@@ -801,13 +811,13 @@ section {
     margin-left: 85px;
     height: 430px;
     position: relative; }
+    #ans-wrap #ans-right .demo-y {
+      height: 430px; }
     #ans-wrap #ans-right .flexcroll {
       height: 430px;
       width: 400px;
       padding-top: 20px;
       overflow: normal !important; }
-    #ans-wrap #ans-right .mCSB_container {
-      padding-left: 25px !important; }
     #ans-wrap #ans-right .tabs__caption {
       height: 100%;
       padding-left: 25px;
@@ -1228,7 +1238,9 @@ section {
       background-color: rgba(76, 76, 76, 0.83);
       padding: 35px 35px 0 40px;
       -webkit-border-top-right-radius: 50px;
-      border-top-right-radius: 50px; }
+      border-top-right-radius: 50px;
+      -webkit-transition: all .3s;
+      transition: all .3s; }
       .map-sect .wrap-for-map .overmap h3 {
         color: #fff;
         line-height: 23px;
@@ -1248,7 +1260,9 @@ section {
       background-color: #4c4c4c;
       padding: 20px 35px 0 20px;
       -webkit-border-top-right-radius: 50px;
-      border-top-right-radius: 50px; }
+      border-top-right-radius: 50px;
+      -webkit-transition: all .3s;
+      transition: all .3s; }
       .map-sect .wrap-for-map .overmap-descr p {
         font-size: 13px;
         color: #fff;
@@ -1317,7 +1331,9 @@ footer {
   position: fixed;
   right: 0;
   top: 34%;
-  cursor: pointer; }
+  cursor: pointer;
+  -webkit-transition: all .25s;
+  transition: all .25s; }
   .consult-fixed:hover {
     opacity: .85; }
 

@@ -1,4 +1,4 @@
-@import 'src/desktop/libs/flexcroll/flexcrollstyles';
+// @import 'src/desktop/libs/flexcroll/flexcrollstyles';
 @import 'src/desktop/libs/mCustomScrollbar/jquery.mCustomScrollbar';
 // @import 'src/desktop/libs/bxslider-4/dist/jquery.bxslider.min';
 
@@ -50,3 +50,28 @@
 		left: 110px
 	#sld1r
 		right: 110px
+
+
+
+.mCSB_scrollTools
+	width: 24px
+	opacity: 1
+
+.mCS-rounded-dark.mCSB_scrollTools .mCSB_dragger
+	height: 37px
+.mCS-rounded-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar
+	width: 22px
+	background-color: transparent
+	background-image: url('../img/scroll-bnt.png')
+	box-shadow: 0 4px 4px rgba(0,0,0,.15)
+	&:hover
+		background-color: transparent
+.mCSB_scrollTools .mCSB_draggerRail
+	width: 1px
+.mCS-rounded-dark.mCSB_scrollTools .mCSB_draggerRail
+	background-color: rgba(0, 0, 0, 0.1);
+.mCS-rounded-dark.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCS-rounded-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar,
+.mCS-rounded-dots-dark.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCS-rounded-dots-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar 
+  background-color: transparent

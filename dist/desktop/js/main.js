@@ -4,36 +4,8 @@ $(function(){
 
 	$(document).ready(function(){
 
-		
-		$.mCustomScrollbar.defaults.theme="light-2"; //set "light-2" as the default theme
-		
-		$(".demo-y").mCustomScrollbar();
-		
-		$(".demo-x").mCustomScrollbar({
-			axis:"x",
-			advanced:{autoExpandHorizontalScroll:true}
-		});
-		
-		$(".demo-yx").mCustomScrollbar({
-			axis:"yx"
-		});
-		
-		$(".scrollTo a").click(function(e){
-			e.preventDefault();
-			var $this=$(this),
-				rel=$this.attr("rel"),
-				el=rel==="content-y" ? ".demo-y" : rel==="content-x" ? ".demo-x" : ".demo-yx",
-				data=$this.data("scroll-to"),
-				href=$this.attr("href").split(/#(.+)/)[1],
-				to=data ? $(el).find(".mCSB_container").find(data) : el===".demo-yx" ? eval("("+href+")") : href,
-				output=$("#info > p code"),
-				outputTXTdata=el===".demo-yx" ? data : "'"+data+"'",
-				outputTXThref=el===".demo-yx" ? href : "'"+href+"'",
-				outputTXT=data ? "$('"+el+"').find('.mCSB_container').find("+outputTXTdata+")" : outputTXThref;
-			$(el).mCustomScrollbar("scrollTo",to);
-			output.text("$('"+el+"').mCustomScrollbar('scrollTo',"+outputTXT+");");
-		});
-		
+
+		// $.mCustomScrollbar.defaults.theme="light-2"; //set "light-2" as the default theme
 
 		// стабилизация
 		var isMobile = false; //initiate as false
@@ -76,12 +48,12 @@ $(function(){
 		$('.menu-btn').on('click', function() {
 			$('.menu').addClass('down').css('padding-left', '0');
 			$('#fixed-menu').css('padding-left', '0');
-			$('body').css({'overflow': 'hidden', 'padding-right': '17px'});
+			$('body').css({'overflow-y': 'hidden', 'padding-right': '17px'});
 		});
 		$('#close-menu').on('click', function() {
 			$('.menu').removeClass('down').css('padding-left', '17px');
 			$('#fixed-menu').css('padding-left', '17px');
-			$('body').css({'overflow': 'auto', 'padding-right': '0'});
+			$('body').css({'overflow-y': 'scroll', 'padding-right': '0'});
 		});
 
 
@@ -399,6 +371,13 @@ $(function(){
 			$('.wrap-for-map .tabs__content.active .overmap-descr').addClass('hidden');
 		});
 
+		//CUSTOM SCROLL
+		$(".mScroll").mCustomScrollbar({
+			theme: "rounded-dark",
+			mouseWheel: {scrollAmount: 50},
+			scrollInertia: 200
+		});
+
 
 
 
@@ -416,3 +395,5 @@ $(function(){
 
 
 });//function
+
+

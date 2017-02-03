@@ -17,10 +17,6 @@ input {
   border: none;
   outline: none; }
 
-a, input, span, div, img {
-  -webkit-transition: all .25s;
-  transition: all .25s; }
-
 input:focus, textarea:focus {
   outline: 0; }
 

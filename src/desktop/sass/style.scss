@@ -250,6 +250,7 @@ section {
 		background-image: none;
 		position: relative;
 		line-height: 65px;
+		transition: all .25s;
 		&:hover .a {top: 20px;}
 		&:hover .c {top: 40px;}
 	}
@@ -261,6 +262,7 @@ section {
 	position: absolute;
 	top: 0;
 	left: -8px;
+	transition: all .25s;
 	span {
 		position: absolute;
 		left: 20px;
@@ -271,6 +273,7 @@ section {
 		background-color: #b9be13;
 		border-bottom-left-radius: 4px;
 		border-top-right-radius: 4px;
+		transition: all .25s;
 		&.a {top: 22px;}
 		&.b {top: 30px;}
 		&.c {top: 38px;}
@@ -287,12 +290,14 @@ section {
 }
 .callback-fixed {
 	float: right;
+	transition: all .25s;
 	a {
 		line-height: 65px;
 		font-size: 20px;
 		font-weight: bold;
 		font-family: $second-font;
 		color: $dark-color;
+		transition: all .25s;
 		&:hover {color: $h-color;}
 	}
 }
@@ -521,6 +526,7 @@ section {
 		border-radius: 50px;
 		@include gradient-btn();
 		box-shadow: 0 4px 10px rgba(37,61,43,.2);
+		transition: all .25s;
 		&:hover {
 			transform: scale(0.98);
 			box-shadow: none;
@@ -649,6 +655,7 @@ section {
 			overflow: hidden;
 			img {
 				vertical-align: middle;
+				transition: all .25s;
 				&:hover {transform: scale(.95);}
 			}
 		}
@@ -659,6 +666,7 @@ section {
 		margin-left: 85px;
 		height: 430px;
 		position: relative;
+		.demo-y {height: 430px;}
 		.flexcroll {
 			height: 430px;
 			width: 400px;
@@ -675,7 +683,7 @@ section {
 		// 	bottom: 0;
 		// 	left: 0;
 		// }
-		.mCSB_container {padding-left: 25px !important;}
+		// .mCSB_container {padding-left: 25px !important;}
 		.tabs__caption {
 			// overflow-y: scroll;
 			height: 100%;
@@ -725,6 +733,8 @@ section {
 	opacity: 1;
 	height: auto;
 }
+
+
 
 
 //CUSTOM SCROLL
@@ -1068,10 +1078,6 @@ section {
 		height: 335px;
 		// overflow: hidden;
 		margin-top: 30px;
-		#map1, #map2 {
-			width: 100%;
-			height: 335px;
-		}
 		.tabs__content {position: relative;}
 		.overmap {
 			position: absolute;
@@ -1082,6 +1088,7 @@ section {
 			background-color: rgba(76,76,76,0.83);
 			padding: 35px 35px 0 40px;
 			border-top-right-radius: 50px;
+			transition: all .3s;
 			h3 {
 				color: #fff;
 				line-height: 23px;
@@ -1104,6 +1111,7 @@ section {
 			background-color: rgba(76,76,76,1);
 			padding: 20px 35px 0 20px;
 			border-top-right-radius: 50px;
+			transition: all .3s;
 			p {
 				font-size: 13px;
 				color: #fff;
@@ -1181,6 +1189,7 @@ footer {
 	right: 0;
 	top: 34%;
 	cursor: pointer;
+	transition: all .25s;
 	&:hover {opacity: .85;}
 }
 
