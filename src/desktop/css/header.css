@@ -94,6 +94,28 @@ h2 {
   font-size: 26px;
   font-weight: bold; }
 
+section {
+  width: 100%;
+  min-width: 980px;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+  min-height: 600px;
+  height: 100vh;
+  background-size: cover !important; }
+  section > div {
+    max-width: 980px;
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    margin: 0 auto; }
+    section > div > div {
+      width: 100%;
+      position: absolute;
+      height: 600px;
+      top: 55%;
+      margin-top: -300px; }
+
 /* Стили хедера */
 .header {
   background-image: url("../img/header-bg.jpg"); }
@@ -142,7 +164,8 @@ h2 {
       margin: 14px 0;
       font-size: 22px;
       color: #696b6e;
-      line-height: 30px; }
+      line-height: 30px;
+      font-weight: normal; }
       .header .header-text h2 span {
         font-weight: bold; }
   .header .header-video {

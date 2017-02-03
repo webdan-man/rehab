@@ -2,6 +2,10 @@
 @import "vars";
 @import "base";
 
+section {
+	@include sec();
+}
+
 /* Стили хедера */
 
 .header {
@@ -59,6 +63,7 @@
 			font-size: 22px;
 			color: #696b6e;
 			line-height: 30px;
+			font-weight: normal;
 			span {font-weight: bold;}
 		}
 	}

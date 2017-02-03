@@ -68,7 +68,8 @@ gulp.task("minJsLibs", function(){
 				'src/desktop/libs/arcticmodal/jquery.arcticmodal.js',
 				'src/desktop/libs/jquery.maskedinput/dist/jquery.maskedinput.min.js',
 				'src/desktop/libs/flexcroll/flexcroll.js',
-				'src/desktop/libs/bxslider-4/dist/jquery.bxslider.min.js'
+				'src/desktop/libs/bxslider-4/dist/jquery.bxslider.min.js',
+				'src/desktop/libs/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js'
 	])
 			.pipe(concat("libs.min.js")) // собираем все библиотеки в один файл
 			.pipe(uglify()) // сжимаем
@@ -79,7 +80,6 @@ gulp.task("minJsLibs", function(){
 gulp.task("minCssLibs", ['sass'], function(){
 	return gulp.src([
 		'src/desktop/css/libs.css'
-		// 'src/desktop/libs/owl-carousel/owl-carousel/owl.carousel.css'
 	])
 			.pipe(cssnano()) // сжимаем
 			.pipe(rename({
