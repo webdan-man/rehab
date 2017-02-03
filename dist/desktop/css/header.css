@@ -281,6 +281,10 @@ section {
     .main-form input[type='submit']:hover {
       opacity: .87; }
 
+#map1, #map2 {
+  width: 100%;
+  height: 335px; }
+
 ::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.3); }
 

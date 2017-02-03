@@ -348,40 +348,74 @@ section {
 .right-filters {
 	float: right;
 	min-width: 270px;
-	.line {
-		&:nth-child(1) {margin-top: 10px;}
-		div {float: left;}
-		input {
-			position: absolute;
-			left: -9999px;
-		}
-		label {
-			width: 130px;
-			text-align: center;
-			display: block;
-			margin: 20px 7px 0;
-			padding: 6px 10px;
-			border: 1px dashed #b7b7b7;
-			cursor: pointer;
-			border-radius: 50px;
-			font-size: 14px;
-			font-family: $second-font;
-			transition: all .25s;
-			&:hover {background-color: #F2F2F2;}
-		}
-		input:checked + label {
-			background: -moz-linear-gradient(90deg, rgba(122,181,7,1) 0%, rgba(190,224,5,1) 100%);
-			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(190,224,5,1)), color-stop(100%, rgba(122,181,7,1)));
-			background: -webkit-linear-gradient(90deg, rgba(122,181,7,1) 0%, rgba(190,224,5,1) 100%);
-			background: -o-linear-gradient(90deg, rgba(122,181,7,1) 0%, rgba(190,224,5,1) 100%);
-			background: -ms-linear-gradient(90deg, rgba(122,181,7,1) 0%, rgba(190,224,5,1) 100%);
-			background: linear-gradient(0deg, rgba(122,181,7,1) 0%, rgba(190,224,5,1) 100%);
-			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bee005', endColorstr='#7ab507',GradientType=0 );
-			border: 1px transparent;
-			font-weight: bold;
-			color: #fff;
-			// box-shadow: 0 1px 0 #23943e;
-		}
+}
+.line {
+	&:nth-child(1) {margin-top: 10px;}
+	div {float: left;}
+	input {
+		position: absolute;
+		left: -9999px;
+	}
+	label {
+		width: 130px;
+		text-align: center;
+		display: block;
+		margin: 20px 7px 0;
+		padding: 6px 10px;
+		border: 1px dashed #b7b7b7;
+		cursor: pointer;
+		border-radius: 50px;
+		font-size: 14px;
+		font-family: $second-font;
+		transition: all .25s;
+		&:hover {background-color: #F2F2F2;}
+	}
+	input:checked + label {
+		background: -moz-linear-gradient(90deg, rgba(122,181,7,1) 0%, rgba(190,224,5,1) 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(190,224,5,1)), color-stop(100%, rgba(122,181,7,1)));
+		background: -webkit-linear-gradient(90deg, rgba(122,181,7,1) 0%, rgba(190,224,5,1) 100%);
+		background: -o-linear-gradient(90deg, rgba(122,181,7,1) 0%, rgba(190,224,5,1) 100%);
+		background: -ms-linear-gradient(90deg, rgba(122,181,7,1) 0%, rgba(190,224,5,1) 100%);
+		background: linear-gradient(0deg, rgba(122,181,7,1) 0%, rgba(190,224,5,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bee005', endColorstr='#7ab507',GradientType=0 );
+		border: 1px transparent;
+		font-weight: bold;
+		color: #fff;
+		// box-shadow: 0 1px 0 #23943e;
+	}
+}
+
+#descr-for-psih {
+	width: 235px;
+	float: left;
+	font-size: 16px;
+	font-family: $second-font;
+	font-weight: bold;
+	line-height: 18px;
+	margin: 18px 10px;
+}
+.for-psih-filters {
+	float: right;
+	width: 440px;
+	margin-top: -15px;
+	margin-bottom: 20px;
+	.line:nth-child(1) {margin-top: 0;}
+	.line label {
+		margin: 20px 0 0 15px;
+	}
+	.line div {float: left;}
+}
+
+.other-filters {
+	p {
+		font-size: 16px;
+		font-family: $second-font;
+		font-weight: bold;
+		line-height: 18px;
+		margin: 5px 10px;
+	}
+	.line label {
+		margin: 13px 22px;
 	}
 }
 
@@ -616,50 +650,7 @@ section {
 }
 #ans-wrap {
 	margin-top: 40px;
-	#ans-left {
-		width: 400px;
-		min-height: 350px;
-		max-height: 430px;
-		overflow: hidden;
-		margin-left: 75px;
-		float: left;
-		transition: all .35s;
-		h3 {
-			font-family: $second-font;
-			font-size: 26px;
-			line-height: 30px;
-			color: #5a5a5a;
-			text-align: left;
-			margin-bottom: 25px;
-		}
-		h4 {
-			color: #494949;
-			font-size: 14px;
-			line-height: 16px;
-			font-weight: bold;
-			font-family: $second-font;
-			text-align: left;
-		}
-		p {
-			font-size: 13px;
-		}
-		.ans-video {
-			height: 210px;
-			line-height: 210px;
-			width: 100%;
-			max-width: 400px;
-			background-color: #666;
-			text-align: center;
-			cursor: pointer;
-			margin-bottom: 30px;
-			overflow: hidden;
-			img {
-				vertical-align: middle;
-				transition: all .25s;
-				&:hover {transform: scale(.95);}
-			}
-		}
-	}
+	
 	#ans-right {
 		width: 375px;
 		float: left;
@@ -723,6 +714,72 @@ section {
 		}
 	}
 }
+
+#ans-left, .wrap-content-psiho {
+	width: 400px;
+	min-height: 350px;
+	max-height: 430px;
+	overflow: hidden;
+	margin-left: 75px;
+	float: left;
+	transition: all .35s;
+	h3 {
+		font-family: $second-font;
+		font-size: 26px;
+		line-height: 30px;
+		color: #5a5a5a;
+		text-align: left;
+		margin-bottom: 25px;
+	}
+	h4 {
+		color: #494949;
+		font-size: 14px;
+		line-height: 16px;
+		font-weight: bold;
+		font-family: $second-font;
+		text-align: left;
+	}
+	p {
+		font-size: 13px;
+	}
+	.ans-video {
+		height: 210px;
+		line-height: 210px;
+		width: 100%;
+		max-width: 400px;
+		background-color: #666;
+		text-align: center;
+		cursor: pointer;
+		margin-bottom: 30px;
+		overflow: hidden;
+		img {
+			vertical-align: middle;
+			transition: all .25s;
+			&:hover {transform: scale(.95);}
+		}
+	}
+}
+
+.wrap-content-psiho {
+	width: 100%;
+	.wrap-video-psiho {
+		float: left;
+		margin-right: 30px;
+		width: 400px;
+	}
+	.wrap-descr-psiho {
+		float: left;
+		width: 455px;
+		height: 240px;
+		p {
+			line-height: 27px;
+			font-size: 14px;
+			color: #6d6e70;
+		}
+	}
+}
+
+
 .tabs__content {
 	transition: opacity 1.5s ease;
 	opacity: 0; 
@@ -1193,6 +1250,40 @@ footer {
 	&:hover {opacity: .85;}
 }
 
+
+// simptom SECTION
+.simptom {
+	background-image: url('../img/simptom-bg.jpg');
+	h2 {margin-top: 30px;line-height: 36px;}
+	ul {
+		display: block;
+		width: 100%;
+		text-align: center;
+		margin: 20px 0;
+		li {
+			display: inline-block;
+			width: 125px;
+			height: 40px;
+			overflow: hidden;
+			cursor: pointer;
+			font-family: $second-font;
+			font-size: 14px;
+			color: #5a5a5a;
+			padding: 0 14px;
+			line-height: 40px;
+			border: 1px dashed #c3c2c2;
+			border-radius: 50px;
+			margin: 0 5px;
+			transition: all .25s;
+			&.active, &:hover {
+				@include gradient-btn();
+				color: #fff;
+				border: 1px solid #7ab507;
+			}
+			&.active {box-shadow: 0 1px 2px #7ab507;}
+		}
+	}
+}
 
 
 
