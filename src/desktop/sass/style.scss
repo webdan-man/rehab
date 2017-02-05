@@ -229,6 +229,21 @@ section {
 	}
 }
 
+#success-modal {
+	padding: 50px;
+	text-align: center;
+	background-color: #fff;
+	font-family: $second-font;
+	font-size: 18px;
+	p {color: $h-color;}
+	.box-modal_close {
+		text-decoration: underline;
+		font-size: 16px;
+		margin-top: 20px;
+		cursor: pointer;
+	}
+}
+
 
 //FIXED MENU
 #fixed-menu {

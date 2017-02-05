@@ -411,18 +411,19 @@ $(function(){
 
 
 		// // отправка формы
-		// $("form").submit(function() {
-		//     event.preventDefault();
-		//     var form_data = $(this).serialize(); //собераем все данные из формы
-		//     $.ajax({
-		//         type: "POST",
-		//         url: "mail.php",
-		//         data: form_data,
-		//         success: function() {
-		//             $('#success-modal').arcticmodal();
-		//         }
-		//     });
-		// });
+		$("form").submit(function() {
+		    event.preventDefault();
+		    var form_data = $(this).serialize(); //собераем все данные из формы
+		    $.ajax({
+		        type: "POST",
+		        url: "mail.php",
+		        data: form_data,
+		        success: function() {
+		            $('#success-modal').arcticmodal();
+		            $('input[type=text],input[type=tel],input[type=email]').val('');
+		        }
+		    });
+		});
 
 
 

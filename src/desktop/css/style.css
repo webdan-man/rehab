@@ -358,6 +358,20 @@ section {
     margin-top: 20px;
     cursor: pointer; }
 
+#success-modal {
+  padding: 50px;
+  text-align: center;
+  background-color: #fff;
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 18px; }
+  #success-modal p {
+    color: #9ca20d; }
+  #success-modal .box-modal_close {
+    text-decoration: underline;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer; }
+
 #fixed-menu {
   -webkit-transform: translate3d(0, -100%, 0);
   transform: translate3d(0, -100%, 0);
