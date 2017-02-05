@@ -1365,8 +1365,7 @@ footer {
   width: 100%;
   position: absolute;
   bottom: 0;
-  background-color: #f6f6f6;
-  z-index: 5; }
+  background-color: #f6f6f6; }
   footer .content {
     width: 980px;
     margin: 0 auto; }

@@ -111,6 +111,14 @@ $(function(){
 				if($('.person-tel-modal').val() == '') {$('.person-tel-modal').css({'box-shadow': '0 0 4px 1px #F02D0E'});}
 			}
 		});
+		$('.send-write-modal').click(function(event) {
+			if($('.person-name-write').val() == '' || $('.person-tel-write').val() == '') {
+				event.preventDefault();
+				$('#error-modal').arcticmodal();
+				if($('.person-name-write').val() == '') {$('.person-name-write').css({'box-shadow': '0 0 4px 1px #F02D0E'});}
+				if($('.person-tel-write').val() == '') {$('.person-tel-write').css({'box-shadow': '0 0 4px 1px #F02D0E'});}
+			}
+		});
 		$('#right-button').click(function(event) {
 			if($('#calc-name').val() == '' || $('#calc-tel').val() == '') {
 				event.preventDefault();
@@ -415,7 +423,6 @@ $(function(){
 		//         }
 		//     });
 		// });
-
 
 
 

@@ -66,9 +66,7 @@ function initalize() {
     ]);
     console.log('js-append');
     // hide-loader
-    setTimeout(function() {
-      document.getElementsByTagName('body')[0].className += ' pre-loaded';
-    }, 1000);
+    document.getElementsByTagName('body')[0].className += ' pre-loaded';
     console.log('main-js.injected');
 
 }

@@ -67,7 +67,7 @@ function initalize() {
     console.log('js-append');
     // hide-loader
     setTimeout(function() {
-      document.getElementsByTagName('body')[0].className += ' pre-loaded';
+        document.getElementsByTagName('body')[0].className += ' pre-loaded';
     }, 1000);
     console.log('main-js.injected');
 
