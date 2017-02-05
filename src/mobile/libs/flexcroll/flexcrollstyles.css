@@ -1,0 +1,22 @@
+.scrollgeneric {line-height: 1px; font-size: 1px;
+position: absolute; top: 0; left: 0;}
+.vscrollerbase, .vscrollerbar {width: 23px !important;}
+.hscrollerbase, .hscrollerbar {height: 20px;}
+.vscrollerbar, .hscrollerbar {padding: 5px;
+z-index: 2;}
+.vscrollerbarbeg {width: 23px !important;}
+.vscrollerbarend {
+width: 23px !important; height: 10px;}
+.hscrollerbarbeg {height: 15px;}
+.hscrollerbarend {height: 15px; width: 23px;}
+.vscrollerbase, .hscrollerbase {
+/* background-color: #D1DDCB; */
+/* background-image: url(images/scrollbaseback.png); */}
+.hscrollerbasebeg {height: 20px;}
+.hscrollerbaseend {height: 15px; width: 7px;
+}
+.vscrollerbasebeg {width: 23px !important;}
+.vscrollerbaseend {height: 7px; width: 20px;}
+.scrollerjogbox {
+width: 20px; height: 15px;
+top: auto; left: auto; bottom: 0px; right: 0px;}

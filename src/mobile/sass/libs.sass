@@ -1,0 +1,77 @@
+// @import 'src/desktop/libs/flexcroll/flexcrollstyles';
+@import 'src/desktop/libs/mCustomScrollbar/jquery.mCustomScrollbar';
+// @import 'src/desktop/libs/bxslider-4/dist/jquery.bxslider.min';
+
+
+
+.arcticmodal-container, .arcticmodal-overlay
+	position: fixed
+	left: 0
+	top: 0
+	right: 0
+	bottom: 0
+	z-index: 1000
+
+.arcticmodal-container
+	overflow: auto
+	margin: 0
+	padding: 0
+	border: 0
+	border-collapse: collapse
+
+:first-child+html .arcticmodal-container
+	height: 100%
+
+.arcticmodal-container_i
+	margin: 0 auto
+	height: 100%
+
+.arcticmodal-container_i2
+	padding: 0
+	margin: 0
+	border: 0
+	vertical-align: middle
+
+#hidden-box, .hidden-box
+	display: none
+.error-input
+	border: 1px solid red
+
+
+
+
+.reviews .bx-controls
+	position: absolute
+	top: 300px
+	width: 100%
+	#sld1l, #sld1r
+		position: absolute
+	#sld1l
+		left: 110px
+	#sld1r
+		right: 110px
+
+
+
+.mCSB_scrollTools
+	width: 24px
+	opacity: 1
+
+.mCS-rounded-dark.mCSB_scrollTools .mCSB_dragger
+	height: 37px
+.mCS-rounded-dark.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar
+	width: 22px
+	background-color: transparent
+	background-image: url('../img/scroll-bnt.png')
+	// box-shadow: 0 4px 4px rgba(0,0,0,.15)
+	&:hover
+		background-color: transparent
+.mCSB_scrollTools .mCSB_draggerRail
+	width: 1px
+.mCS-rounded-dark.mCSB_scrollTools .mCSB_draggerRail
+	background-color: rgba(0, 0, 0, 0.1);
+.mCS-rounded-dark.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCS-rounded-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar,
+.mCS-rounded-dots-dark.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
+.mCS-rounded-dots-dark.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar 
+  background-color: transparent
