@@ -171,6 +171,10 @@ $(function(){
 		$('.menu a').click(function(e){
 		  e.preventDefault();
 		  $("html, body").animate({ scrollTop: $($(this).attr('href')).offset().top}, 1000);
+		  $('body').css({
+		  	'overflow-y': 'scroll',
+		  	'padding-right': 0
+		  });
 		  $('.menu').removeClass('down');
 		    // $('.menu-btn').removeClass('as-close');
 		    $('.close-menu').fadeOut('100');
@@ -396,6 +400,21 @@ $(function(){
 			mouseWheel: {scrollAmount: 50},
 			scrollInertia: 200
 		});
+
+
+		// // отправка формы
+		// $("form").submit(function() {
+		//     event.preventDefault();
+		//     var form_data = $(this).serialize(); //собераем все данные из формы
+		//     $.ajax({
+		//         type: "POST",
+		//         url: "mail.php",
+		//         data: form_data,
+		//         success: function() {
+		//             $('#success-modal').arcticmodal();
+		//         }
+		//     });
+		// });
 
 
 
