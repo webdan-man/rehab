@@ -473,8 +473,9 @@ section > div > div {
 
 #map1,
 #map2 {
-  width: 100%;
-  height: 540px; }
+  width: 480px;
+  height: 540px;
+  overflow: hidden; }
 
 #fixed-menu {
   -webkit-transform: translate3d(0, -100%, 0);

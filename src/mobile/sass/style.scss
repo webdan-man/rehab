@@ -107,7 +107,7 @@ section {
 	height: 100%;
 	overflow: scroll;
 	transition: transform .7s cubic-bezier(0.47, 0.04, 0.12, 0.99);
-	transform: translate3d(0, -100%, 0);
+	transform: translate3d(-100%, 0, 0);
 	&.down {transform: translate3d(0, 0, 0);}
 	#close-menu {
 		display: block;
@@ -261,6 +261,7 @@ section {
 		margin-top: 12px;
 		box-shadow: 0 1px 0px #23943e;
 		margin-left: 115px;
+		cursor: pointer;
 	}
 }
 
@@ -354,15 +355,15 @@ section {
 	margin: 18px 10px;
 }
 .for-psih-filters {
-	float: right;
-	width: 440px;
-	margin-top: -15px;
-	margin-bottom: 20px;
-	.line:nth-child(1) {margin-top: 0;}
+	// float: right;
+	// width: 440px;
+	// margin-top: -15px;
+	// margin-bottom: 20px;
+	// .line:nth-child(1) {margin-top: 0;}
 	.line label {
-		margin: 20px 0 0 15px;
+		// margin: 20px 0 0 15px;
 	}
-	.line div {float: left;}
+	// .line div {float: left;}
 }
 
 .other-filters {
@@ -373,9 +374,9 @@ section {
 		line-height: 18px;
 		margin: 5px 10px;
 	}
-	.line label {
-		margin: 13px 22px;
-	}
+	// .line label {
+	// 	margin: 13px 22px;
+	// }
 }
 
 .calc .main-form {
@@ -490,6 +491,29 @@ section {
 	}
 }
 
+
+
+
+.only-doc {
+	width: 440px;
+	height: 50px;
+	padding-left: 115px;
+	border-radius: 25px;
+	background-image: url('../img/mozg.png');
+	background-color: #fff;
+	background-repeat: no-repeat;
+	background-position: 40px 0;
+
+	font-family: $second-font;
+	font-size: 13px;
+	color: #606060;
+	line-height: 16px;
+
+	margin: 20px auto 0;
+	padding-top: 8px;
+
+	box-shadow: 0 1px 8px rgba(0,0,0,.1);
+}
 
 
 
@@ -619,6 +643,7 @@ section {
 //ANSWERS SECTION
 .answers {
 	background-image: url('../img/answers-bg.jpg');
+	min-height: 570px;
 	h2 {
 		font-size: 20px;
 		line-height: 30px;
@@ -1243,7 +1268,7 @@ section {
 	}
 	h2 {margin-bottom: 20px;}
 	.phone {
-		width: 100%;
+		// width: 100%;
 		// float: left;
 		// margin-left: 175px;
 		margin-left: 40px;
@@ -1370,12 +1395,13 @@ section {
 
 footer {
 	height: 60px;
-	width: 100%;
+	max-width: 480px;
+	margin: 0 auto;
 	// position: absolute;
 	// bottom: 0;
 	background-color: #f6f6f6;
 	.content  {
-		width: 980px;
+		width: 480px;
 		margin: 0 auto;
 	}
 	p {
