@@ -269,11 +269,6 @@ textarea {
 .clearfix {
   clear: both !important; }
 
-section.header > div > div,
-section.menu > div > div,
-section.problem > div > div {
-  top: 50%; }
-
 h2 {
   font-family: 'Roboto Slab',sans-serif;
   font-size: 26px;
@@ -285,6 +280,7 @@ section {
   z-index: 2;
   width: 100%;
   min-width: 480px;
+  padding-top: 1px;
   min-height: 600px;
   background-size: cover !important; }
 
@@ -296,13 +292,12 @@ section > div {
   margin: 0 auto; }
 
 section > div > div {
-  position: absolute;
   width: 100%;
   height: 100%; }
 
 .header {
   background-image: url(../img/header-bg.jpg);
-  min-height: 970px; }
+  min-height: 958px; }
 
 .header .head {
   min-height: 55px;
@@ -402,6 +397,10 @@ section > div > div {
   height: 360px;
   padding: 35px 60px;
   background-color: #27292c;
+  -webkit-border-top-left-radius: 50px;
+  border-top-left-radius: 50px;
+  -webkit-border-bottom-right-radius: 50px;
+  border-bottom-right-radius: 50px;
   background-image: url(../img/header-form-bg.png);
   background-size: cover; }
 
@@ -411,6 +410,10 @@ section > div > div {
   color: #fff;
   margin-bottom: 32px;
   text-align: center; }
+
+.header .main-form {
+  -webkit-border-radius: 0 !important;
+  border-radius: 0 !important; }
 
 .main-form input[type='text'],
 .main-form input[type='tel'] {
@@ -471,4 +474,8 @@ section > div > div {
 #map1,
 #map2 {
   width: 100%;
-  height: 335px; }
+  height: 540px; }
+
+#fixed-menu {
+  -webkit-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0); }

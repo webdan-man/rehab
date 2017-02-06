@@ -60,6 +60,7 @@ h2 {
 	min-height: 600px;
 	// height: 100vh;
 	margin: 0 auto;
+	padding-top: 1px;
 	background-size: cover!important;
 	&>div{
 		max-width: $viewport;
@@ -69,7 +70,7 @@ h2 {
 		margin: 0 auto;
 		&>div{
 			width: 100%;
-			position: absolute;
+			// position: absolute;
 			height: 100%;
 			// top: 55%;
 			// margin-top: -300px;
