@@ -171,10 +171,10 @@ section {
 #write-modal .box-modal_close.arcticmodal-close,
 #callback-modal .box-modal_close.arcticmodal-close {
 	position: absolute;
-	top: -24px;
+	top: -54px;
 	right: 5px;
-	width: 21px;
-	height: 21px;
+	width: 51px;
+	height: 51px;
 	background-image: url('../img/close-menu.png');
 	cursor: pointer;
 }
@@ -248,7 +248,8 @@ section {
 	.fixed-zapis {
 		width: 135px;
 		height: 41px;
-		line-height: 37px;
+		// line-height: 37px;
+		padding-top: 6px;
 		text-align: center;
 		font-size: 14px;
 		font-family: $second-font;
@@ -509,7 +510,7 @@ section {
 	color: #606060;
 	line-height: 16px;
 
-	margin: 20px auto 0;
+	margin: 20px auto;
 	padding-top: 8px;
 
 	box-shadow: 0 1px 8px rgba(0,0,0,.1);
@@ -586,10 +587,10 @@ section {
 		width: 350px;
 		height: 60px;
 		text-align: left;
-		margin: 25px auto 0;
+		margin: 25px auto;
 		color: $grey-color;
 		font-size: 16px;
-		line-height: 26px;
+		// line-height: 26px;
 		font-family: $second-font;
 		font-weight: bold;
 		background-image: url('../img/sofa.png');
