@@ -7,6 +7,12 @@ section {
 	@include sec();
 }
 
+body {
+	font-size: 100%;
+	-webkit-text-size-adjust: 100%;
+	     -ms-text-size-adjust: 100%;
+}
+
 // PROBLEM SECTION
 .problem {
 	background-color: #fbfbfb;
@@ -248,8 +254,8 @@ section {
 	.fixed-zapis {
 		width: 135px;
 		height: 41px;
-		// line-height: 37px;
-		padding-top: 6px;
+		line-height: 1;
+		padding-top: 12px;
 		text-align: center;
 		font-size: 14px;
 		font-family: $second-font;
