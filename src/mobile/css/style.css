@@ -184,15 +184,12 @@ body {
   background-image: url("../img/psiho-bg-mob.jpg"); }
 
 #politics {
-  margin: 35px auto 0;
+  margin: 15px auto;
   display: block;
   font-size: 14px;
   color: #6c6c6c;
   text-align: center;
   width: 230px; }
-  #politics:hover {
-    text-decoration: underline;
-    opacity: .8; }
 
 .menu {
   background-color: rgba(255, 255, 255, 0.93);
@@ -306,33 +303,34 @@ body {
 #write-modal .main-form {
   background-image: none; }
 
-#error-modal {
+#error-modal, #success-modal {
   padding: 50px;
   text-align: center;
   background-color: #fff;
   font-family: "Roboto Slab", sans-serif;
   font-size: 18px; }
-  #error-modal p {
+  #error-modal p, #success-modal p {
     color: #9ca20d; }
-  #error-modal .box-modal_close {
+  #error-modal .box-modal_close, #success-modal .box-modal_close {
     text-decoration: underline;
     font-size: 16px;
     margin-top: 20px;
     cursor: pointer; }
 
-#success-modal {
+#pol-conf {
   padding: 50px;
   text-align: center;
   background-color: #fff;
   font-family: "Roboto Slab", sans-serif;
-  font-size: 18px; }
-  #success-modal p {
-    color: #9ca20d; }
-  #success-modal .box-modal_close {
+  font-size: 14px;
+  line-height: 1.4;
+  max-width: 600px; }
+  #pol-conf .box-modal_close {
     text-decoration: underline;
-    font-size: 16px;
+    font-size: 14px;
     margin-top: 20px;
-    cursor: pointer; }
+    cursor: pointer;
+    color: #9ca20d; }
 
 #fixed-menu {
   -webkit-transform: translate3d(0, -100%, 0);

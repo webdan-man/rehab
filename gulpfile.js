@@ -20,14 +20,14 @@ const bourbon2     = require('bourbon'); // Подключаем библиот�
 
 // sass to css
 gulp.task("sass", function(){
-  return gulp.src("src/desktop/sass/**/*.+(scss|sass)")
+  return gulp.src("src/mobile/sass/**/*.+(scss|sass)")
     .pipe(sass({
 			includePaths: bourbon.includePaths
 		})
 		 // .on('error', sass.logError)) //перехватываем ошибки
 		)
 		.pipe(autoprefixer({browsers: ['last 10 versions'], cascade: false}))
-    .pipe(gulp.dest("src/desktop/css")) //нельзя писать файл. Нужно только папки
+    .pipe(gulp.dest("src/mobile/css")) //нельзя писать файл. Нужно только папки
     .pipe(browserSync.reload({
 			stream: true
 		}));
@@ -37,7 +37,7 @@ gulp.task("sass", function(){
 gulp.task("browserSync", function(){
   browserSync({
     server: {
-      baseDir: './src/desktop/' //папка с исходными файлами проекта
+      baseDir: './src/mobile/' //папка с исходными файлами проекта
     },
     notify: false
   });
@@ -45,14 +45,14 @@ gulp.task("browserSync", function(){
 
 //compress and cached images
 gulp.task('img', function(){
-	return gulp.src("src/desktop/img/**/*")
+	return gulp.src("src/mobile/img/**/*")
 			.pipe(cache(imagemin({
 				interlaced:		true,
 				progressive:	true,
 				svgoPlugins:	[{removeViewBox: false}],
 				une:					[pngquant()]
 			})))
-			.pipe(gulp.dest("dist/desktop/img"));
+			.pipe(gulp.dest("dist/mobile/img"));
 });
 
 //очистка Cache
@@ -62,30 +62,30 @@ gulp.task("clearCache", function(){
 
 //concat and minification js libs
 gulp.task("minJsLibs", function(){
-	del.sync("src/desktop/js/libs.min.js"); // удаляем старую сборку
+	del.sync("src/mobile/js/libs.min.js"); // удаляем старую сборку
 	return gulp.src([
-				'src/desktop/libs/jquery/dist/jquery.min.js',
-				'src/desktop/libs/arcticmodal/jquery.arcticmodal.js',
-				'src/desktop/libs/jquery.maskedinput/dist/jquery.maskedinput.min.js',
-				'src/desktop/libs/flexcroll/flexcroll.js',
-				'src/desktop/libs/bxslider-4/dist/jquery.bxslider.min.js',
-				'src/desktop/libs/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js'
+				'src/mobile/libs/jquery/dist/jquery.min.js',
+				'src/mobile/libs/arcticmodal/jquery.arcticmodal.js',
+				'src/mobile/libs/jquery.maskedinput/dist/jquery.maskedinput.min.js',
+				'src/mobile/libs/flexcroll/flexcroll.js',
+				'src/mobile/libs/bxslider-4/dist/jquery.bxslider.min.js',
+				'src/mobile/libs/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js'
 	])
 			.pipe(concat("libs.min.js")) // собираем все библиотеки в один файл
 			.pipe(uglify()) // сжимаем
-			.pipe(gulp.dest("src/desktop/js"));
+			.pipe(gulp.dest("src/mobile/js"));
 });
 
 //concat and minification css libs
 gulp.task("minCssLibs", ['sass'], function(){
 	return gulp.src([
-		'src/desktop/css/libs.css'
+		'src/mobile/css/libs.css'
 	])
 			.pipe(cssnano()) // сжимаем
 			.pipe(rename({
 				suffix: '.min'
 			})) // добавляет суффикс .min
-			.pipe(gulp.dest("src/desktop/css"));
+			.pipe(gulp.dest("src/mobile/css"));
 });
 
 //remove dist folder
@@ -94,23 +94,23 @@ gulp.task("remove", function(){
 });
 
 gulp.task("watch", ['browserSync', 'sass', 'minJsLibs', 'minCssLibs'], function(){
-	gulp.watch("src/desktop/sass/**/*.+(scss|sass)", ['sass']); //массив запускаемых тасков
-	gulp.watch("src/desktop/**/*.+(html|php)", browserSync.reload);
-	gulp.watch("src/desktop/js/**/*.js", browserSync.reload);
+	gulp.watch("src/mobile/sass/**/*.+(scss|sass)", ['sass']); //массив запускаемых тасков
+	gulp.watch("src/mobile/**/*.+(html|php)", browserSync.reload);
+	gulp.watch("src/mobile/js/**/*.js", browserSync.reload);
 });
 
 //собираем проект в продакшн
 gulp.task("build", ['remove', 'img', 'sass', 'minJsLibs'], function(){
-	var buildCss = gulp.src("src/desktop/css/*").pipe(gulp.dest("dist/desktop/css"));
+	var buildCss = gulp.src("src/mobile/css/*").pipe(gulp.dest("dist/mobile/css"));
 
-	var buildFonts = gulp.src("src/desktop/fonts/**/*")
-			.pipe(gulp.dest("dist/desktop/fonts"));
+	var buildFonts = gulp.src("src/mobile/fonts/**/*")
+			.pipe(gulp.dest("dist/mobile/fonts"));
 
-	var buildJs = gulp.src("src/desktop/js/**/*")
-			.pipe(gulp.dest("dist/desktop/js"));
+	var buildJs = gulp.src("src/mobile/js/**/*")
+			.pipe(gulp.dest("dist/mobile/js"));
 
-	var buildHtml = gulp.src("src/desktop/*.html")
-			.pipe(gulp.dest("dist/desktop/"));
+	var buildHtml = gulp.src("src/mobile/*.html")
+			.pipe(gulp.dest("dist/mobile/"));
 });
 
 //default gulp task call watch

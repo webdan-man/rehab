@@ -1,7 +1,7 @@
 //webfont-load
 WebFont.load({
     google: {
-        families: ['Roboto:300,700:latin,cyrillic', 'Roboto Slab:400,700:latin,cyrillic']
+        families: ['Roboto:300,400,700:latin,cyrillic', 'Roboto Slab:400,700:latin,cyrillic']
     },
     active: function() {
         console.log('fonts-active');
