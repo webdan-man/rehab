@@ -1,7 +1,7 @@
 //webfont-load
 WebFont.load({
     google: {
-        families: ['Roboto:300,400,700:latin,cyrillic', 'Roboto Slab:400,700:latin,cyrillic']
+        families: ['Roboto:300,700:latin,cyrillic', 'Roboto Slab:400,700:latin,cyrillic']
     },
     active: function() {
         console.log('fonts-active');
@@ -50,8 +50,8 @@ function initalize() {
         "undefined" != typeof exports ? exports.loadCSS = n : e.loadCSS = n
     }("undefined" != typeof global ? global : this)
 
-    loadCSS("css/libs.css");
-    loadCSS("css/style.css");
+    loadCSS("css/libs.min.css");
+    loadCSS("css/style.min.css");
     //console.log('css-append');
 
     ! function(e, t, n) {
@@ -62,7 +62,7 @@ function initalize() {
     }(document, "script", [
         // "https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js",
         "js/libs.min.js",
-        "js/main.js",
+        "js/main.min.js",
     ]);
     console.log('js-append');
     // hide-loader
