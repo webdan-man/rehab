@@ -58,7 +58,7 @@ $(function(){
 		});
 
 		//modal header
-		$('.callback-btn').click(function() {$('#callback-modal').arcticmodal();});
+		// $('.callback-btn').click(function() {$('#callback-modal').arcticmodal();});
 		$('#consult-btn, .consult-fixed, .fixed-zapis').click(function(e) {
 			e.preventDefault();
 			$('#write-modal').arcticmodal();
@@ -150,7 +150,7 @@ $(function(){
 		$( "#ans-right li.active" ).prev().css( "border-bottom", "none" );
 
 		//плавный переход меню
-		$('.menu a').click(function(e){
+		$('.menu .menu-list a').click(function(e){
 		  e.preventDefault();
 		  $("html, body").animate({ scrollTop: $($(this).attr('href')).offset().top}, 1000);
 		  $('body').css({
