@@ -63,7 +63,17 @@ $(function(){
 		});
 		$('.frame-3d').click(function(e){
 			e.preventDefault();
-			$(this).html('<iframe width="100%" height="100%" src="/files/rehab_virtualtour/pixiq_rehabclinic.html" frameborder="0" allowfullscreen></iframe>')
+			$('#modal-3d').arcticmodal({
+				beforeOpen: function(data, el) {
+					var w = window.innerWidth;
+					var h = window.innerHeight;
+					$('#modal-3d').css({
+						'width': w-100,
+						'height': h-100
+					});
+				}
+			});
+			// $(this).html('<iframe width="100%" height="100%" src="/files/rehab_virtualtour/pixiq_rehabclinic.html" frameborder="0" allowfullscreen></iframe>');
 		});
 
 		$('.video-block, .vid-1').click(function(e){
@@ -73,8 +83,8 @@ $(function(){
 			// }
 		});
 
-		$('.simptom .tabs__caption li').click(function() {$('.wrap-content-psiho .ans-video').html('<img src="img/video-btn.png" alt="btnv">');});
-		$('#ans-right li').click(function() {$('#ans-left .ans-video').html('<img src="img/video-btn.png" alt="btnv">');});
+		$('.simptom .tabs__caption li').click(function() {$('.wrap-content-psiho .ans-video').html('<div class="video-btn"></div>');});
+		$('#ans-right li').click(function() {$('#ans-left .ans-video').html('<div class="video-btn"></div>');});
 
 
 		//fixed menu
@@ -89,7 +99,7 @@ $(function(){
 
 		//modal header
 		$('.callback-btn').click(function() {$('#callback-modal').arcticmodal();});
-		$('#consult-btn, .consult-fixed').click(function(e) {
+		$('#consult-btn, .consult-fixed, .write-consult').click(function(e) {
 			e.preventDefault();
 			$('#write-modal').arcticmodal();
 		});
@@ -208,10 +218,10 @@ $(function(){
 			maxSlides: 1,
 			moveSlides: 1,
 			onSlideNext:function($slideElement, oldIndex, newIndex){
-				$('.reviews .video-block').html('<img src="img/video-btn.png" alt="btnv">');
+				$('.reviews .video-block').html('<div class="video-btn"></div>');
 			},
 			onSlidePrev:function($slideElement, oldIndex, newIndex){
-				$('.reviews .video-block').html('<img src="img/video-btn.png" alt="btnv">');
+				$('.reviews .video-block').html('<div class="video-btn"></div>');
 			}
 		});
 		

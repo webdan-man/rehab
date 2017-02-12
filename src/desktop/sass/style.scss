@@ -7,6 +7,14 @@ section {
 	@include sec();
 }
 
+input[type='text'], input[type='tel'], input[type='email'] {
+	font-size: 16px;
+	&:focus {
+		background-color: #fff;
+		color: #000;
+	}
+}
+
 // PROBLEM SECTION
 .problem {
 	background-image: url('../img/problem-bg.jpg');
@@ -136,7 +144,7 @@ section {
 	width: 100%;
 	height: 100%;
 	overflow: hidden;
-	transition: transform .7s cubic-bezier(0.47, 0.04, 0.12, 0.99);
+	transition: transform .4s;
 	transform: translate3d(0, -100%, 0);
 	&.down {transform: translate3d(0, 0, 0);}
 	#close-menu {
@@ -202,6 +210,7 @@ section {
 //MODALS
 .main-form {position: relative;}
 #write-modal .box-modal_close.arcticmodal-close,
+#modal-3d .box-modal_close.arcticmodal-close,
 #callback-modal .box-modal_close.arcticmodal-close {
 	position: absolute;
 	top: -24px;
@@ -247,6 +256,15 @@ section {
 	}
 }
 
+//3D MODAL
+#modal-3d {
+	width: 1300px;
+	height: 700px;
+	position: relative;
+}
+
+
+.arcticmodal-container, .arcticmodal-overlay {z-index: 200;}
 
 //FIXED MENU
 #fixed-menu {
@@ -299,11 +317,21 @@ section {
 }
 .logo-fixed {
 	float: left;
-	img {
-		height: 42px;
-		width: auto;
-		display: block;
-		margin: 11px 82px;
+	.write-consult {
+		display: inline-block;
+		cursor: pointer;
+		font-family: $second-font;
+		font-size: 14px;
+		padding: 5px 16px;
+		border-radius: 50px;
+		margin: 0 5px;
+		@include gradient();
+		color: #fff;
+		// border: 1px solid #7ab507;
+		box-shadow: 0 1px 1px #7ab507;
+		margin-top: 12px;
+		transition: all .25s;
+		&:hover {opacity: .92;}
 	}
 }
 .callback-fixed {
@@ -458,7 +486,7 @@ section {
 
 	border-bottom-right-radius: 50px;
 	color: #fff;
-	font-size: 15px;
+	font-size: 18px;
 	font-family: $second-font;
 	&:hover {opacity: .9;}
 }
@@ -636,7 +664,20 @@ section {
 		display: inline-block;
 		vertical-align: middle;
 		transition: all .25s;
-		// &:hover {transform: scale(.95);}
+		opacity: .95;
+		&:hover {opacity: 1;}
+	}
+	.video-btn {
+		width: 90px;
+		height: 90px;
+		display: inline-block;
+		vertical-align: middle;
+		transition: all .25s;
+		background-image: url('../img/videobtn-bg.png');
+		background-position: 53% 51%;
+		background-color: #e62117;
+		border-radius: 50%;
+		&:hover {background-color: #cc181e;}
 	}
 }
 .under-video {
@@ -769,6 +810,18 @@ section {
 			vertical-align: middle;
 			transition: all .25s;
 			// &:hover {transform: scale(.95);}
+		}
+		.video-btn {
+			width: 75px;
+			height: 75px;
+			display: inline-block;
+			vertical-align: middle;
+			transition: all .25s;
+			background-image: url('../img/videobtn-bg.png');
+			background-position: 53% 51%;
+			background-color: #e62117;
+			border-radius: 50%;
+			&:hover {background-color: #cc181e;}
 		}
 	}
 }
@@ -1024,11 +1077,17 @@ section {
 				background-color: #4e5156;
 				color: #bbb;
 				font-family: $main-font;
-				font-size: 12px;
-				padding: 12px 19px;
+				font-size: 16px;
+				padding: 10px 19px;
 				margin-bottom: 20px;
 				border-radius: 20px;
 				box-shadow: inset 0 4px 2px rgba(0,0,0,.14);
+				border: 1px solid transparent;
+				&:focus {
+					background-color: #eee;
+					border: 1px solid #000;
+					color: #000;
+				}
 			}
 			input[type='submit'] {
 				text-align: center;
@@ -1038,7 +1097,7 @@ section {
 				border-bottom-left-radius: 25px;
 				padding: 15px;
 				color: #fff;
-				font-size: 15px;
+				font-size: 17px;
 				font-family: $second-font;
 				cursor: pointer;
 				@include gradient-btn();
