@@ -142,6 +142,21 @@ input[type='text'], input[type='tel'], input[type='email'] {
     box-shadow: -2px 10px 34px rgba(45, 78, 28, 0.32);
     -webkit-transition: all .25s;
     transition: all .25s; }
+    .problems-wrap .problem-item .more-btn {
+      width: 200px;
+      height: 50px;
+      background-color: #fff;
+      position: absolute;
+      bottom: 20px;
+      left: 30px;
+      padding-top: 10px;
+      font-family: "Roboto Slab", sans-serif;
+      color: #9ca20d;
+      text-align: center;
+      -webkit-border-radius: 50px;
+      border-radius: 50px;
+      -webkit-border-top-right-radius: 0;
+      border-top-right-radius: 0; }
     .problems-wrap .problem-item a {
       display: block;
       width: 100%;
@@ -169,14 +184,17 @@ input[type='text'], input[type='tel'], input[type='email'] {
       opacity: 0;
       -webkit-transition: all .25s;
       transition: all .25s; }
-    .problems-wrap .problem-item:hover {
+    .problems-wrap .problem-item:hover, .problems-wrap .problem-item.hover {
       -webkit-box-shadow: -2px 10px 34px rgba(45, 78, 28, 0.6);
       box-shadow: -2px 10px 34px rgba(45, 78, 28, 0.6); }
-    .problems-wrap .problem-item:hover p {
+    .problems-wrap .problem-item:hover p,
+    .problems-wrap .problem-item.hover p {
       opacity: 1; }
-    .problems-wrap .problem-item:hover h3 {
+    .problems-wrap .problem-item:hover h3,
+    .problems-wrap .problem-item.hover h3 {
       color: #fff; }
-    .problems-wrap .problem-item:hover .overlay {
+    .problems-wrap .problem-item:hover .overlay,
+    .problems-wrap .problem-item.hover .overlay {
       opacity: 1; }
   .problems-wrap .problem-item.alko {
     margin-right: 22px;
@@ -268,6 +286,18 @@ input[type='text'], input[type='tel'], input[type='email'] {
       -webkit-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
       transform: rotate(90deg); }
+  .menu > div {
+    max-width: 980px;
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    margin: 0 auto; }
+    .menu > div > div {
+      width: 100%;
+      position: absolute;
+      height: 600px;
+      top: 55%;
+      margin-top: -300px; }
 
 .menu-list {
   text-align: center; }
@@ -286,7 +316,7 @@ input[type='text'], input[type='tel'], input[type='email'] {
     height: 14px;
     background-image: url("../img/li-list.png");
     background-repeat: no-repeat; }
-  .menu-list li:nth-child(4):after, .menu-list li:nth-child(7):after, .menu-list li:nth-child(8):after {
+  .menu-list li:nth-child(4):after, .menu-list li:nth-child(7):after, .menu-list li:nth-child(8):after, .menu-list li.last-li:after {
     display: none; }
 
 .menu-list a {
