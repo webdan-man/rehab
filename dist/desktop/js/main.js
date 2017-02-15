@@ -153,8 +153,34 @@ $(function(){
 		});
 
 
+		$('#reviews .vid-1').click(function(e){
+			e.preventDefault();
+				$(this).html('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/AXf2W_Em2mo?autoplay=1;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>');
+		});
+		$('#reviews .vid-2').click(function(e){
+			e.preventDefault();
+				$(this).html('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/m6v8ROKH1Yg?autoplay=1;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>');
+		});
+		$('#reviews .vid-3').click(function(e){
+			e.preventDefault();
+				$(this).html('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/qTOGRR5CN5c?autoplay=1;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>');
+		});
+		$('#reviews .vid-4').click(function(e){
+			e.preventDefault();
+				$(this).html('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/UEDir9glviw?autoplay=1;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>');
+		});
+		$('#reviews .vid-5').click(function(e){
+			e.preventDefault();
+				$(this).html('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/ON0wf8r2xwU?autoplay=1;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>');
+		});
+
+
 		$('.simptom .tabs__caption li').click(function() {$('.wrap-content-psiho .ans-video').html('<div class="video-btn"></div>');});
 		$('#ans-right li').click(function() {$('#ans-left .ans-video').html('<div class="video-btn"></div>');});
+
+
+		//запуск видео по клику из списка
+
 
 
 		//fixed menu
@@ -543,7 +569,7 @@ $(function(){
 	$('ul.tabs__caption').on('click', 'li:not(.active)', function() {
 		$(this)
 		.addClass('active').siblings().removeClass('active')
-		.closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
+		.closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active').find('.ans-video').trigger('click');
 		$("#ans-right li:not(.active)" ).css( {'border-bottom': '1px solid #cdcdcd'});
 		$("#ans-right li.active" ).prev().css( "border-bottom", "none");
 	});
