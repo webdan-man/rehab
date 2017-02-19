@@ -1117,7 +1117,7 @@ input[type='text'], input[type='tel'], input[type='email'] {
         box-shadow: 0 1px 2px #7ab507; }
   .specs .spec-slide {
     width: 830px;
-    height: 400px !important;
+    height: 430px !important;
     margin: 0 auto; }
     .specs .spec-slide .photo {
       float: left;
@@ -1127,7 +1127,7 @@ input[type='text'], input[type='tel'], input[type='email'] {
         max-height: 100%; }
     .specs .spec-slide .descr {
       float: left;
-      width: 370px;
+      width: 510px;
       margin-left: 30px; }
       .specs .spec-slide .descr h3 {
         font-size: 26px;
@@ -1138,7 +1138,14 @@ input[type='text'], input[type='tel'], input[type='email'] {
       .specs .spec-slide .descr h4 {
         font-size: 17px;
         color: #5a5a5a;
-        line-height: 30px;
+        line-height: 26px;
+        text-align: left; }
+      .specs .spec-slide .descr h5 {
+        font-size: 13px;
+        font-family: "Roboto", sans-serif;
+        color: #5a5a5a;
+        margin-top: 20px;
+        line-height: 1.2;
         text-align: left; }
   .specs #sld2-1l, .specs #sld2-1r,
   .specs #sld2-2l, .specs #sld2-2r,
@@ -1174,7 +1181,7 @@ input[type='text'], input[type='tel'], input[type='email'] {
   .specs #sld2-1r a, .specs #sld2-2r a, .specs #sld2-3r a, .specs #sld2-4r a, .specs #sld2-5r a {
     background-image: url("../img/right-bx2.png"); }
   .specs #sld2-1l, .specs #sld2-2l, .specs #sld2-3l, .specs #sld2-4l, .specs #sld2-5l {
-    left: 30px; }
+    left: 0px; }
   .specs #sld2-1r, .specs #sld2-2r, .specs #sld2-3r, .specs #sld2-4r, .specs #sld2-5r {
     left: 350px; }
 
@@ -1202,7 +1209,12 @@ input[type='text'], input[type='tel'], input[type='email'] {
       width: 450px;
       height: 100%;
       float: left;
-      padding: 70px 0 0 65px; }
+      padding: 50px 0 0 65px; }
+      .conference .wrap-form .left-part p {
+        font-size: 22px;
+        color: #5a5a5a;
+        font-family: "Roboto Slab", sans-serif;
+        margin-bottom: 30px; }
       .conference .wrap-form .left-part h4 {
         font-size: 19px;
         color: #5a5a5a;

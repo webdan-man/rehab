@@ -29,30 +29,128 @@ $(function(){
 
 		//подгрузка объектов
 		$('.header .vid-over').click(function(){
-			$(this).html('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/ogjkRFi810w?autoplay=1;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>')
+			$(this).html('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/7y2WOzSyk4w?autoplay=1;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>')
 		});
+
 		$('.frame-3d').click(function(e){
 			e.preventDefault();
 			$(this).html('<iframe width="100%" height="100%" src="http://rehabfamily.ru/flash/flash/pixiq_rehabclinic.html" frameborder="0" allowfullscreen></iframe>')
 		});
 
-		$('.video-block, .vid-1').click(function(e){
+		$('#video-patient .video-block.alko').click(function(e){
 			e.preventDefault();
-			// if($(this).parent().parent().hasClass('active')) {
-				$(this).html('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/ogjkRFi810w?autoplay=1;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>');
-			// }
+			$(this).html('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/HtlUUKpobes?autoplay=1;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>');
+		});
+		$('#video-patient .video-block.narko').click(function(e){
+			e.preventDefault();
+			$(this).html('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/XwG0U0quaIA?autoplay=1;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>');
+		});
+		$('#video-patient .video-block.psiho').click(function(e){
+			e.preventDefault();
+			$(this).html('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/fidDqjvPmZ0?autoplay=1;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>');
 		});
 
-		$('.simptom .tabs__caption li').click(function() {$('.wrap-content-psiho .ans-video').html('<img src="img/video-btn.png" alt="btnv">');});
-		$('#ans-right li').click(function() {$('#ans-left .ans-video').html('<img src="img/video-btn.png" alt="btnv">');});
+		$('#answers .vid-1').click(function(e){
+			e.preventDefault();
+			$(this).html('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/e7wjmR8vMP8?autoplay=1;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>');
+		});
+		$('#answers .vid-2').click(function(e){
+			e.preventDefault();
+			$(this).html('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/-Rl558Y3Uag?autoplay=1;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>');
+		});
+		$('#answers .vid-3').click(function(e){
+			e.preventDefault();
+			$(this).html('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/V0SIvVYKzZs?autoplay=1;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>');
+		});
+		$('#answers .vid-4').click(function(e){
+			e.preventDefault();
+			$(this).html('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/GCTtu1zNv_A?autoplay=1;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>');
+		});
+		$('#answers .vid-5').click(function(e){
+			e.preventDefault();
+			$(this).html('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/sM3MDtjBIXA?autoplay=1;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>');
+		});
+		$('#answers .vid-6').click(function(e){
+			e.preventDefault();
+			$(this).html('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/YxyZ467eQYA?autoplay=1;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>');
+		});
+		$('#answers .vid-7').click(function(e){
+			e.preventDefault();
+			$(this).html('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/YxyZ467eQYA?autoplay=1;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>');
+		});
+		$('#answers .vid-8').click(function(e){
+			e.preventDefault();
+			$(this).html('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/YqISf4TYe_c?autoplay=1;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>');
+		});
+		$('#answers .vid-9').click(function(e){
+			e.preventDefault();
+			$(this).html('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/Mtf8lSz2jTk?autoplay=1;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>');
+		});
+
+
+
+		$('#answers .vid-1').click(function(e){
+			e.preventDefault();
+			$(this).html('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/U0KDPswPyqg?autoplay=1;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>');
+		});
+		$('#answers .vid-2').click(function(e){
+			e.preventDefault();
+			$(this).html('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/sEBVSnJeXq0?autoplay=1;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>');
+		});
+		$('#answers .vid-3').click(function(e){
+			e.preventDefault();
+			$(this).html('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/mC5RB1FCE58?autoplay=1;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>');
+		});
+		$('#answers .vid-4').click(function(e){
+			e.preventDefault();
+			$(this).html('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/FyCh3OQ_BZE?autoplay=1;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>');
+		});
+		$('#answers .vid-5').click(function(e){
+			e.preventDefault();
+			$(this).html('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/lBvdF0Zm6kg?autoplay=1;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>');
+		});
+		$('#answers .vid-6').click(function(e){
+			e.preventDefault();
+			$(this).html('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/OKLp83j7tLg?autoplay=1;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>');
+		});
+
+
+		$('#reviews .vid-1').click(function(e){
+			e.preventDefault();
+			$(this).html('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/AXf2W_Em2mo?autoplay=1;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>');
+		});
+		$('#reviews .vid-2').click(function(e){
+			e.preventDefault();
+			$(this).html('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/m6v8ROKH1Yg?autoplay=1;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>');
+		});
+		$('#reviews .vid-3').click(function(e){
+			e.preventDefault();
+			$(this).html('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/qTOGRR5CN5c?autoplay=1;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>');
+		});
+		$('#reviews .vid-4').click(function(e){
+			e.preventDefault();
+			$(this).html('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/UEDir9glviw?autoplay=1;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>');
+		});
+		$('#reviews .vid-5').click(function(e){
+			e.preventDefault();
+			$(this).html('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/ON0wf8r2xwU?autoplay=1;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>');
+		});
+		$('#reviews .vid-6').click(function(e){
+			e.preventDefault();
+			$(this).html('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/KxPJ-DIWwZw?autoplay=1;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>');
+		});
+
+		$('.simptom .tabs__caption li').click(function() {$('.wrap-content-psiho .ans-video').html('<div class="video-btn"></div>');});
+		$('#ans-right li').click(function() {$('#ans-left .ans-video').html('<div class="video-btn"></div>');});
 
 
 		//fixed menu
 		$(window).scroll(function () {
-			if($(this).scrollTop() > $('section').height()) {
+			if($(this).scrollTop() > 100) {
 				$('#fixed-menu').addClass('down-menu');
 			}
-			if($(this).scrollTop() <= 400 && $('#fixed-menu').hasClass('down-menu')) {
+			// if($(this).scrollTop() <= 50 && $('#fixed-menu').hasClass('down-menu')) 
+			else {
 				$('#fixed-menu').removeClass('down-menu');
 			}
 		});
@@ -62,6 +160,7 @@ $(function(){
 		$('#consult-btn, .consult-fixed, .fixed-zapis').click(function(e) {
 			e.preventDefault();
 			$('#write-modal').arcticmodal();
+			$('#close-menu').trigger('click');
 		});
 		$('#politics').click(function(e) {
 			e.preventDefault();
@@ -178,10 +277,10 @@ $(function(){
 			maxSlides: 1,
 			moveSlides: 1,
 			onSlideNext:function($slideElement, oldIndex, newIndex){
-				$('.reviews .video-block').html('<img src="img/video-btn.png" alt="btnv">');
+				$('.reviews .video-block').html('<div class="video-btn"></div>');
 			},
 			onSlidePrev:function($slideElement, oldIndex, newIndex){
-				$('.reviews .video-block').html('<img src="img/video-btn.png" alt="btnv">');
+				$('.reviews .video-block').html('<div class="video-btn"></div>');
 			}
 		});
 		
@@ -385,21 +484,23 @@ $(function(){
 
 
 		// // отправка формы
-		$("form").submit(function() {
-		    event.preventDefault();
-		    var form_data = $(this).serialize(); //собераем все данные из формы
-		    $.ajax({
-		        type: "POST",
-		        url: "mail.php",
-		        data: form_data,
-		        success: function() {
-		            $('#success-modal').arcticmodal();
-		            $('input[type=text],input[type=tel],input[type=email]').val('');
-		            $('#callback-modal .arcticmodal-close, #write-modal .arcticmodal-close').trigger('click');
-		            $('body').css({'overflow-y': 'scroll'});
-		        }
-		    });
-		});
+		// $("form").submit(function() {
+		//     event.preventDefault();
+		//     var form_data = $(this).serialize(); //собераем все данные из формы
+		//     $.ajax({
+		//         type: "POST",
+		//         url: "mail.php",
+		//         data: form_data,
+		//         success: function() {
+		//             $('#success-modal').arcticmodal();
+		//             $('input[type=text],input[type=tel],input[type=email]').val('');
+		//             $('#callback-modal .arcticmodal-close, #write-modal .arcticmodal-close').trigger('click');
+		//             $('body').css({'overflow-y': 'scroll'});
+		//         }
+		//     });
+		// });
+
+		//bag firefox
 		$('.arcticmodal-close').click(function() {
 			$('body').css({'overflow-y': 'scroll'});
 		});
@@ -419,8 +520,37 @@ $(function(){
 			});
 
 			$('.set a').click(function() {
-				$('.set .ans-video').html('<img src="img/video-btn.png" alt="btnv">');
+				$('.set .ans-video').html('<div class="video-btn"></div>');
 			});
+
+
+
+
+
+		$("form").submit(function() {
+			event.preventDefault();
+			var form_data = $(this).serialize(); //собераем все данные из формы
+			$.ajax({
+				type: "POST",
+				url: "/mail.php",
+				data: form_data,
+				success: function() {
+					$('#success-modal').arcticmodal();
+					$('input[type=text],input[type=tel],input[type=email]').val('');
+					$('#callback-modal .arcticmodal-close, #write-modal .arcticmodal-close').trigger('click');
+					$('body').css({'overflow-y': 'scroll'});
+				},
+				complete: function(response) {
+					if (response.readyState === 4 && response.status === 200) {
+						alert(response.responseText);
+					}
+				},
+				beforeSend: function(jqXHR, settings) {
+					var credentials = Comagic.getCredentials();
+					settings.data += '&' + $.param(credentials);
+				}
+			});
+		});
 
 
 

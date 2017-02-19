@@ -51,7 +51,7 @@ function initalize() {
     }("undefined" != typeof global ? global : this)
 
     loadCSS("css/libs.min.css");
-    loadCSS("css/style.min.css");
+    loadCSS("css/style.css");
     //console.log('css-append');
 
     ! function(e, t, n) {
@@ -62,7 +62,7 @@ function initalize() {
     }(document, "script", [
         // "https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js",
         "js/libs.min.js",
-        "js/main.min.js",
+        "js/main.js",
     ]);
     console.log('js-append');
     // hide-loader

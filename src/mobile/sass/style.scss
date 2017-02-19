@@ -365,7 +365,8 @@ body {
 }
 
 #descr-for-psih {
-	width: 235px;
+	// width: 235px;
+	width: 100%;
 	float: left;
 	font-size: 16px;
 	font-family: $second-font;
@@ -1179,7 +1180,8 @@ body {
 			// height: 100%;
 			// float: left;
 			padding: 25px 20px;
-			h4 {
+
+			h4, p {
 				font-size: 19px;
 				color: #5a5a5a;
 				font-family: $second-font;
@@ -1192,6 +1194,7 @@ body {
 				line-height: 28px;
 				text-align: center;
 			}
+			p {font-size: 22px;}
 		}
 		.right-part {
 			// float: left;
@@ -1477,7 +1480,7 @@ footer {
 	}
 }
 
-
+.arcticmodal-container, .arcticmodal-overlay {z-index: 200;}
 
 
 @import "media";  //всегда в конце
