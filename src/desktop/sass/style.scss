@@ -53,13 +53,13 @@ input[type='text'], input[type='tel'], input[type='email'] {
 			text-align: center;
 			border-radius: 50px;
 			border-top-right-radius: 0;
-			// @include gradient();
-			// color: #fff;
+			transition: all .25s;
+			&:hover {background-color: #f00 !important;}
 		}
-		// &:hover .more-btn {
-		// 	background: #fff !important;
-		// 	color: $h-color;
-		// }
+		&:hover .more-btn {
+			background: #FF0026;
+			color: #fff;
+		}
 		a {
 			display: block;
 			width: 100%;
@@ -224,6 +224,7 @@ input[type='text'], input[type='tel'], input[type='email'] {
 	&:nth-child(4):after,
 	&:nth-child(7):after,
 	&:nth-child(8):after,
+	&:nth-child(11):after,
 	&.last-li:after {display: none;}
 }
 .menu-list a {
@@ -235,7 +236,7 @@ input[type='text'], input[type='tel'], input[type='email'] {
 	&:hover {color: $h-color;}
 }
 .logo-menu {
-	margin: 0 auto 100px;
+	margin: 0 auto 70px;
 	text-align: center;
 }
 #consult-btn {
@@ -334,6 +335,7 @@ input[type='text'], input[type='tel'], input[type='email'] {
 		background-image: none;
 		position: relative;
 		line-height: 65px;
+		margin-right: 205px !important;
 		transition: all .25s;
 		&:hover .a {top: 20px;}
 		&:hover .c {top: 40px;}

@@ -156,7 +156,14 @@ input[type='text'], input[type='tel'], input[type='email'] {
       -webkit-border-radius: 50px;
       border-radius: 50px;
       -webkit-border-top-right-radius: 0;
-      border-top-right-radius: 0; }
+      border-top-right-radius: 0;
+      -webkit-transition: all .25s;
+      transition: all .25s; }
+      .problems-wrap .problem-item .more-btn:hover {
+        background-color: #f00 !important; }
+    .problems-wrap .problem-item:hover .more-btn {
+      background: #FF0026;
+      color: #fff; }
     .problems-wrap .problem-item a {
       display: block;
       width: 100%;
@@ -316,7 +323,7 @@ input[type='text'], input[type='tel'], input[type='email'] {
     height: 14px;
     background-image: url("../img/li-list.png");
     background-repeat: no-repeat; }
-  .menu-list li:nth-child(4):after, .menu-list li:nth-child(7):after, .menu-list li:nth-child(8):after, .menu-list li.last-li:after {
+  .menu-list li:nth-child(4):after, .menu-list li:nth-child(7):after, .menu-list li:nth-child(8):after, .menu-list li:nth-child(11):after, .menu-list li.last-li:after {
     display: none; }
 
 .menu-list a {
@@ -329,7 +336,7 @@ input[type='text'], input[type='tel'], input[type='email'] {
     color: #9ca20d; }
 
 .logo-menu {
-  margin: 0 auto 100px;
+  margin: 0 auto 70px;
   text-align: center; }
 
 #consult-btn {
@@ -443,6 +450,7 @@ input[type='text'], input[type='tel'], input[type='email'] {
     background-image: none;
     position: relative;
     line-height: 65px;
+    margin-right: 205px !important;
     -webkit-transition: all .25s;
     transition: all .25s; }
     #fixed-menu .menu-btn:hover .a {

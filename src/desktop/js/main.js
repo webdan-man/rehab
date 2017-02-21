@@ -312,7 +312,7 @@ $(function(){
 		$( "#ans-right li.active" ).prev().css( "border-bottom", "none" );
 
 		//плавный переход меню
-		$('.menu a').click(function(e){
+		$('.menu a.navig').click(function(e){
 			e.preventDefault();
 			$("html, body").animate({ scrollTop: $($(this).attr('href')).offset().top}, 1000);
 			$('body').css({

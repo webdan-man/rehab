@@ -1,3 +1,23 @@
+
+function getURLParameter(name) {return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search)||[,""])[1].replace(/\+/g, '%20'))||null;} 
+function run_geo(geo_url){
+	$.ajax({type: 'GET',url: geo_url,dataType: 'xml',
+		success: function(xml) {$(xml).find('ip').each(function(){
+			var city = $(this).find('city').text();
+			var region = $(this).find('region').text();
+			if(city!=region){var ipg = city+', '+region;}else{var ipg = city;}
+			$('<input type="hidden" />').attr({name: 'location', class: 'location', value:ipg}).appendTo("form");
+		});}});
+}
+
+function submit_track_event(event){
+    if (yaCounter) {yaCounter.reachGoal(event);}
+    if (ga) {ga('send','event','submit',event);}
+}
+
+
+
+
 "use strict";
 
 $(function(){
@@ -527,9 +547,39 @@ $(function(){
 
 
 
-		$("form").submit(function() {
-			event.preventDefault();
+		// $("form").submit(function() {
+		// 	event.preventDefault();
+		// 	var form_data = $(this).serialize(); //собераем все данные из формы
+		// 	$.ajax({
+		// 		type: "POST",
+		// 		url: "/mail.php",
+		// 		data: form_data,
+		// 		success: function() {
+		// 			$('#success-modal').arcticmodal();
+		// 			$('input[type=text],input[type=tel],input[type=email]').val('');
+		// 			$('#callback-modal .arcticmodal-close, #write-modal .arcticmodal-close').trigger('click');
+		// 			$('body').css({'overflow-y': 'scroll'});
+		// 		},
+		// 		complete: function(response) {
+		// 			if (response.readyState === 4 && response.status === 200) {
+		// 				alert(response.responseText);
+		// 			}
+		// 		},
+		// 		beforeSend: function(jqXHR, settings) {
+		// 			var credentials = Comagic.getCredentials();
+		// 			settings.data += '&' + $.param(credentials);
+		// 		}
+		// 	});
+		// });
+
+
+			$("form").submit(function() {
+				event.preventDefault();
 			var form_data = $(this).serialize(); //собераем все данные из формы
+			var type=$(this).attr('method');
+			// var url=$(this).attr('action');
+			var track_event=$(this).find('input[name="event"]').val();
+
 			$.ajax({
 				type: "POST",
 				url: "/mail.php",
@@ -539,10 +589,12 @@ $(function(){
 					$('input[type=text],input[type=tel],input[type=email]').val('');
 					$('#callback-modal .arcticmodal-close, #write-modal .arcticmodal-close').trigger('click');
 					$('body').css({'overflow-y': 'scroll'});
+
+					submit_track_event(track_event);
 				},
 				complete: function(response) {
 					if (response.readyState === 4 && response.status === 200) {
-						alert(response.responseText);
+						// alert(response.responseText);
 					}
 				},
 				beforeSend: function(jqXHR, settings) {
@@ -551,6 +603,13 @@ $(function(){
 				}
 			});
 		});
+
+
+		//UTM GEO
+		$.get("http://ipinfo.io", function(response) {geo_url='http://ipgeobase.ru:7020/geo?ip='+response.ip; run_geo(geo_url);}, "jsonp");
+		utm=[];$.each(["utm_source","utm_medium","utm_campaign","utm_term",'source_type','source','position_type','position','added','creative','matchtype'],function(i,v){$('<input type="hidden" />').attr({name: v, class: v, value: function(){if(getURLParameter(v) == undefined)return '-'; else return getURLParameter(v)}}).appendTo("form")});
+		$('<input type="hidden" />').attr({name: 'url', value: document.location.href}).appendTo("form");
+		$('<input type="hidden" />').attr({name: 'title', value: document.title}).appendTo("form");
 
 
 

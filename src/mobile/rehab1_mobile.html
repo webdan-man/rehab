@@ -27,7 +27,7 @@
 
 	</script>
 
-		<script type="text/javascript">
+	<script type="text/javascript">
 	var __cs = __cs || [];
 	__cs.push(["setCsAccount", "6GEn4hC7z6NluheRt50G0RFleEH29hUd"]);
 	__cs.push(["setCsHost", "//server.comagic.ru/comagic"]);
@@ -118,11 +118,11 @@
 						<p>Для кого вы выбираете лечение?</p>
 						<div class="line">
 							<div>
-								<input id="rad1" name="for-who" type="radio" value="dlya_sebya">
+								<input id="rad1" name="for-who" type="radio" value="Для себя">
 								<label for="rad1">Для себя</label>
 							</div>
 							<div>
-								<input id="rad2" name="for-who" type="radio" value="dlya_blizkogo">
+								<input id="rad2" name="for-who" type="radio" value="Для близкого">
 								<label for="rad2">Для близкого</label>
 							</div>
 						</div>
@@ -137,7 +137,7 @@
 									<li>4</li>
 									<li>5</li>
 								</ul>
-								<input type="hidden" id="select" name="specs" />
+								<input type="hidden" id="select" name="years" />
 							</nav>
 						</div>
 						<p>Ранее уже проходили лечения?</p>
@@ -166,6 +166,8 @@
 					<div class="main-form">
 							<input id="calc-name" class="input-bottom" type="text" name="name" placeholder="Ваше имя">
 							<input id="calc-tel" class="input-bottom masked" type="tel" name="tel" placeholder="Ваш телефон">
+							<input type="hidden" name="frmid" value="Форма-калькулятор (алкоголь)">
+							<input type="hidden" name="event" value="calc_alko_form">
 							<input id="right-button" type="submit" value="Узнать стоимость">
 					</div>
 				</form>
@@ -500,23 +502,22 @@
 					<!-- 3TH TAB -->
 					<div class="tabs__content active">
 						<div class="bxslider2-3">
-							<div class="spec-slide first-slide" data-sld="0">
-								<div class="photo">
-									<img src="img/workers/12.jpg" alt="doc">
-								</div>
-								<div class="descr">
-									<h3>Михалев Михаил Александрович </h3>
-									<h4>Врач-психиатр, сексолог</h4>
-									
-								</div>
-							</div>
-							<div class="spec-slide" data-sld="1">
+							<div class="spec-slide" data-sld="0">
 								<div class="photo">
 									<img src="img/workers/10.jpg" alt="doc">
 								</div>
 								<div class="descr">
 									<h3>Курлович Николай Михайлович </h3>
 									<h4>Главный врач, врач-нарколог</h4>
+								</div>
+							</div>
+							<div class="spec-slide first-slide" data-sld="1">
+								<div class="photo">
+									<img src="img/workers/12.jpg" alt="doc">
+								</div>
+								<div class="descr">
+									<h3>Михалев Михаил Александрович </h3>
+									<h4>Врач-психиатр, сексолог</h4>
 									
 								</div>
 							</div>
@@ -602,16 +603,7 @@
 					</div>
 					<div class="tabs__content">
 						<div class="bxslider2-5">
-							<div class="spec-slide first-slide" data-sld="0">
-								<div class="photo">
-									<img src="img/workers/13.jpg" alt="doc">
-								</div>
-								<div class="descr">
-									<h3>Панова Юлия</h3>
-									<h4>Арттерапевт</h4>
-								</div>
-							</div>
-							<div class="spec-slide" data-sld="1">
+							<div class="spec-slide" data-sld="0">
 								<div class="photo">
 									<img src="img/workers/15.jpg" alt="doc">
 								</div>
@@ -620,7 +612,7 @@
 									<h4>Старший администратор <br> Реабилитационного центра </h4>
 								</div>
 							</div>
-							<div class="spec-slide" data-sld="2">
+							<div class="spec-slide" data-sld="1">
 								<div class="photo">
 									<img src="img/workers/6.jpg" alt="doc">
 								</div>
@@ -629,7 +621,7 @@
 									<h4>Старшая мед. сестра</h4>
 								</div>
 							</div>
-							<div class="spec-slide" data-sld="3">
+							<div class="spec-slide" data-sld="2">
 								<div class="photo">
 									<img src="img/workers/4.jpg" alt="doc">
 								</div>
