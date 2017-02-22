@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=480">
+	<meta id="viewport" name="viewport" content="width=480">
 	<title>REHAB</title>
 	<meta property="og:image" content="for-social.jpg">
 	<link rel="shortcut icon" href="img/fav.ico" type="image/x-icon">
@@ -58,7 +58,7 @@
 			</div>
 			<div class="header-text">
 				<h1>Сохраните вашу семью! <br> <span>Решитесь на прохождение реабилитационного <br> курса в Rehab family</span></h1>
-				<h2>и всего <span>через 30 дней</span> избавьтесь <br> от наркотиков в вашем доме навсегда!</h2>
+				<h2>и всего <span>через 30 дней</span> избавьтесь <br> от алкоголизма в вашем доме навсегда!</h2>
 			</div>
 			<div class="header-video">
 				<div class="vid-over">
@@ -85,14 +85,16 @@
 			<img id="close-menu" src="img/close-menu.png" alt="close">
 			<div class="logo-menu"><img src="img/logo.png" alt="logo-menu"></div>
 			<ul class="menu-list">
-				<li><a href="#stoimost">Стоимость и сроки</a></li>
+				<li><a class="navig" href="#stoimost">Стоимость и сроки</a></li>
 				<!-- <li><a href="#ex3d">3d экскурсия</a></li> -->
-				<li><a href="#video-patient">Видео о пациентах</a></li>
-				<li><a href="#answers">Ответы на вопросы</a></li>
-				<li><a href="#reviews">Отзывы пациентов</a></li>
-				<li><a href="#specialists">Специалисты Rehab Family</a></li>
-				<li><a href="#conf">Записаться на конференцию</a></li>
-				<li><a href="#contacts">Контактная информация</a></li>
+				<li><a class="navig" href="#video-patient">Видео о пациентах</a></li>
+				<li><a class="navig" href="#answers">Ответы на вопросы</a></li>
+				<li><a class="navig" href="#reviews">Отзывы пациентов</a></li>
+				<li><a class="navig" href="#specialists">Специалисты Rehab Family</a></li>
+				<li><a class="navig" href="#conf">Записаться на конференцию</a></li>
+				<li><a href="narkomania_mobile.php">Наркомания</a></li>
+				<li><a href="psihologia_mobile.php">Психологические расстройства</a></li>
+				<li><a class="navig" href="#contacts">Контактная информация</a></li>
 			</ul>
 			<a href="#" id="consult-btn">Записаться на консультацию</a>
 		</div>
@@ -115,84 +117,59 @@
 			<div class="calc-form">
 				<form id="calc-form">
 					<div class="wrap-filters">
-						<div class="left-labels">
-							<p>Для кого вы выбираете лечение?</p>
-							<p>Были случаи агрессивного поведения?</p>
-						</div>
-						<div class="right-filters">
-							<div class="line">
-								<div>
-									<input id="rad1" name="for-who" type="radio" value="Для себя">
-									<label for="rad1">Для себя</label>
-								</div>
-								<div>
-									<input id="rad2" name="for-who" type="radio" value="Для близкого">
-									<label for="rad2">Для близкого</label>
-								</div>
+						<p>Для кого вы выбираете лечение?</p>
+						<div class="line">
+							<div>
+								<input id="rad1" name="for-who" type="radio" value="Для себя">
+								<label for="rad1">Для себя</label>
 							</div>
-							<div class="line">
-								<div>
-									<input id="rad5" name="agro" type="radio" value="Да">
-									<label for="rad5">Да</label>
-								</div>
-								<div>
-									<input id="rad6" name="agro" type="radio" value="Нет">
-									<label for="rad6">Нет</label>
-								</div>
+							<div>
+								<input id="rad2" name="for-who" type="radio" value="Для близкого">
+								<label for="rad2">Для близкого</label>
 							</div>
 						</div>
-						<div class="other-filters">
-							<p>О какой наркологической зависимости идет речь?</p>
-						
-							<div class="line">
-								<div>
-									<input id="rad7" name="type_narko" type="radio" value="марихуана">
-									<label for="rad7">Марихуана</label>
-								</div>
-								<div>
-									<input id="rad8" name="type_narko" type="radio" value="Шарики">
-									<label for="rad8">Шарики</label>
-								</div>
+						<p>Сколько лет вы уже боритесь <br>с зависимостью:</p>
+						<div class="line">
+							<nav class="select">
+								<span class="slct">Сколько лет?</span>
+								<ul class="drop">
+									<li>1</li>
+									<li>2</li>
+									<li>3</li>
+									<li>4</li>
+									<li>5</li>
+								</ul>
+								<input type="hidden" id="select" name="years" />
+							</nav>
+						</div>
+						<p>Ранее уже проходили лечения?</p>
+						<div class="line">
+							<div>
+								<input id="rad3" name="before" type="radio" value="yes">
+								<label for="rad3">Да</label>
 							</div>
-							<div class="clearfix"></div>
-							<div class="line">
-								<div>
-									<input id="rad9" name="type_narko" type="radio" value="Героин">
-									<label for="rad9">Героин</label>
-								</div>
-								<div>
-									<input id="rad10" name="type_narko" type="radio" value="ЛСД">
-									<label for="rad10">ЛСД</label>
-								</div>
+							<div>
+								<input id="rad4" name="before" type="radio" value="no">
+								<label for="rad4">Нет</label>
 							</div>
-							<div class="line">
-								<div>
-									<input id="rad11" name="type_narko" type="radio" value="Кокаин">
-									<label for="rad11">Кокаин</label>
-								</div>
-								<div>
-									<input id="rad12" name="type_narko" type="radio" value="Спайс">
-									<label for="rad12">Спайс</label>
-								</div>
+						</div>
+						<p>Были случаи агрессивного поведения?</p>
+						<div class="line">
+							<div>
+								<input id="rad5" name="agro" type="radio" value="yes">
+								<label for="rad5">Да</label>
 							</div>
-							<div class="line">
-								<div>
-									<input id="rad13" name="type_narko" type="radio" value="Методон">
-									<label for="rad13">Методон</label>
-								</div>
-								<div>
-									<input id="rad14" name="type_narko" type="radio" value="Экстази">
-									<label for="rad14">Экстази</label>
-								</div>
+							<div>
+								<input id="rad6" name="agro" type="radio" value="no">
+								<label for="rad6">Нет</label>
 							</div>
-							
 						</div>
 					</div>
 					<div class="main-form">
 							<input id="calc-name" class="input-bottom" type="text" name="name" placeholder="Ваше имя">
 							<input id="calc-tel" class="input-bottom masked" type="tel" name="tel" placeholder="Ваш телефон">
-							<input type="hidden" name="frmid" value="Форма-калькулятор (наркомания)">
-							<input type="hidden" name="event" value="calc_narko_form">
+							<input type="hidden" name="frmid" value="Форма-калькулятор (алкоголь)">
+							<input type="hidden" name="event" value="calc_alko_form">
 							<input id="right-button" type="submit" value="Узнать стоимость">
 					</div>
 				</form>
@@ -200,8 +177,8 @@
 		</div>
 	</div>
 </section>
-<!-- 
-<section class="sect3d" id="ex3d">
+
+<!-- <section class="sect3d" id="ex3d">
 	<div>
 		<div>
 			<h2>В Rehab Family созданы идеальные <br>условия для выздоровления!</h2>
@@ -222,8 +199,8 @@
 <section class="video-sect" id="video-patient">
 	<div>
 		<div>
-			<h2>Посмотрите видео и узнайте почему более 75% пациентов Rehab Family навсегда <br> избавляются от наркотиков!</h2>
-			<div class="video-block narko" style="background-image: url(http://img.youtube.com/vi/fidDqjvPmZ0/0.jpg);">
+			<h2>Посмотрите видео и узнайте почему более 95% пациентов Rehab Family навсегда <br> избавляются от алкоголизма!</h2>
+			<div class="video-block alko" style="background-image: url(http://img.youtube.com/vi/fidDqjvPmZ0/0.jpg);">
 				<div class="video-btn"></div>
 			</div>
 			<div class="under-video">
@@ -765,6 +742,7 @@
 
 
 
+
 <div class="hidden-box">
 	<div id="callback-modal">
 		<div class="main-form">
@@ -805,6 +783,7 @@
 		<div class="box-modal_close arcticmodal-close">закрыть окно</div>
 	</div>
 </div>
+
 
 
 

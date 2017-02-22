@@ -695,7 +695,8 @@ body {
     color: #fff;
     line-height: 30px;
     font-size: 19px;
-    margin: 40px 0; }
+    margin: 40px 0;
+    padding: 0 10px; }
 
 .video-block {
   width: 100%;

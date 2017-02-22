@@ -950,20 +950,20 @@ input[type='text'], input[type='tel'], input[type='email'] {
 		font-size: 16px;
 	}
 	.video-block {
-		box-shadow: 0 65px 95px rgba(0,0,0,.3);
+		box-shadow: 0 35px 95px rgba(0,0,0,.3);
 		overflow: hidden;
 	}
 	.name {
-		width: 240px;
-		margin: 35px auto 0;
+		width: 960px;
+		margin: 35px auto 50px;
 		h4 {
 			font-family: $second-font;
 			font-weight: bold;
-			font-size: 14px;
+			font-size: 17px;
 			color: #fff;
 			margin-bottom: 10px;
 			line-height: 100%;
-			text-align: left;
+			text-align: center;
 		}
 		p {
 			color: #fff;

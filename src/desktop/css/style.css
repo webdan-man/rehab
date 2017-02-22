@@ -1061,20 +1061,20 @@ input[type='text'], input[type='tel'], input[type='email'] {
     margin: 10px 0 22px;
     font-size: 16px; }
   .reviews .video-block {
-    -webkit-box-shadow: 0 65px 95px rgba(0, 0, 0, 0.3);
-    box-shadow: 0 65px 95px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 35px 95px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 35px 95px rgba(0, 0, 0, 0.3);
     overflow: hidden; }
   .reviews .name {
-    width: 240px;
-    margin: 35px auto 0; }
+    width: 960px;
+    margin: 35px auto 50px; }
     .reviews .name h4 {
       font-family: "Roboto Slab", sans-serif;
       font-weight: bold;
-      font-size: 14px;
+      font-size: 17px;
       color: #fff;
       margin-bottom: 10px;
       line-height: 100%;
-      text-align: left; }
+      text-align: center; }
     .reviews .name p {
       color: #fff;
       font-size: 13px;

@@ -269,7 +269,7 @@ $(function(){
 		$( "#ans-right li.active" ).prev().css( "border-bottom", "none" );
 
 		//плавный переход меню
-		$('.menu .menu-list a').click(function(e){
+		$('.menu .menu-list a.navig').click(function(e){
 		  e.preventDefault();
 		  $("html, body").animate({ scrollTop: $($(this).attr('href')).offset().top}, 1000);
 		  $('body').css({
@@ -279,6 +279,7 @@ $(function(){
 		  $('.menu').removeClass('down');
 		    // $('.menu-btn').removeClass('as-close');
 		    $('.close-menu').fadeOut('100');
+		    // $('#close-menu').trigger('click');
 		});
 		
 		//bxSlider
