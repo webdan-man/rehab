@@ -517,8 +517,9 @@ input[type='text'], input[type='tel'], input[type='email'] {
 
 
 .bottom-contact {
-	min-height: 73px;
+	height: 73px;
 	background-color: #27292c;
+	overflow: hidden;
 }
 
 #right-button {
@@ -551,6 +552,7 @@ input[type='text'], input[type='tel'], input[type='email'] {
 	color: #ccc;
 	border-radius: 50px;
 	font-family: $main-font;
+	float: left;
 }
 
 /*Select */
@@ -1441,6 +1443,116 @@ footer {
 	padding-top: 8px;
 	box-shadow: 0 1px 8px rgba(0,0,0,.1);
 }
+
+#modal-3d iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+
+.wrap-tel-input {
+	height: 43px;
+	background-color: #4e5156;
+	border-radius: 20px;
+	box-shadow: inset 0 4px 2px rgba(0,0,0,0.14);
+	margin-bottom: 20px;
+	padding-left: 15px;
+	padding-bottom: 5px;
+	float: left;
+	span {
+		line-height: 43px;
+		font-size: 19px;
+	}
+	input {
+		height: 32px !important;
+		background-color: #6d6e70 !important;
+		border-radius: 10px !important;
+		padding: 0 5px;
+		color: #bbb;
+		text-align: center;
+	}
+}
+
+#header-form {
+	.wrap-tel-input {
+		width: 295px;
+		input:focus {
+			background-color: #eee !important;
+			color: #333;
+		}
+	}
+	.inp-tel-1 {width: 50px;}
+	.inp-tel-2 {width: 60px;}
+	.inp-tel-3 {width: 110px;}
+}
+#conference-form {
+	.wrap-tel-input {
+		width: 295px;
+		input {
+			background-color: #6d6e70;
+			padding: 5px;
+			border-radius: 10px;
+		}
+		input:focus {
+			background-color: #eee !important;
+		}
+	}
+	.inp-tel-1 {width: 40px;}
+	.inp-tel-2 {width: 60px;}
+	.inp-tel-3 {width: 120px;}
+}
+
+#calc-form {
+	.wrap-tel-input {
+		margin-top: 15px;
+		margin-left: 45px;
+		width: 220px;
+		height: 40px;
+		display: inline-block;
+		padding-left: 5px;
+		* {
+			display: block;
+			float: left;
+		}
+		input {margin: 5px 2px;}
+		input:focus {
+			background-color: #eee !important;
+			color: #333;
+		}
+	}
+	.inp-tel-1 {width: 30px;}
+	.inp-tel-2 {width: 40px;}
+	.inp-tel-3 {width: 100px;}
+}
+
+.person-name:focus {
+	background-color: #fff !important;
+	color: #000 !important;
+}
+
+.main-form input[type='text'],
+.main-form input[type='tel'] {
+	width:100%;
+	background-color:#4e5156;
+	color:#bbb;
+	font-family:"Roboto",sans-serif;
+	font-size:16px;
+	padding:12px 15px;
+	margin-bottom:20px;
+	-webkit-border-radius:20px;
+	border-radius:20px;
+	-webkit-box-shadow:inset 0 4px 2px rgba(0,0,0,0.14);
+	box-shadow:inset 0 4px 2px rgba(0,0,0,0.14);
+}
+
+
+
+
+
+
+
+
 
 
 @import "media";  //всегда в конце
