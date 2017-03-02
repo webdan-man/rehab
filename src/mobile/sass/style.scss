@@ -3,15 +3,18 @@
 @import "vars";
 @import "base";
 
-section {
-	@include sec();
-}
+section {@include sec();}
 
 body {
 	font-size: 100%;
 	-webkit-text-size-adjust: 100%;
 	     -ms-text-size-adjust: 100%;
 }
+
+::-webkit-input-placeholder {color:#333;}
+::-moz-placeholder          {color:#333;}/* Firefox 19+ */
+:-moz-placeholder           {color:#333;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#333;}
 
 // PROBLEM SECTION
 .problem {
@@ -1482,6 +1485,220 @@ footer {
 }
 
 .arcticmodal-container, .arcticmodal-overlay {z-index: 200;}
+
+
+
+.wrap-tel-input {
+	width: 100%;
+	height: 45px;
+	background-color: #4e5156;
+	border-radius: 20px;
+	box-shadow: inset 0 4px 2px rgba(0,0,0,0.14);
+	margin-bottom: 20px;
+	padding-left: 25px;
+	padding-bottom: 5px;
+	float: left;
+	span {
+		line-height: 43px;
+		font-size: 19px;
+	}
+	input {
+		height: 32px !important;
+		background-color: #6d6e70 !important;
+		border-radius: 10px !important;
+		padding: 0 5px;
+		color: #bbb;
+		text-align: center;
+	}
+}
+
+#header-form {
+	.wrap-tel-input {
+		background-color: #fff;
+		input {
+			background-color: #f9f9f9 !important;
+			color: #333;
+			box-shadow: none;
+		}
+		input:focus {
+			background-color: #eee !important;
+			color: #333;
+		}
+	}
+	.inp-tel-1 {width: 15%;padding: 0;}
+	.inp-tel-2 {width: 20%;}
+	.inp-tel-3 {width: 45%;}
+	::-webkit-input-placeholder {color:#333;}
+	::-moz-placeholder          {color:#333;}/* Firefox 19+ */
+	:-moz-placeholder           {color:#333;}/* Firefox 18- */
+	:-ms-input-placeholder      {color:#333;}
+}
+
+#conference-form {
+	.wrap-tel-input {
+		width: 100%;
+		input {
+			background-color: #6d6e70;
+			padding: 5px;
+			border-radius: 10px;
+		}
+		input:focus {background-color: #eee !important;}
+	}
+	.inp-tel-1 {width: 15%;padding: 0;}
+	.inp-tel-2 {width: 20%;}
+	.inp-tel-3 {width: 45%;}
+	::-webkit-input-placeholder {color:#eee;}
+	::-moz-placeholder          {color:#eee;}/* Firefox 19+ */
+	:-moz-placeholder           {color:#eee;}/* Firefox 18- */
+	:-ms-input-placeholder      {color:#eee;}
+}
+
+#calc-form {
+	.wrap-tel-input {
+		padding-left: 15px !important;
+		display: inline-block;
+		padding-left: 5px;
+		background-color: #fff;
+		* {
+			display: block;
+			float: left;
+		}
+		input {
+			margin: 5px 2px;
+			background-color: #fefefe !important;
+			color: #333;
+		}
+		input:focus {
+			background-color: #eee !important;
+			color: #333;
+		}
+	}
+	.inp-tel-1 {width: 15%;padding: 0;}
+	.inp-tel-2 {width: 20%;}
+	.inp-tel-3 {width: 45%;}
+	::-webkit-input-placeholder {color:#333;}
+	::-moz-placeholder          {color:#333;}/* Firefox 19+ */
+	:-moz-placeholder           {color:#333;}/* Firefox 18- */
+	:-ms-input-placeholder      {color:#333;}
+
+	.input-bottom {
+		background-color: #fff;
+		color: #333;
+	}
+}
+
+
+
+
+
+.dop-block {
+	background-image: url('../img/dop-block-bg.jpg');
+	::-webkit-input-placeholder {color:#eee;}
+	::-moz-placeholder          {color:#eee;}/* Firefox 19+ */
+	:-moz-placeholder           {color:#eee;}/* Firefox 18- */
+	:-ms-input-placeholder      {color:#eee;}
+	h2, h3, h4 {color: #fff;}
+	h2 {
+		margin: 50px 0 30px;
+		font-size: 34px;
+		&.bottom {
+			font-family: $main-font;
+			font-weight: 400;
+			font-size: 24px;
+			margin-top: 20px;
+		}
+		a {
+			
+			color: #fff;
+			text-decoration: none;
+			transition: all .25s;
+			&:hover {text-decoration: underline;}
+		}
+	}
+	h3 {
+		margin-bottom: 15px;
+		font-size: 24px;
+		font-family: $main-font;
+		font-weight: 400;
+	}
+	h4 {
+		margin-bottom: 15px;
+		font-size: 20px;
+		font-family: $main-font;
+		font-weight: 400;
+	}
+	.wrap-form {
+		width: 95%;
+		margin: 0 auto;
+		padding: 20px;
+		border: 1px solid #d0ec99;
+		border-top-left-radius: 50px;
+		border-bottom-left-radius: 30px;
+		border-bottom-right-radius: 30px;
+	}
+	#dop-block-form {
+		textarea {
+			background-color: #4e5156;
+			font-family: $main-font;
+			border-radius: 20px;
+			height: 140px;
+			width: 100%;
+			padding: 10px 20px 10px 20px;
+			font-size: 18px;
+			color: #ccc;
+			margin-bottom: 10px;
+			resize: none;
+		}
+		#dop-tel {
+			background-color: #4e5156;
+			font-family: $main-font;
+			border-radius: 20px;
+			width: 100%;
+			font-size: 18px;
+			padding: 13px 20px;
+			color: #ccc;
+			margin-bottom: 20px;
+		}
+		.wrap-tel-input {
+			width: 100%;
+			border-radius: 15px;
+			input {
+				background-color: #6d6e70;
+				padding: 9px;
+				border-radius: 10px;
+			}
+			input:focus {
+				background-color: #eee !important;
+			}
+		}
+		.inp-tel-1 {width: 50px;}
+		.inp-tel-2 {width: 90px;}
+		.inp-tel-3 {width: 160px;}
+
+		input[type='submit'] {
+			text-align: center;
+			width: 100%;
+			float: right;
+			border-bottom-right-radius: 25px;
+			border-top-left-radius: 25px;
+			border-bottom-left-radius: 25px;
+			padding: 10px;
+			color: #fff;
+			font-size: 17px;
+			font-family: $second-font;
+			cursor: pointer;
+			@include gradient-btn();
+			transition: all .25s;
+			box-shadow: 0 1px 1px #23943e;
+			&:hover {
+				opacity: .87;
+			}
+		}
+	}
+}
+
+
+
 
 
 @import "media";  //всегда в конце

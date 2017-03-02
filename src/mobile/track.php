@@ -11,5 +11,10 @@
   ga('create', 'UA-92252225-1', 'auto');
   ga('send', 'pageview');
 
+  var dimensionValue1 = 'cd1';
+  ga('set', 'dimension1', dimensionValue1);
+  var dimensionValue2 = 'cd2';
+  ga('set', 'dimension2', dimensionValue2);
+
 </script>
 

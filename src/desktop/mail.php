@@ -72,6 +72,7 @@ $frm = $_POST['frmid'];
 $name = $_POST['name'];
 $phone = $_POST['tel'];
 $email = $_POST['email'];
+$mess = $_POST['mess'];
 
 $for_who = $_POST['for-who'];
 $how_much_years = $_POST['years'];
@@ -115,6 +116,7 @@ $message .= "Сколько лет вы уже боритесь с зависи�
 $message .= "Ранее уже проходили лечения: $lech_before\n\n";
 $message .= "Были случаи агрессивного поведения: $agro\n\n";
 $message .= "Тип возможного заболевания: $type_ill\n\n";
+$message .= "Сообщение: $mess\n\n";
 
 // $message .= "Источник: $utm_source\n";
 // $message .= "Тип источника: $utm_medium\n";

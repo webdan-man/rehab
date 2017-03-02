@@ -10,13 +10,13 @@
 
 	<script> 
 	if (screen.width <= 800) { 
-	document.location = "/mobile/" + document.location.search; 
+	document.location = "/mobile/narkomania.php" + document.location.search; 
 	} 
 	</script>
 
 	<style type="text/css">
 		
-		.cssload-container{position:relative}.cssload-whirlpool,.cssload-whirlpool::after,.cssload-whirlpool::before{position:absolute;top:50%;left:50%;border:1px solid #c9e704;border-left-color:#000;border-radius:1124px;-o-border-radius:1124px;-ms-border-radius:1124px;-webkit-border-radius:1124px;-moz-border-radius:1124px}.cssload-whirlpool{margin:-28px 0 0 -28px;height:56px;width:56px;animation:cssload-rotate 1.15s linear infinite;-o-animation:cssload-rotate 1.15s linear infinite;-ms-animation:cssload-rotate 1.15s linear infinite;-webkit-animation:cssload-rotate 1.15s linear infinite;-moz-animation:cssload-rotate 1.15s linear infinite}.cssload-whirlpool::before{content:"";margin:-26px 0 0 -26px;height:50px;width:50px;animation:cssload-rotate 1.15s linear infinite;-o-animation:cssload-rotate 1.15s linear infinite;-ms-animation:cssload-rotate 1.15s linear infinite;-webkit-animation:cssload-rotate 1.15s linear infinite;-moz-animation:cssload-rotate 1.15s linear infinite}.cssload-whirlpool::after{content:"";margin:-33px 0 0 -33px;height:63px;width:63px;animation:cssload-rotate 2.3s linear infinite;-o-animation:cssload-rotate 2.3s linear infinite;-ms-animation:cssload-rotate 2.3s linear infinite;-webkit-animation:cssload-rotate 2.3s linear infinite;-moz-animation:cssload-rotate 2.3s linear infinite}@keyframes cssload-rotate{100%{transform:rotate(360deg)}}@-o-keyframes cssload-rotate{100%{-o-transform:rotate(360deg)}}@-ms-keyframes cssload-rotate{100%{-ms-transform:rotate(360deg)}}@-webkit-keyframes cssload-rotate{100%{-webkit-transform:rotate(360deg)}}@-moz-keyframes cssload-rotate{100%{-moz-transform:rotate(360deg)}}.pre-loader {position: fixed;top: 0;left: 0;right: 0;bottom: 0;width: 100%;height: 100%;z-index: 1000000;background-color: #fff;transition: transform .6s;}.cssload-container {top: 50%;}body.pre-loaded .pre-loader {transform: translate3d(0, -100%, 0);}.menu {transform: translate3d(0, -100%, 0);}body{font-family:"Roboto",sans-serif;font-size:16px;line-height:28px;color:#6d6e70;overflow-x:hidden;-webkit-font-smoothing:antialiased;font-weight:400;background-color:#fff}a,a:visited,a:focus{text-decoration:none;outline:none}input{border:none;outline:none}input:focus,textarea:focus{outline:0}h1,h2,h3,h4,h5,h6{font-family:"Roboto Slab",sans-serif,sans-serif}img{max-width:100%;height:auto}ul,ol{padding-left:0}li{list-style:none}*{margin:0;padding:0;-webkit-box-sizing:border-box;box-sizing:border-box;background-position:center;background-repeat:no-repeat}:after,:before{content:"";display:block;width:100%;height:0;clear:both}sup:after,sup:before,a:after,a:before,br:after,br:before,img:after,img:before,span:after,span:before,table:after,table:before,td:after,td:before,tr:after,tr:before{content:none}h1,h2,h3,h4,h5{font-size:1em;font-weight:inherit;text-align:center;font-family:"Roboto Slab",sans-serif;font-weight:400;letter-spacing:.01em}a{text-decoration:none;color:inherit;outline:0!important}button,input,textarea{outline:none}::-moz-selection{background-color:rgba(177,213,38,0.85)}::selection{background-color:rgba(177,213,38,0.85)}::-moz-selection{background-color:rgba(177,213,38,0.85)}.clearfix{clear:both!important}section.header > div > div,section.menu > div > div,section.problem > div > div{top:50%}h2{font-family:"Roboto Slab",sans-serif;color:#9ca20d;font-size:26px;font-weight:700}section{width:100%;min-width:980px;overflow:hidden;position:relative;z-index:2;min-height:600px;height:100vh;background-size:cover!important}section > div{max-width:980px;position:relative;z-index:2;height:100%;margin:0 auto}section > div > div{width:100%;position:absolute;height:600px;top:55%;margin-top:-300px}.header{background-image:url(img/header-bg.jpg)}.header .head{min-height:55px}.header .logo{float:left;height:55px;text-align: center;margin-top: -15px;}.header .logo img{height:125%;display: inline-block;}.header .logo p{font-family:"Roboto",sans-serif;font-size:15px;line-height:18px;margin-top:-6px}.header .callback{float:right;text-align:right;min-height:55px}.header .callback a{font-size:21px;font-weight:700;font-family:"Roboto Slab",sans-serif;color:#46494d}.header .callback a:hover{color:#9ca20d}.header .callback .callback-btn{font-size:14px;background-image:url(img/icon-callback.png);background-repeat:no-repeat;background-position:left center;cursor:pointer}.header .callback .callback-btn:hover{color:#9ca20d}.header .header-text{margin-top:15px}.header .header-text p {text-align: center;font-size: 20px;color: #46494d;font-family: 'Roboto Slab';margin-bottom: 25px;}.header .header-text h1{font-size:29px;color:#46494d;font-weight:700;line-height:36px}.header .header-text h2{margin:14px 0;font-size:22px;color:#696b6e;line-height:30px;font-weight:400}.header .header-text h2 span{font-weight:700}.header .header-video{width:460px;height:315px;background-image:url(img/header-video-bg.jpg);background-size:cover;background-position:center center;cursor:pointer;float:left;margin-right:38px;margin-left: 55px;margin-top:9px}.header .header-video .vid-over{width:100%;height:100%;text-align:center;line-height:315px;overflow:hidden;background-image: url('img/main-zaglushka.jpg');-webkit-background-size: cover;background-size: cover;}.header .header-video .vid-over img{vertical-align:middle;-webkit-transition:all .25s;transition:all .25s}.menu-btn{width:160px;min-height:55px;background-image:url(img/menu-toggle.png);background-repeat:no-repeat;background-position:top left;text-align:center;cursor:pointer;margin-right:240px;float:left;-webkit-transition:all .25s;transition:all .25s}.menu-btn span{font-family:"Roboto Slab",sans-serif;font-weight:700;font-size:13px;line-height:38px}.menu-btn:hover{background-image:url(img/menu-toggle-hover.png)}.menu-btn:hover span{color:#9ca20d}.main-form{width:365px;height:315px;float:left;margin-top:9px;background-color:#27292c;background-image:url(img/header-form-bg.png);-webkit-border-top-left-radius:30px;border-top-left-radius:30px;-webkit-border-bottom-right-radius:30px;border-bottom-right-radius:30px;padding:35px}.main-form p{font-size:16px;color:#fff;text-align:center;line-height:20px;margin-bottom:20px}.main-form #header-form > input[type='text'],.main-form #header-form > input[type='tel']{width:100%;background-color:#4e5156;color:#bbb;font-family:"Roboto",sans-serif;font-size:16px;padding:12px 15px;margin-bottom:20px;-webkit-border-radius:20px;border-radius:20px;-webkit-box-shadow:inset 0 4px 2px rgba(0,0,0,0.14);box-shadow:inset 0 4px 2px rgba(0,0,0,0.14)}.main-form input[type='submit']{text-align:center;width:100%;-webkit-border-bottom-right-radius:25px;border-bottom-right-radius:25px;-webkit-border-top-left-radius:25px;border-top-left-radius:25px;-webkit-border-bottom-left-radius:25px;border-bottom-left-radius:25px;padding:15px;color:#fff;font-size:17px;font-family:"Roboto Slab",sans-serif;cursor:pointer;background:#d7f004;background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,#d7f004),color-stop(100%,#7ab507));background:-webkit-linear-gradient(90deg,#7ab507 0%,#d7f004 100%);background:-webkit-gradient(linear,left bottom,left top,from(#7ab507),to(#d7f004));background:-webkit-linear-gradient(bottom,#7ab507 0%,#d7f004 100%);background:linear-gradient(0deg,#7ab507 0%,#d7f004 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#d7f004',endColorstr='#7ab507',GradientType=0);-webkit-transition:all .25s;transition:all .25s;-webkit-box-shadow:0 1px 1px #23943e;box-shadow:0 1px 1px #23943e}.main-form input[type='submit']:hover{opacity:.87}::-webkit-input-placeholder{color:rgba(255,255,255,0.3)}::-moz-placeholder{color:rgba(255,255,255,0.3)}:-moz-placeholder{color:rgba(255,255,255,0.3)}:-ms-input-placeholder{color:rgba(255,255,255,0.3)}#map1,#map2{width: 100%;height: 335px;}.video-btn {width: 90px;height: 90px;	display: inline-block;vertical-align: middle;transition: all .25s;background-image: url('../img/videobtn-bg.png');background-position: 53% 51%;background-color: #e62117;	border-radius: 50%;}.video-btn:hover {background-color: #cc181e;}
+		.cssload-container{position:relative}.cssload-whirlpool,.cssload-whirlpool::after,.cssload-whirlpool::before{position:absolute;top:50%;left:50%;border:1px solid #c9e704;border-left-color:#000;border-radius:1124px;-o-border-radius:1124px;-ms-border-radius:1124px;-webkit-border-radius:1124px;-moz-border-radius:1124px}.cssload-whirlpool{margin:-28px 0 0 -28px;height:56px;width:56px;animation:cssload-rotate 1.15s linear infinite;-o-animation:cssload-rotate 1.15s linear infinite;-ms-animation:cssload-rotate 1.15s linear infinite;-webkit-animation:cssload-rotate 1.15s linear infinite;-moz-animation:cssload-rotate 1.15s linear infinite}.cssload-whirlpool::before{content:"";margin:-26px 0 0 -26px;height:50px;width:50px;animation:cssload-rotate 1.15s linear infinite;-o-animation:cssload-rotate 1.15s linear infinite;-ms-animation:cssload-rotate 1.15s linear infinite;-webkit-animation:cssload-rotate 1.15s linear infinite;-moz-animation:cssload-rotate 1.15s linear infinite}.cssload-whirlpool::after{content:"";margin:-33px 0 0 -33px;height:63px;width:63px;animation:cssload-rotate 2.3s linear infinite;-o-animation:cssload-rotate 2.3s linear infinite;-ms-animation:cssload-rotate 2.3s linear infinite;-webkit-animation:cssload-rotate 2.3s linear infinite;-moz-animation:cssload-rotate 2.3s linear infinite}@keyframes cssload-rotate{100%{transform:rotate(360deg)}}@-o-keyframes cssload-rotate{100%{-o-transform:rotate(360deg)}}@-ms-keyframes cssload-rotate{100%{-ms-transform:rotate(360deg)}}@-webkit-keyframes cssload-rotate{100%{-webkit-transform:rotate(360deg)}}@-moz-keyframes cssload-rotate{100%{-moz-transform:rotate(360deg)}}.pre-loader {position: fixed;top: 0;left: 0;right: 0;bottom: 0;width: 100%;height: 100%;z-index: 1000000;background-color: #fff;transition: transform .6s;}.cssload-container {top: 50%;}body.pre-loaded .pre-loader {transform: translate3d(0, -100%, 0);}.menu {transform: translate3d(0, -100%, 0);}body{font-family:"Roboto",sans-serif;font-size:16px;line-height:28px;color:#6d6e70;overflow-x:hidden;-webkit-font-smoothing:antialiased;font-weight:400;background-color:#fff}a,a:visited,a:focus{text-decoration:none;outline:none}input{border:none;outline:none}input:focus,textarea:focus{outline:0}h1,h2,h3,h4,h5,h6{font-family:"Roboto Slab",sans-serif,sans-serif}img{max-width:100%;height:auto}ul,ol{padding-left:0}li{list-style:none}*{margin:0;padding:0;-webkit-box-sizing:border-box;box-sizing:border-box;background-position:center;background-repeat:no-repeat}:after,:before{content:"";display:block;width:100%;height:0;clear:both}sup:after,sup:before,a:after,a:before,br:after,br:before,img:after,img:before,span:after,span:before,table:after,table:before,td:after,td:before,tr:after,tr:before{content:none}h1,h2,h3,h4,h5{font-size:1em;font-weight:inherit;text-align:center;font-family:"Roboto Slab",sans-serif;font-weight:400;letter-spacing:.01em}a{text-decoration:none;color:inherit;outline:0!important}button,input,textarea{outline:none}::-moz-selection{background-color:rgba(177,213,38,0.85)}::selection{background-color:rgba(177,213,38,0.85)}::-moz-selection{background-color:rgba(177,213,38,0.85)}.clearfix{clear:both!important}section.header > div > div,section.menu > div > div,section.problem > div > div{top:50%}h2{font-family:"Roboto Slab",sans-serif;color:#9ca20d;font-size:26px;font-weight:700}section{width:100%;min-width:980px;overflow:hidden;position:relative;z-index:2;min-height:600px;height:100vh;background-size:cover!important}section > div{max-width:980px;position:relative;z-index:2;height:100%;margin:0 auto}section > div > div{width:100%;position:absolute;height:600px;top:55%;margin-top:-300px}.header{background-image:url(img/header-bg.jpg)}.header .head{min-height:55px}.header .logo{float:left;height:55px;text-align: center;margin-top: -15px;}.header .logo img{height:125%;display: inline-block;}.header .logo p{font-family:"Roboto",sans-serif;font-size:15px;line-height:18px;margin-top:-6px}.header .callback{float:right;text-align:right;min-height:55px}.header .callback a{font-size:21px;font-weight:700;font-family:"Roboto Slab",sans-serif;color:#46494d}.header .callback a:hover{color:#9ca20d}.header .callback .callback-btn{font-size:14px;background-image:url(img/icon-callback.png);background-repeat:no-repeat;background-position:left center;cursor:pointer}.header .callback .callback-btn:hover{color:#9ca20d}.header .header-text{margin-top:15px}.header .header-text p {text-align: center;font-size: 20px;color: #46494d;font-family: 'Roboto Slab';margin-bottom: 25px;}.header .header-text h1{font-size:29px;color:#46494d;font-weight:700;line-height:36px}.header .header-text h2{margin:14px 0;font-size:22px;color:#696b6e;line-height:30px;font-weight:400}.header .header-text h2 span{font-weight:700}.header .header-video{width:460px;height:315px;background-image:url(img/header-video-bg.jpg);background-size:cover;background-position:center center;cursor:pointer;float:left;margin-right:38px;margin-left: 55px;margin-top:9px}.header .header-video .vid-over{width:100%;height:100%;text-align:center;line-height:315px;overflow:hidden;background-image: url('img/main-zaglushka.jpg');-webkit-background-size: cover;background-size: cover;}.header .header-video .vid-over img{vertical-align:middle;-webkit-transition:all .25s;transition:all .25s}.menu-btn{width:160px;min-height:55px;background-image:url(img/menu-toggle.png);background-repeat:no-repeat;background-position:top left;text-align:center;cursor:pointer;margin-right:240px;float:left;-webkit-transition:all .25s;transition:all .25s}.menu-btn span{font-family:"Roboto Slab",sans-serif;font-weight:700;font-size:13px;line-height:38px}.menu-btn:hover{background-image:url(img/menu-toggle-hover.png)}.menu-btn:hover span{color:#9ca20d}.main-form{width:365px;height:315px;float:left;margin-top:9px;background-color:#27292c;background-image:url(img/header-form-bg.png);-webkit-border-top-left-radius:30px;border-top-left-radius:30px;-webkit-border-bottom-right-radius:30px;border-bottom-right-radius:30px;padding:35px}.main-form p{font-size:16px;color:#fff;text-align:center;line-height:20px;margin-bottom:20px}.main-form #header-form > input[type='text'],.main-form #header-form > input[type='tel']{width:100%;background-color:#fff;color:#333;font-family:"Roboto",sans-serif;font-size:16px;padding:12px 15px;margin-bottom:20px;-webkit-border-radius:20px;border-radius:20px;-webkit-box-shadow:inset 0 4px 2px rgba(0,0,0,0.14);box-shadow:inset 0 4px 2px rgba(0,0,0,0.14)}.main-form input[type='submit']{text-align:center;width:100%;-webkit-border-bottom-right-radius:25px;border-bottom-right-radius:25px;-webkit-border-top-left-radius:25px;border-top-left-radius:25px;-webkit-border-bottom-left-radius:25px;border-bottom-left-radius:25px;padding:15px;color:#fff;font-size:17px;font-family:"Roboto Slab",sans-serif;cursor:pointer;background:#d7f004;background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,#d7f004),color-stop(100%,#7ab507));background:-webkit-linear-gradient(90deg,#7ab507 0%,#d7f004 100%);background:-webkit-gradient(linear,left bottom,left top,from(#7ab507),to(#d7f004));background:-webkit-linear-gradient(bottom,#7ab507 0%,#d7f004 100%);background:linear-gradient(0deg,#7ab507 0%,#d7f004 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#d7f004',endColorstr='#7ab507',GradientType=0);-webkit-transition:all .25s;transition:all .25s;-webkit-box-shadow:0 1px 1px #23943e;box-shadow:0 1px 1px #23943e}.main-form input[type='submit']:hover{opacity:.87}::-webkit-input-placeholder{color:rgba(255,255,255,0.3)}::-moz-placeholder{color:rgba(255,255,255,0.3)}:-moz-placeholder{color:rgba(255,255,255,0.3)}:-ms-input-placeholder{color:rgba(255,255,255,0.3)}#map1,#map2{width: 100%;height: 335px;}.video-btn {width: 90px;height: 90px;	display: inline-block;vertical-align: middle;transition: all .25s;background-image: url('../img/videobtn-bg.png');background-position: 53% 51%;background-color: #e62117;	border-radius: 50%;}.video-btn:hover {background-color: #cc181e;}
 
 	</style>
 
@@ -34,6 +34,26 @@
 	__cs.push(["setCsHost", "//server.comagic.ru/comagic"]);
 	</script>
 	<script type="text/javascript" async src="//app.comagic.ru/static/cs.min.js"></script>
+
+	<!-- Facebook Pixel Code -->
+	<script>
+	!function(f,b,e,v,n,t,s)
+	{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+	n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+	if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+	n.queue=[];t=b.createElement(e);t.async=!0;
+	t.src=v;s=b.getElementsByTagName(e)[0];
+	s.parentNode.insertBefore(t,s)}(window,document,'script',
+	'https://connect.facebook.net/en_US/fbevents.js');
+	 fbq('init', '1226360984095417'); 
+	fbq('track', 'PageView');
+	</script>
+	<noscript>
+	 <img height="1" width="1" 
+	src="https://www.facebook.com/tr?id=1226360984095417&ev=PageView
+	&noscript=1"/>
+	</noscript>
+	<!-- End Facebook Pixel Code -->
 
 </head>
 <body>
@@ -53,7 +73,7 @@
 					<img src="img/logo.png" alt="logo">
 				</div>
 				<div class="callback">
-					<a href="tel:74952120887" class="comagic_phone_link">7 495 212 08 87</a>
+					<a href="tel:74953200124" class="comagic_phone_link">7 495 320 01 24</a>
 					<div class="callback-btn">Заказать звонок</div>
 				</div>
 			</div>
@@ -71,8 +91,8 @@
 				<form id="header-form">
 					<p>Запишитесь на бесплатную <br>консультацию психиатора нарколога</p>
 					<input class="person-name" type="text" name="name" placeholder="Ваше имя">
-					<!-- <input class="person-tel masked" type="tel" name="tel" placeholder="Ваш телефон"> -->
-					<div class="wrap-tel-input">
+					<input class="person-tel masked" type="tel" name="tel" placeholder="Ваш телефон">
+					<!-- <div class="wrap-tel-input">
 						<span>+</span>
 						<input class="inp-tel-1" type="text" maxlength="2" placeholder="__">
 						<span>(</span>
@@ -80,11 +100,12 @@
 						<span>)</span>
 						<input class="inp-tel-3 tel-mask" type="text" placeholder="___-__-__">
 						<input type="hidden" name="tel" class="full_phone">
-					</div>
+					</div> -->
 					<input type="hidden" name="frmid" value="Форма в хедере">
 					<input type="hidden" name="event" value="header_form">
 					<input class="send-form" type="submit" value="Заказать звонок">
 				</form>
+				<a href="#" class="politics">Политика конфиденциальности</a>
 			</div>
 		</div>
 	</div>
@@ -100,7 +121,7 @@
 				<li><a class="navig" href="#ex3d">3d экскурсия</a></li>
 				<li><a class="navig" href="#video-patient">Видео о пациентах</a></li>
 				<li><a class="navig" href="#answers">Ответы на вопросы</a></li>
-				<li><a class="navig" href="#reviews">Отзывы пациентов</a></li>
+				<li><a class="navig" href="#reviews">Отзывы о клинике</a></li>
 				<li><a class="navig" href="#specialists">Специалисты Rehab Family</a></li>
 				<li><a class="navig" href="#conf">Записаться на конференцию</a></li>
 				<br>
@@ -128,7 +149,7 @@
 			<div class="write-consult">Записаться на консультацию</div>
 		</div>
 		<div class="callback-fixed">
-			<a href="tel:+74952120887">7 495 212 08 87</a>
+			<a href="tel:+74953200124">7 495 320 01 24</a>
 		</div>
 	</div>
 </nav>
@@ -208,8 +229,8 @@
 					</div>
 					<div class="bottom-contact">
 						<input id="calc-name" class="input-bottom" type="text" name="name" placeholder="Ваше имя">
-						<!-- <input id="calc-tel" class="input-bottom masked" type="tel" name="tel" placeholder="Ваш телефон"> -->
-						<div class="wrap-tel-input">
+						<input id="calc-tel" class="input-bottom masked" type="tel" name="tel" placeholder="Ваш телефон">
+						<!-- <div class="wrap-tel-input">
 							<span>+</span>
 							<input class="inp-tel-1" type="text" maxlength="2" placeholder="__">
 							<span>(</span>
@@ -217,218 +238,13 @@
 							<span>)</span>
 							<input class="inp-tel-3 tel-mask" type="text" placeholder="___-__-__">
 							<input type="hidden" name="tel" class="full_phone">
-						</div>
+						</div> -->
 						<input type="hidden" name="frmid" value="Форма-калькулятор (наркомания)">
 						<input type="hidden" name="event" value="calc_narko_form">
 						<input id="right-button" type="submit" value="Узнать стоимость">
 					</div>
 				</form>
 			</div>
-		</div>
-	</div>
-</section>
-
-<section class="sect3d" id="ex3d">
-	<div>
-		<div>
-			<h2>В Rehab Family созданы идеальные условия для <br> выздоровления!</h2>
-			<h3>Комфортные номера, бассейн, баня, спортивный зал, зоны отдыха, бильярд, <br>кинотеатр. библиотека и многое другое - убедитесь сами, пройдите нашу <br> виртуальную экскурсию!</h3>
-			<div class="frame-3d">
-				<div class="btn-3d">
-					<div class="left-part"></div>
-					<div class="right-part">начать 3D экскурсию</div>
-				</div>
-			</div>
-			<div class="under-frame">
-				По-настоящему домашняя уютная атмосфера !
-			</div>
-		</div>
-	</div>
-</section>
-
-<section class="video-sect" id="video-patient">
-	<div>
-		<div>
-			<h2>Посмотрите видео и узнайте почему более <br> 95% пациентов Rehab Family навсегда <br> избавляются от наркотиков!</h2>
-			<div class="video-block narko" style="background-image: url(http://img.youtube.com/vi/fidDqjvPmZ0/0.jpg);">
-				<div class="video-btn"></div>
-			</div>
-			<div class="under-video">
-				Гарантия 2 года после прохождения курса !
-			</div>
-		</div>
-	</div>
-</section>
-
-<section class="answers" id="answers">
-	<div>
-		<div>
-			<h2>Ответы на самые популярные вопросы от главного <br> врача Rehab Family</h2>
-			<div class="tabs" id="ans-wrap">
-				
-				<div id="ans-left">
-					<div class="content-tabs-wrap">
-						<div class="tabs__content active">
-							<h3>Он никуда не хочет ехать! Что мне делать?</h3>
-							<div class="ans-video vid-1"  style="background-image: url(http://img.youtube.com/vi/sM3MDtjBIXA/0.jpg);"><div class="video-btn"></div></div>
-							<h4>Курлович Николай Михайлович</h4>
-							<p>Главный врач Rehab Family</p>
-						</div>
-						<div class="tabs__content">
-							<h3>У меня нет денег на такое лечение, что делать?</h3>
-							<div class="ans-video vid-2"  style="background-image: url(http://img.youtube.com/vi/-Rl558Y3Uag/0.jpg);">
-								<div class="video-btn"></div>
-							</div>
-							<h4>Курлович Николай Михайлович</h4>
-							<p>Главный врач Rehab Family</p>
-						</div>
-						<div class="tabs__content">
-							<h3>За 30 дней никого вылечить невозможно!</h3>
-							<div class="ans-video vid-3"  style="background-image: url(http://img.youtube.com/vi/V0SIvVYKzZs/0.jpg);">
-								<div class="video-btn"></div>
-							</div>
-							<h4>Курлович Николай Михайлович</h4>
-							<p>Главный врач Rehab Family</p>
-						</div>
-						<div class="tabs__content">
-							<h3>Почему в других клиниках не вылечили, а у вас вылечат?</h3>
-							<div class="ans-video vid-4"  style="background-image: url(http://img.youtube.com/vi/GCTtu1zNv_A/0.jpg);">
-								<div class="video-btn"></div>
-							</div>
-							<h4>Курлович Николай Михайлович</h4>
-							<p>Главный врач Rehab Family</p>
-						</div>
-						<div class="tabs__content">
-							<h3>Используете ли вы <br> Миннисотскую <br> программу 12 шагов?</h3>
-							<div class="ans-video vid-5"  style="background-image: url(http://img.youtube.com/vi/sM3MDtjBIXA/0.jpg);">
-								<div class="video-btn"></div>
-							</div>
-							<h4>Курлович Николай Михайлович</h4>
-							<p>Главный врач Rehab Family</p>
-						</div>
-						<div class="tabs__content">
-							<h3>Он (она) после вашего лечения станет овощем !</h3>
-							<div class="ans-video vid-6"  style="background-image: url(http://img.youtube.com/vi/YxyZ467eQYA/0.jpg);">
-								<div class="video-btn"></div>
-							</div>
-							<h4>Курлович Николай Михайлович</h4>
-							<p>Главный врач Rehab Family</p>
-						</div>
-						<!-- <div class="tabs__content">
-							<h3>Коммерческие клиники только выкачивают деньги </h3>
-							<div class="ans-video vid-7">
-								<div class="video-btn"></div>
-							</div>
-							<h4>Курлович Николай Михайлович</h4>
-							<p>Главный врач Rehab Family</p>
-						</div> -->
-						<div class="tabs__content" >
-							<h3>Препараты, которыми вы лечите вызывают зависимость!</h3>
-							<div class="ans-video vid-8" style="background-image: url(http://img.youtube.com/vi/YqISf4TYe_c/0.jpg);">
-								<div class="video-btn"></div>
-							</div>
-							<h4>Курлович Николай Михайлович</h4>
-							<p>Главный врач Rehab Family</p>
-						</div>
-						<div class="tabs__content">
-							<h3>Ваша клиника располагается далеко от города.</h3>
-							<div class="ans-video vid-9"  style="background-image: url(http://img.youtube.com/vi/Mtf8lSz2jTk/0.jpg);">
-								<div class="video-btn"></div>
-							</div>
-							<h4>Курлович Николай Михайлович</h4>
-							<p>Главный врач Rehab Family</p>
-						</div>
-						<!-- <div class="tabs__content">
-							<h3>Мы слышали, что ваши группы заменяют семью, чуть ли не секта...</h3>
-							<div class="ans-video vid-1">
-								<div class="video-btn"></div>
-							</div>
-							<h4>Курлович Николай Михайлович</h4>
-							<p>Главный врач Rehab Family</p>
-						</div> -->
-					</div>
-				</div>
-				<div id="ans-right" class="mScroll">
-					<ul class="tabs__caption">
-						<li class="active">Он никуда не хочет ехать! Что мне делать?</li>
-						<li>У меня нет денег на такое лечение, что делать?</li>
-						<li>За 30 дней никого вылечить невозможно!</li>
-						<li>Почему в других клиниках не вылечили, а у вас вылечат?</li>
-						<li>Используете ли вы Миннисотскую программу 12 шагов?</li>
-						<li>Он (она) после вашего лечения станет овощем !</li>
-						<!-- <li>Коммерческие клиники только выкачивают деньги</li> -->
-						<li>Препараты, которыми вы лечите вызывают зависимость!</li>
-						<li>Ваша клиника располагается далеко от города.</li>
-						<!-- <li>Мы слышали, что ваши группы заменяют семью, чуть ли не секта...</li> -->
-					</ul>
-				</div>
-			</div>
-
-		</div>
-	</div>
-</section>
-
-<section class="reviews" id="reviews">
-	<div>
-		<div>
-			<h2>За 6 лет работы Rehab Family мы помогли тысячам людей!</h2>
-			<h3>Отзывы некоторых из них:</h3>
-			<ul class="slider-wrap bxslider">
-				<li>
-					<div class="video-block vid-1" style="background-image: url(http://img.youtube.com/vi/AXf2W_Em2mo/0.jpg);">
-						<div class="video-btn"></div>
-					</div>
-					<div class="name">
-						<h4>Прыгунов о Рехаб Фэмили</h4>
-						<!-- <p>Проходил лечение в августе 2013 г</p> -->
-					</div>
-				</li>
-				<li>
-					<div class="video-block vid-2" style="background-image: url(http://img.youtube.com/vi/m6v8ROKH1Yg/0.jpg);">
-						<div class="video-btn"></div>
-					</div>
-					<div class="name">
-						<h4>Аполлонов о Рехаб Фэмили</h4>
-						<!-- <p>Проходил лечение в августе 2013 г</p> -->
-					</div>
-				</li>
-				<li>
-					<div class="video-block vid-3" style="background-image: url(http://img.youtube.com/vi/qTOGRR5CN5c/0.jpg);">
-						<div class="video-btn"></div>
-					</div>
-					<div class="name">
-						<h4>Юлия Панова</h4>
-						<!-- <p>Проходил лечение в августе 2013 г</p> -->
-					</div>
-				</li>
-				<li>
-					<div class="video-block vid-4" style="background-image: url(http://img.youtube.com/vi/UEDir9glviw/0.jpg);">
-						<div class="video-btn"></div>
-					</div>
-					<div class="name">
-						<h4>Отзыв жены</h4>
-						<!-- <p>Проходил лечение в августе 2013 г</p> -->
-					</div>
-				</li>
-				<li>
-					<div class="video-block vid-6" style="background-image: url(http://img.youtube.com/vi/KxPJ-DIWwZw/0.jpg);">
-						<div class="video-btn"></div>
-					</div>
-					<div class="name">
-						<h4>Отзыв мамы</h4>
-						<!-- <p>Проходил лечение в августе 2013 г</p> -->
-					</div>
-				</li>
-				<li>
-					<div class="video-block vid-5" style="background-image: url(http://img.youtube.com/vi/ON0wf8r2xwU/0.jpg);">
-						<div class="video-btn"></div>
-					</div>
-					<div class="name">
-						<h4>Мазаев о Рехаб Фэмили</h4>
-						<!-- <p>Проходил лечение в августе 2013 г</p> -->
-					</div>
-				</li>
-			</ul>
 		</div>
 	</div>
 </section>
@@ -653,6 +469,237 @@
 	</div>
 </section>
 
+<section class="dop-block">
+	<div>
+		<div>
+			<h2>Проблема не исчезнет сама по себе!</h2>
+			<h3>Более 95% пациентов в нашей клинике <br>полностью выздоравливают!</h3>
+			<h4>Опишите вашу историю, оставьте контакт и мы поможем Вам и Вашим близким!</h4>
+			<div class="wrap-form">
+				<form id="dop-block-form">
+					<textarea name="mess" placeholder="Введите сообщение" id="area_mess"></textarea>
+					<div class="wrap-tel-input">
+						<span>+</span>
+						<input class="inp-tel-1" type="text" maxlength="2" placeholder="__">
+						<span>(</span>
+						<input class="inp-tel-2" type="text" maxlength="3" placeholder="___">
+						<span>)</span>
+						<input class="inp-tel-3 tel-mask" type="text" placeholder="___-__-__">
+						<input type="hidden" name="tel" class="full_phone">
+					</div>
+					<input type="submit" value="Решить проблему">
+				</form>
+			</div>
+			<h2 class="bottom">Или звоните: <a href="tel:+74953200124">+7 (495) 320-01-24</a>, мы работаем 24/7</h2>
+		</div>
+	</div>
+</section>
+
+<section class="sect3d" id="ex3d">
+	<div>
+		<div>
+			<h2>В Rehab Family созданы идеальные условия для <br> выздоровления!</h2>
+			<h3>Комфортные номера, бассейн, баня, спортивный зал, зоны отдыха, бильярд, <br>кинотеатр. библиотека и многое другое - убедитесь сами, пройдите нашу <br> виртуальную экскурсию!</h3>
+			<div class="frame-3d">
+				<div class="btn-3d">
+					<div class="left-part"></div>
+					<div class="right-part">начать 3D экскурсию</div>
+				</div>
+			</div>
+			<div class="under-frame">
+				По-настоящему домашняя уютная атмосфера !
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="video-sect" id="video-patient">
+	<div>
+		<div>
+			<h2>Посмотрите видео и узнайте почему более <br> 95% пациентов Rehab Family навсегда <br> избавляются от наркотиков!</h2>
+			<div class="video-block narko" style="background-image: url(http://img.youtube.com/vi/fidDqjvPmZ0/0.jpg);">
+				<div class="video-btn"></div>
+			</div>
+			<div class="under-video">
+				Гарантия 2 года после прохождения курса !
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="answers" id="answers">
+	<div>
+		<div>
+			<h2>Ответы на самые популярные вопросы от главного <br> врача Rehab Family</h2>
+			<div class="tabs" id="ans-wrap">
+				
+				<div id="ans-left">
+					<div class="content-tabs-wrap">
+						<div class="tabs__content active">
+							<h3>Он никуда не хочет ехать! Что мне делать?</h3>
+							<div class="ans-video vid-1"  style="background-image: url(http://img.youtube.com/vi/sM3MDtjBIXA/0.jpg);"><div class="video-btn"></div></div>
+							<h4>Курлович Николай Михайлович</h4>
+							<p>Главный врач Rehab Family</p>
+						</div>
+						<div class="tabs__content">
+							<h3>У меня нет денег на такое лечение, что делать?</h3>
+							<div class="ans-video vid-2"  style="background-image: url(http://img.youtube.com/vi/-Rl558Y3Uag/0.jpg);">
+								<div class="video-btn"></div>
+							</div>
+							<h4>Курлович Николай Михайлович</h4>
+							<p>Главный врач Rehab Family</p>
+						</div>
+						<div class="tabs__content">
+							<h3>За 30 дней никого вылечить невозможно!</h3>
+							<div class="ans-video vid-3"  style="background-image: url(http://img.youtube.com/vi/V0SIvVYKzZs/0.jpg);">
+								<div class="video-btn"></div>
+							</div>
+							<h4>Курлович Николай Михайлович</h4>
+							<p>Главный врач Rehab Family</p>
+						</div>
+						<div class="tabs__content">
+							<h3>Почему в других клиниках не вылечили, а у вас вылечат?</h3>
+							<div class="ans-video vid-4"  style="background-image: url(http://img.youtube.com/vi/GCTtu1zNv_A/0.jpg);">
+								<div class="video-btn"></div>
+							</div>
+							<h4>Курлович Николай Михайлович</h4>
+							<p>Главный врач Rehab Family</p>
+						</div>
+						<div class="tabs__content">
+							<h3>Используете ли вы <br> Миннисотскую <br> программу 12 шагов?</h3>
+							<div class="ans-video vid-5"  style="background-image: url(http://img.youtube.com/vi/sM3MDtjBIXA/0.jpg);">
+								<div class="video-btn"></div>
+							</div>
+							<h4>Курлович Николай Михайлович</h4>
+							<p>Главный врач Rehab Family</p>
+						</div>
+						<div class="tabs__content">
+							<h3>Он (она) после вашего лечения станет овощем !</h3>
+							<div class="ans-video vid-6"  style="background-image: url(http://img.youtube.com/vi/YxyZ467eQYA/0.jpg);">
+								<div class="video-btn"></div>
+							</div>
+							<h4>Курлович Николай Михайлович</h4>
+							<p>Главный врач Rehab Family</p>
+						</div>
+						<!-- <div class="tabs__content">
+							<h3>Коммерческие клиники только выкачивают деньги </h3>
+							<div class="ans-video vid-7">
+								<div class="video-btn"></div>
+							</div>
+							<h4>Курлович Николай Михайлович</h4>
+							<p>Главный врач Rehab Family</p>
+						</div> -->
+						<div class="tabs__content" >
+							<h3>Препараты, которыми вы лечите вызывают зависимость!</h3>
+							<div class="ans-video vid-8" style="background-image: url(http://img.youtube.com/vi/YqISf4TYe_c/0.jpg);">
+								<div class="video-btn"></div>
+							</div>
+							<h4>Курлович Николай Михайлович</h4>
+							<p>Главный врач Rehab Family</p>
+						</div>
+						<div class="tabs__content">
+							<h3>Ваша клиника располагается далеко от города.</h3>
+							<div class="ans-video vid-9"  style="background-image: url(http://img.youtube.com/vi/Mtf8lSz2jTk/0.jpg);">
+								<div class="video-btn"></div>
+							</div>
+							<h4>Курлович Николай Михайлович</h4>
+							<p>Главный врач Rehab Family</p>
+						</div>
+						<!-- <div class="tabs__content">
+							<h3>Мы слышали, что ваши группы заменяют семью, чуть ли не секта...</h3>
+							<div class="ans-video vid-1">
+								<div class="video-btn"></div>
+							</div>
+							<h4>Курлович Николай Михайлович</h4>
+							<p>Главный врач Rehab Family</p>
+						</div> -->
+					</div>
+				</div>
+				<div id="ans-right" class="mScroll">
+					<ul class="tabs__caption">
+						<li class="active">Он никуда не хочет ехать! Что мне делать?</li>
+						<li>У меня нет денег на такое лечение, что делать?</li>
+						<li>За 30 дней никого вылечить невозможно!</li>
+						<li>Почему в других клиниках не вылечили, а у вас вылечат?</li>
+						<li>Используете ли вы Миннисотскую программу 12 шагов?</li>
+						<li>Он (она) после вашего лечения станет овощем !</li>
+						<!-- <li>Коммерческие клиники только выкачивают деньги</li> -->
+						<li>Препараты, которыми вы лечите вызывают зависимость!</li>
+						<li>Ваша клиника располагается далеко от города.</li>
+						<!-- <li>Мы слышали, что ваши группы заменяют семью, чуть ли не секта...</li> -->
+					</ul>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</section>
+
+<section class="reviews" id="reviews">
+	<div>
+		<div>
+			<h2>За 6 лет работы Rehab Family мы помогли тысячам людей!</h2>
+			<h3>Отзывы некоторых из них:</h3>
+			<ul class="slider-wrap bxslider">
+				<li>
+					<div class="video-block vid-1" style="background-image: url(http://img.youtube.com/vi/AXf2W_Em2mo/0.jpg);">
+						<div class="video-btn"></div>
+					</div>
+					<div class="name">
+						<h4>Прыгунов о Рехаб Фэмили</h4>
+						<!-- <p>Проходил лечение в августе 2013 г</p> -->
+					</div>
+				</li>
+				<li>
+					<div class="video-block vid-2" style="background-image: url(http://img.youtube.com/vi/m6v8ROKH1Yg/0.jpg);">
+						<div class="video-btn"></div>
+					</div>
+					<div class="name">
+						<h4>Аполлонов о Рехаб Фэмили</h4>
+						<!-- <p>Проходил лечение в августе 2013 г</p> -->
+					</div>
+				</li>
+				<li>
+					<div class="video-block vid-3" style="background-image: url(http://img.youtube.com/vi/qTOGRR5CN5c/0.jpg);">
+						<div class="video-btn"></div>
+					</div>
+					<div class="name">
+						<h4>Юлия Панова</h4>
+						<!-- <p>Проходил лечение в августе 2013 г</p> -->
+					</div>
+				</li>
+				<li>
+					<div class="video-block vid-4" style="background-image: url(http://img.youtube.com/vi/UEDir9glviw/0.jpg);">
+						<div class="video-btn"></div>
+					</div>
+					<div class="name">
+						<h4>Отзыв жены</h4>
+						<!-- <p>Проходил лечение в августе 2013 г</p> -->
+					</div>
+				</li>
+				<li>
+					<div class="video-block vid-6" style="background-image: url(http://img.youtube.com/vi/KxPJ-DIWwZw/0.jpg);">
+						<div class="video-btn"></div>
+					</div>
+					<div class="name">
+						<h4>Отзыв мамы</h4>
+						<!-- <p>Проходил лечение в августе 2013 г</p> -->
+					</div>
+				</li>
+				<li>
+					<div class="video-block vid-5" style="background-image: url(http://img.youtube.com/vi/ON0wf8r2xwU/0.jpg);">
+						<div class="video-btn"></div>
+					</div>
+					<div class="name">
+						<h4>Мазаев о Рехаб Фэмили</h4>
+						<!-- <p>Проходил лечение в августе 2013 г</p> -->
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</section>
+
 <section class="conference" id="conf">
 	<div>
 		<div>
@@ -667,8 +714,8 @@
 				<div class="right-part">
 					<form id="conference-form">
 						<input class="person-name-conference" type="text" name="name" placeholder="Ваше имя">
-						<!-- <input class="person-tel-conference masked" type="tel" name="tel" placeholder="Ваш телефон"> -->
-						<div class="wrap-tel-input">
+						<input class="person-tel-conference masked" type="tel" name="tel" placeholder="Ваш телефон">
+						<!-- <div class="wrap-tel-input">
 							<span>+</span>
 							<input class="inp-tel-1" type="text" maxlength="2" placeholder="__">
 							<span>(</span>
@@ -676,7 +723,7 @@
 							<span>)</span>
 							<input class="inp-tel-3 tel-mask" type="text" placeholder="___-__-__">
 							<input type="hidden" name="tel" class="full_phone">
-						</div>
+						</div> -->
 						<input class="person-email-conference" type="email" name="email" placeholder="Ваш email">
 						<input type="hidden" name="frmid" value="Форма конференция">
 						<input type="hidden" name="event" value="conf_form">
@@ -693,7 +740,7 @@
 		<div>
 			<h2>Контактные данные семейной клиники Rehab Family</h2>
 			<div class="phone">
-				<a href="tel:74952120887" class="comagic_phone_link">+7 (495) 212-08-87</a>
+				<a href="tel:74953200124" class="comagic_phone_link">+7 (495) 320-01-24</a>
 				<p>Единый контактный номер</p>
 			</div>
 			<div class="email">
@@ -719,7 +766,7 @@
 							<p>круглосуточно</p>
 						</div>
 						<div class="overmap-descr hidden">
-							<p>Едите по Дмитровскому шоссе на 54 км поворачиваете направо ориентир — указатель Софрино, Ногинск. Проезжаете 1,5 км до поворота направо на указатель Славино, Игнатово, Рождественно. Едите 10 км прямо по главной дороге до перекрестка Большое Ивановское и Голенищево, через 200 метров после перекрестка сворачиваете налево (вы увидите комплекс на опушке леса). <br>GPS ш. 56.136711, д. 37.571728</p>
+							<p>Едете по Дмитровскому шоссе на 54 км поворачиваете направо ориентир — указатель Софрино, Ногинск. Проезжаете 1,5 км до поворота направо на указатель Славино, Игнатово, Рождественно. Едете 10 км прямо по главной дороге до перекрестка Большое Ивановское и Голенищево, через 200 метров после перекрестка сворачиваете налево (вы увидите комплекс на опушке леса). <br>GPS ш. 56.136711, д. 37.571728</p>
 							<div class="back">Назад</div>
 						</div>
 					</div>
@@ -740,7 +787,7 @@
 
 				</div>
 			</div>
-			<a href="#" id="politics">Политика конфиденциальности</a>
+			<a href="#" class="politics">Политика конфиденциальности</a>
 		</div>
 	</div>
 <!-- 	<footer>
@@ -763,8 +810,8 @@
 			<form id="header-popup-form">
 				<p>Оставьте свои контактные данные <br>и наши сотрудники свяжутся с Вами</p>
 				<input class="person-name-modal" type="text" name="name" placeholder="Ваше имя">
-				<!-- <input class="person-tel-modal masked" type="tel" name="tel" placeholder="Ваш телефон"> -->
-				<div class="wrap-tel-input">
+				<input class="person-tel-modal masked" type="tel" name="tel" placeholder="Ваш телефон">
+				<!-- <div class="wrap-tel-input">
 					<span>+</span>
 					<input class="inp-tel-1" type="text" maxlength="2" placeholder="__">
 					<span>(</span>
@@ -772,7 +819,7 @@
 					<span>)</span>
 					<input class="inp-tel-3 tel-mask" type="text" placeholder="___-__-__">
 					<input type="hidden" name="tel" class="full_phone">
-				</div>
+				</div> -->
 				<input type="hidden" name="frmid" value="Форма в всплывающем окне">
 				<input type="hidden" name="event" value="popup_form1">
 				<input class="send-form-modal" type="submit" value="Заказать звонок">
@@ -786,8 +833,8 @@
 			<form id="write-popup-form">
 				<p>Запишитесь на бесплатную <br>консультацию психиатора нарколога</p>
 				<input class="person-name-write" type="text" name="name" placeholder="Ваше имя">
-				<!-- <input class="person-tel-write masked" type="tel" name="tel" placeholder="Ваш телефон"> -->
-				<div class="wrap-tel-input">
+				<input class="person-tel-write masked" type="tel" name="tel" placeholder="Ваш телефон">
+				<!-- <div class="wrap-tel-input">
 					<span>+</span>
 					<input class="inp-tel-1" type="text" maxlength="2" placeholder="__">
 					<span>(</span>
@@ -795,7 +842,7 @@
 					<span>)</span>
 					<input class="inp-tel-3 tel-mask" type="text" placeholder="___-__-__">
 					<input type="hidden" name="tel" class="full_phone">
-				</div>
+				</div> -->
 				<input type="hidden" name="frmid" value="Заявка на бесплатную консультацию">
 				<input type="hidden" name="event" value="popup_form2">
 				<input class="send-write-modal" type="submit" value="Записаться">

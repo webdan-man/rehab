@@ -72,6 +72,7 @@ $frm = $_POST['frmid'];
 $name = $_POST['name'];
 $phone = $_POST['tel'];
 $email = $_POST['email'];
+$mess = $_POST['mess'];
 
 $for_who = $_POST['for-who'];
 $how_much_years = $_POST['years'];
@@ -102,21 +103,20 @@ $headers.= "X-Mailer: PHP/" . phpversion()."\r\n";
 $headers.= "MIME-Version: 1.0" . "\r\n";
 $headers.= "Content-type: text/plain; charset=utf-8\r\n";
 
-$to = "vanoja@mail.ru";
+$to = "zayavka@rehabfamily.ru";
+$to2 = "rehablid@gmail.com";
 
 $message = "Форма: $frm\n\n";
 $message .= "Имя: $name\n";
 $message .= "Телефон: $phone\n\n";
 $message .= "E-mail: $email\n\n";
-$message .= "<br/>";
 
 $message .= "Для кого лечение: $for_who\n\n";
 $message .= "Сколько лет вы уже боритесь с зависимостью: $how_much_years\n\n";
 $message .= "Ранее уже проходили лечения: $lech_before\n\n";
 $message .= "Были случаи агрессивного поведения: $agro\n\n";
 $message .= "Тип возможного заболевания: $type_ill\n\n";
-
-$message .= "<br/>";
+$message .= "Сообщение: $mess\n\n";
 
 // $message .= "Источник: $utm_source\n";
 // $message .= "Тип источника: $utm_medium\n";
@@ -134,6 +134,7 @@ $message .= "Ссылка на сайт: $url\n";
 $message .= "Заголовок: $title\n\n";
 
 mail ($to,$subject,$message,$headers);
+mail ($to2,$subject,$message,$headers);
 
 
 

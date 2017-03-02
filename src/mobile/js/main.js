@@ -574,11 +574,31 @@ $(function(){
 		// });
 
 
-			$("form").submit(function() {
-				event.preventDefault();
+
+
+		$("form").submit(function(event) {
+			event.preventDefault();
+
+			// var phone_p1 = $(this).find('.inp-tel-1').val();
+			// var phone_p2 = $(this).find('.inp-tel-2').val();
+			// var phone_p3 = $(this).find('.inp-tel-3').val();
+
+			// if(phone_p1 == '') {$(this).find('.inp-tel-1').css({'box-shadow': '0 0 4px 1px #F02D0E'});}
+			// if(phone_p2 == '') {$(this).find('.inp-tel-2').css({'box-shadow': '0 0 4px 1px #F02D0E'});}
+			// if(phone_p3 == '') {$(this).find('.inp-tel-3').css({'box-shadow': '0 0 4px 1px #F02D0E'});}
+			// if(phone_p1 == '' || phone_p2 == '' || phone_p3 == '' || phone_p2.length < 3) {
+			// 	$('#error-modal').arcticmodal();
+			// 	if(phone_p2.length < 3) {
+			// 		$(this).find('.inp-tel-2').css({'box-shadow': '0 0 4px 1px #F02D0E'});
+			// 	}
+			// 	return 0;
+			// } else {
+			// 	var full_phone = '+' + phone_p1 + ' (' + phone_p2 + ') ' + phone_p3;
+			// 	$(this).find('.full_phone').val(full_phone);
+			// }
+
 			var form_data = $(this).serialize(); //собераем все данные из формы
 			var type=$(this).attr('method');
-			// var url=$(this).attr('action');
 			var track_event=$(this).find('input[name="event"]').val();
 
 			$.ajax({
@@ -593,17 +613,20 @@ $(function(){
 
 					submit_track_event(track_event);
 				},
-				complete: function(response) {
-					if (response.readyState === 4 && response.status === 200) {
-						// alert(response.responseText);
-					}
-				},
+				// complete: function(response) {
+				// 	if (response.readyState === 4 && response.status === 200) {
+				// 		// alert(response.responseText);
+				// 	}
+				// },
 				beforeSend: function(jqXHR, settings) {
 					var credentials = Comagic.getCredentials();
 					settings.data += '&' + $.param(credentials);
 				}
 			});
+			window.history.pushState(null, null, 'lid.php');
 		});
+
+
 
 
 		//UTM GEO
