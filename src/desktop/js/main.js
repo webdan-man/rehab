@@ -11,8 +11,8 @@ function run_geo(geo_url){
 }
 
 function submit_track_event(event){
-    if (yaCounter) {yaCounter.reachGoal(event);}
-    if (ga) {ga('send','event','submit',event);}
+    // if (yaCounter) {yaCounter.reachGoal(event);}
+    // if (ga) {ga('send','event','submit',event);}
 }
 
 jQuery.fn.ForceNumericOnly =
@@ -621,8 +621,8 @@ $(function(){
 
 
 
-		$("form").submit(function() {
-			event.preventDefault();
+		$("form").submit(function(e) {
+			e.preventDefault();
 
 			// var phone_p1 = $(this).find('.inp-tel-1').val();
 			// var phone_p2 = $(this).find('.inp-tel-2').val();
@@ -643,8 +643,8 @@ $(function(){
 			// }
 
 			var form_data = $(this).serialize(); //собераем все данные из формы
-			var type=$(this).attr('method');
-			var track_event=$(this).find('input[name="event"]').val();
+			var type = $(this).attr('method');
+			var track_event = $(this).find('input[name="event"]').val();
 
 			$.ajax({
 				type: "POST",
@@ -656,7 +656,9 @@ $(function(){
 					$('#callback-modal .arcticmodal-close, #write-modal .arcticmodal-close').trigger('click');
 					$('body').css({'overflow-y': 'scroll'});
 
-					submit_track_event(track_event);
+					// submit_track_event(track_event);
+					yaCounter42910834.reachGoal(track_event);
+					ga('send','event','submit',track_event);
 				},
 				// complete: function(response) {
 				// 	if (response.readyState === 4 && response.status === 200) {
