@@ -1716,3 +1716,80 @@ footer {
     box-shadow: 0 1px 1px #23943e; }
     .dop-block #dop-block-form input[type='submit']:hover {
       opacity: .87; }
+
+.one-one .header-text {
+  margin-top: 25px; }
+  .one-one .header-text h1 {
+    font-size: 30px;
+    margin-top: 50px; }
+  .one-one .header-text h2 {
+    font-size: 22px; }
+
+.one-one .main-form {
+  height: 410px; }
+  .one-one .main-form input[type='submit'] {
+    margin-right: 0;
+    font-size: 22px;
+    background: #EB1513;
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+  .one-one .main-form p {
+    font-size: 24px;
+    line-height: 1.2; }
+
+.glav-vrach {
+  padding-top: 50px; }
+  .glav-vrach .left-part {
+    text-align: center;
+    margin-top: 70px;
+    padding-left: 30px; }
+  .glav-vrach .right-part {
+    margin-top: 70px;
+    padding: 15px; }
+  .glav-vrach p {
+    margin-bottom: 15px;
+    color: #000;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.4; }
+  .glav-vrach footer {
+    height: auto; }
+  .glav-vrach .name {
+    line-height: 50px;
+    font-family: "Roboto Slab", sans-serif;
+    font-size: 18px;
+    margin-left: 100px; }
+  .glav-vrach .address, .glav-vrach .email {
+    font-family: "Roboto Slab", sans-serif;
+    font-size: 15px;
+    padding-left: 30px;
+    line-height: 50px;
+    position: relative; }
+  .glav-vrach .address {
+    text-align: center; }
+    .glav-vrach .address:before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 43px;
+      top: 10px;
+      height: 26px;
+      width: 26px;
+      background-image: url("../img/map-marker.png");
+      background-size: contain;
+      background-repeat: no-repeat; }
+  .glav-vrach .email {
+    width: 200px;
+    margin: 0 auto;
+    font-size: 18px; }
+    .glav-vrach .email:before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: -5px;
+      top: 8px;
+      height: 30px;
+      width: 30px;
+      background-image: url("../img/footer-sprite.png");
+      background-position: -21px 10px;
+      background-repeat: no-repeat; }

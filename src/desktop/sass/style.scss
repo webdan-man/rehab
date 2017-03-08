@@ -279,7 +279,7 @@ input[type='text'], input[type='tel'], input[type='email'] {
 #write-modal .main-form {background-image: none;}
 
 //ERROR MODAL
-#error-modal, #success-modal {
+#error-modal, #success-modal, #download-modal {
 	padding: 50px;
 	text-align: center;
 	background-color: #fff;
@@ -1675,7 +1675,7 @@ footer {
 }
 
 
-.header.single {
+.header.single, .glav-vrach {
 	.left {
 		float: left !important;
 		width: 140px;
@@ -1695,7 +1695,7 @@ footer {
 		position: relative;
 	}
 	.address {
-		float: left;
+		float: right;
 		&:before {
 			content: '';
 			display: block;
@@ -1710,7 +1710,7 @@ footer {
 		}
 	}
 	.email {
-		float: right;
+		float: left;
 		&:before {
 			content: '';
 			display: block;
@@ -1728,6 +1728,127 @@ footer {
 }
 
 
+.one-one {
+	.header-text {
+		margin-top: -55px;
+		overflow: hidden;
+		p {margin-bottom: 5px;}
+		h1 {font-size: 32px;}
+		h2 {
+			font-size: 25px;
+			color: #000;
+		}
+	}
+	.anor h1 {font-size: 32px;}
+	.anor h2 {font-size: 23px;}
+	.nark h2 {font-size: 22px;}
+	.anor #header-form p {font-size: 17px;}
+	.logo {
+		padding-right: 35px;
+		img {
+			height: 110%;
+		}
+	}
+	.callback {margin-top: -10px;}
+	.callback-btn {background-position: 35px center !important;}
+	.header-video {
+		width: 530px !important;
+		height: 330px !important;
+		margin: 15px auto !important;
+		float: none;
+		box-shadow: 0 0 15px rgba(0,0,0,.2);
+	}
+	.vid-over {line-height: 330px !important;}
+	.main-form {
+		// float: none;
+		width: 85%;
+		padding: 20px;
+		height: 120px;
+		margin: 10px auto;
+		float: none;
+		border-radius: 5px;
+		.politics {
+			margin-top: 0;
+			color: #000;
+		}
+		p {font-size: 19px;}
+	}
+	input {
+		float: left;
+		width: 31% !important;
+		margin-right: 18px;
+		margin-bottom: 10px;
+	}
+	.main-form input[type='submit'] {
+		padding: 8px;
+		margin-right: 0;
+		font-size: 22px;
+		background: #EB1513;
+		box-shadow: none;
+	}
+	.logo {
+		img, p {float: left;}
+		p {
+			margin-top: 20px;
+			margin-left: 15px;
+			text-align: left;
+		}
+	}
+	.left {
+		margin-right: 160px !important;
+	}
+}
+
+.header-video.alko .vid-over {background-image: url('../img/alko.jpg') !important;}
+.header-video.anor .vid-over {background-image: url('../img/anor.jpg') !important;}
+.header-video.shizo .vid-over {background-image: url('../img/shizo.jpg') !important;}
+.header-video.narko .vid-over {background-image: url('../img/narko.jpg') !important;}
+.header-video.nevr .vid-over {background-image: url('../img/nevro.jpg') !important;}
+.header-video.psihiatr .vid-over {background-image: url('../img/psihiatr.jpg') !important;}
+
+
+
+.glav-vrach {
+	.left-part {
+		width: 40%;
+		float: left;
+		margin-top: 70px;
+		padding-left: 30px;
+	}
+	.right-part {
+		width: 60%;
+		float: left;
+		margin-top: 70px;
+	}
+	p {
+		margin-bottom: 15px;
+		color: #000;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 1.4;
+	}
+	.name {
+		float: left;
+		line-height: 50px;
+		font-family: $second-font;
+		font-size: 16px;
+		margin-left: 100px;
+	}
+}
+
+.error-input {box-shadow: 0 0 4px 1px #F02D0E;}
+
+.btn-download {
+	padding: 10px;
+	font-size: 22px;
+	background: #EB1513;
+	color: #fff;
+	width: 200px;
+	margin: 20px auto 0;
+	display: block;
+	border-radius: 10px;
+	&:hover {opacity: .9;}
+}
 
 
 

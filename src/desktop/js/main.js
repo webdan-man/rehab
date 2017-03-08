@@ -15,6 +15,8 @@ function submit_track_event(event){
     // if (ga) {ga('send','event','submit',event);}
 }
 
+function validateEmail(email) {var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;return re.test(email);};
+
 jQuery.fn.ForceNumericOnly =
     function() {
         return this.each(function() {
@@ -74,6 +76,9 @@ $(function(){
 				});
 			}
 
+			$('input[name="email"]').blur(function() {if(!validateEmail($(this).val())) {$(this).addClass('error-input');}});
+			$('input[name="email"]').focus(function() {$(this).removeClass('error-input');});
+
 		// убираем плейсхолдер при фокусе
 		$('input, textarea').focus(function(){
 			$(this).css({'box-shadow': 'none'});
@@ -97,10 +102,36 @@ $(function(){
 		});
 
 
+		setTimeout(function() {
+			$('.auto-video .vid-over').trigger('click');
+		}, 3000);
+
+
 		//подгрузка объектов
 		$('.header .vid-over').click(function(){
 			$(this).html('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/7y2WOzSyk4w?autoplay=1;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>')
 		});
+
+		$('.header .alko .vid-over').click(function(){
+			$(this).html('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/ZOEX0DO1p-c?autoplay=1;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>')
+		});
+		$('.header .narko .vid-over').click(function(){
+			$(this).html('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/wOyPn135CNo?autoplay=1;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>')
+		});
+		$('.header .anor .vid-over').click(function(){
+			$(this).html('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/czOJ7iL8-r4?autoplay=1;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>')
+		});
+		$('.header .shizo .vid-over').click(function(){
+			$(this).html('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/TRftE8K5Mlg?autoplay=1;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>')
+		});
+		$('.header .nevr .vid-over').click(function(){
+			$(this).html('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/kn3jqv74lhk?autoplay=1;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>')
+		});
+		$('.header .psihiatr .vid-over').click(function(){
+			$(this).html('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/zxbHV2eAf3s?autoplay=1;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>')
+		});
+
+
 
 		$('.frame-3d').click(function(e){
 			e.preventDefault();
@@ -592,12 +623,15 @@ $(function(){
 
 		$('.problem-item').hover(function() {$(this).removeClass('hover');});
 
+		$('.btn-download').click(function() {$('.box-modal_close').trigger('click');});
 
-		// setTimeout(function() {
-		//     if ($('body').hasClass('pre-loaded')) {
-		//     	$('.pre-loader').slideUp();
-		//     }
-		// }, 2000);
+
+		setTimeout(function() {
+		    // if ($('body').hasClass('pre-loaded')) {
+		    	// $('.pre-loader').slideUp();
+		    // }
+		    $('body').addClass('pre-loaded');
+		}, 500);
 
 				// // отправка формы
 				// $("form").submit(function() {
@@ -646,25 +680,25 @@ $(function(){
 			var type = $(this).attr('method');
 			var track_event = $(this).find('input[name="event"]').val();
 
+			var type_frm = $(this).find('input[name="typefrm"]').val();
+
 			$.ajax({
 				type: "POST",
 				url: "/mail.php",
 				data: form_data,
 				success: function() {
-					$('#success-modal').arcticmodal();
+					if(type_frm == 'alko') {
+						$('#download-modal').arcticmodal();
+					} else {
+						$('#success-modal').arcticmodal();
+					}
 					$('input[type=text],input[type=tel],input[type=email]').val('');
 					$('#callback-modal .arcticmodal-close, #write-modal .arcticmodal-close').trigger('click');
 					$('body').css({'overflow-y': 'scroll'});
-
 					// submit_track_event(track_event);
 					yaCounter42910834.reachGoal(track_event);
 					ga('send','event','submit',track_event);
 				},
-				// complete: function(response) {
-				// 	if (response.readyState === 4 && response.status === 200) {
-				// 		// alert(response.responseText);
-				// 	}
-				// },
 				beforeSend: function(jqXHR, settings) {
 					var credentials = Comagic.getCredentials();
 					settings.data += '&' + $.param(credentials);
