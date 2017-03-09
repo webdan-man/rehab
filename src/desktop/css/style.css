@@ -118,6 +118,9 @@ input[type='text'], input[type='tel'], input[type='email'] {
     background-color: #fff;
     color: #000; }
 
+.header {
+  background-size: cover !important; }
+
 .problem {
   background-image: url("../img/problem-bg.jpg");
   background-position: center center; }
@@ -1906,7 +1909,9 @@ footer {
   width: 530px !important;
   height: 330px !important;
   margin: 15px auto !important;
-  float: none; }
+  float: none;
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); }
 
 .one-one .vid-over {
   line-height: 330px !important; }
@@ -2009,15 +2014,3 @@ footer {
   border-radius: 10px; }
   .btn-download:hover {
     opacity: .9; }
-
-@media screen and (max-width: 1700px) {
-  .header {
-    background-size: 118% !important; } }
-
-@media screen and (max-width: 1450px) {
-  .header {
-    background-size: 137% !important; } }
-
-@media screen and (max-width: 1300px) {
-  .header {
-    background-size: 148% !important; } }
