@@ -646,7 +646,14 @@ input[type='text'], input[type='tel'], input[type='email'] {
   .for-psih-filters .line:nth-child(1) {
     margin-top: 0; }
   .for-psih-filters .line label {
-    margin: 20px 0 0 15px; }
+    margin: 20px 0 0 15px;
+    line-height: 1.2;
+    height: 45px;
+    vertical-align: middle;
+    display: inline-block;
+    padding-top: 13px; }
+    .for-psih-filters .line label.not-padding {
+      padding-top: 5px; }
   .for-psih-filters .line div {
     float: left; }
 
@@ -658,7 +665,12 @@ input[type='text'], input[type='tel'], input[type='email'] {
   margin: 5px 10px; }
 
 .other-filters .line label {
-  margin: 13px 22px; }
+  margin: 0px 22px 15px;
+  line-height: 1.2;
+  height: 42px;
+  padding-top: 12px; }
+  .other-filters .line label.not-padding {
+    padding-top: 4px; }
 
 .bottom-contact {
   height: 73px;

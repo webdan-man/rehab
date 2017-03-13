@@ -118,6 +118,9 @@ input[type='text'], input[type='tel'], input[type='email'] {
     background-color: #fff;
     color: #000; }
 
+.header {
+  background-size: cover !important; }
+
 .problem {
   background-image: url("../img/problem-bg.jpg");
   background-position: center center; }
@@ -643,7 +646,14 @@ input[type='text'], input[type='tel'], input[type='email'] {
   .for-psih-filters .line:nth-child(1) {
     margin-top: 0; }
   .for-psih-filters .line label {
-    margin: 20px 0 0 15px; }
+    margin: 20px 0 0 15px;
+    line-height: 1.2;
+    height: 45px;
+    vertical-align: middle;
+    display: inline-block;
+    padding-top: 13px; }
+    .for-psih-filters .line label.not-padding {
+      padding-top: 5px; }
   .for-psih-filters .line div {
     float: left; }
 
@@ -655,7 +665,12 @@ input[type='text'], input[type='tel'], input[type='email'] {
   margin: 5px 10px; }
 
 .other-filters .line label {
-  margin: 13px 22px; }
+  margin: 0px 22px 15px;
+  line-height: 1.2;
+  height: 42px;
+  padding-top: 12px; }
+  .other-filters .line label.not-padding {
+    padding-top: 4px; }
 
 .bottom-contact {
   height: 73px;
@@ -1906,7 +1921,9 @@ footer {
   width: 530px !important;
   height: 330px !important;
   margin: 15px auto !important;
-  float: none; }
+  float: none;
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); }
 
 .one-one .vid-over {
   line-height: 330px !important; }
@@ -2009,15 +2026,3 @@ footer {
   border-radius: 10px; }
   .btn-download:hover {
     opacity: .9; }
-
-@media screen and (max-width: 1700px) {
-  .header {
-    background-size: 118% !important; } }
-
-@media screen and (max-width: 1450px) {
-  .header {
-    background-size: 137% !important; } }
-
-@media screen and (max-width: 1300px) {
-  .header {
-    background-size: 148% !important; } }

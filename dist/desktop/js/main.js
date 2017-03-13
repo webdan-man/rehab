@@ -102,9 +102,9 @@ $(function(){
 		});
 
 
-		// setTimeout(function() {
-		// 	$('.auto-video .vid-over').trigger('click');
-		// }, 3000);
+		setTimeout(function() {
+			$('.auto-video .vid-over').trigger('click');
+		}, 3000);
 
 
 		//подгрузка объектов
@@ -119,16 +119,16 @@ $(function(){
 			$(this).html('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/wOyPn135CNo?autoplay=1;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>')
 		});
 		$('.header .anor .vid-over').click(function(){
-			$(this).html('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/wOyPn135CNo?autoplay=1;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>')
+			$(this).html('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/czOJ7iL8-r4?autoplay=1;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>')
 		});
 		$('.header .shizo .vid-over').click(function(){
-			$(this).html('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/wOyPn135CNo?autoplay=1;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>')
+			$(this).html('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/TRftE8K5Mlg?autoplay=1;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>')
 		});
 		$('.header .nevr .vid-over').click(function(){
-			$(this).html('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/wOyPn135CNo?autoplay=1;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>')
+			$(this).html('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/kn3jqv74lhk?autoplay=1;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>')
 		});
 		$('.header .psihiatr .vid-over').click(function(){
-			$(this).html('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/wOyPn135CNo?autoplay=1;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>')
+			$(this).html('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/zxbHV2eAf3s?autoplay=1;rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>')
 		});
 
 
@@ -738,3 +738,4 @@ $(function(){
 
 });//function
 
+// first start

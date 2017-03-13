@@ -506,6 +506,12 @@ input[type='text'], input[type='tel'], input[type='email'] {
 	.line:nth-child(1) {margin-top: 0;}
 	.line label {
 		margin: 20px 0 0 15px;
+		line-height: 1.2;
+		height: 45px;
+		vertical-align: middle;
+		display: inline-block;
+		padding-top: 13px;
+		&.not-padding {padding-top: 5px;}
 	}
 	.line div {float: left;}
 }
@@ -519,7 +525,11 @@ input[type='text'], input[type='tel'], input[type='email'] {
 		margin: 5px 10px;
 	}
 	.line label {
-		margin: 13px 22px;
+		margin: 0px 22px 15px;
+		line-height: 1.2;
+		height: 42px;
+		padding-top: 12px;
+		&.not-padding {padding-top: 4px;}
 	}
 }
 
