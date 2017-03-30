@@ -102,9 +102,9 @@ $(function(){
 		});
 
 
-		setTimeout(function() {
-			$('.auto-video .vid-over').trigger('click');
-		}, 3000);
+		// setTimeout(function() {
+		// 	$('.auto-video .vid-over').trigger('click');
+		// }, 3000);
 
 
 		//подгрузка объектов
@@ -271,7 +271,7 @@ $(function(){
 		});
 
 		//modal header
-		$('.callback-btn').click(function() {$('#callback-modal').arcticmodal();});
+		$('.callback-btn, .big-btn, .back-btn').click(function() {$('#callback-modal').arcticmodal();});
 		$('#consult-btn, .consult-fixed, .write-consult').click(function(e) {
 			e.preventDefault();
 			$('.menu').removeClass('down');

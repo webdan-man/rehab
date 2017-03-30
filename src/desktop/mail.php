@@ -83,7 +83,7 @@ $message .= "Для кого лечение: $for_who\n\n";
 $message .= "Сколько лет вы уже боритесь с зависимостью: $how_much_years\n\n";
 $message .= "Ранее уже проходили лечения: $lech_before\n\n";
 $message .= "Были случаи агрессивного поведения: $agro\n\n";
-$message .= "Тип возможного заболевания: $type_ill\n\n";
+$message .= "Тип возможного заболевания:" . implode(', ', $type_ill) . "\n\n";
 $message .= "Сообщение: $mess\n\n";
 
 // $message .= "Источник: $utm_source\n";
